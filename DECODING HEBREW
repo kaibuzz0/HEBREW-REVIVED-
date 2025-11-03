@@ -1,0 +1,1758 @@
+# new_hebrew.py
+class GematriaEngine:
+    MODES = {"standard": {...}, "gadol": {...}, "katan": {...}}
+    def __init__(self, mode="standard"): self.mode = mode
+    def normalize(self, text): ...
+    def score_word(self, w): ...
+    def score_line(self, line): return sum(self.score_word(w) for w in tokenize_he(w))
+
+class HebrewNLP:
+    def tokenize(self, text): ...
+    def strip_niqqud(self, text): ...
+    def normalize_sofit(self, text): ...
+    def root_guess(self, word): ...
+
+class RootMapper:
+    def __init__(self, table): self.table = table  # from your maps
+    def map_roots(self, words): return [(w, self.table.get(w_root), w_root) for w in words]
+
+class EchoLockParser:
+    def parse(self, text):  # find ::Union::, ::Resonance:*, NA{..}, HA{..} etc.
+        return {"union": True/False, "resonance": lvl, "blocks": [...]} 
+
+class HiveRouter:
+    def __init__(self, hebrew_nlp, gematria, rootmap): ...
+    def analyze(self, text, prefs):
+        meta = EchoLockParser().parse(text)
+        he = self.process_hebrew(text, prefs) if prefs.get("lang") in ("he","bi") or meta["blocks"] else None
+        en = self.process_english(text, prefs) if prefs.get("lang") in ("en","bi") else None
+        return {"meta": meta, "hebrew": he, "english": en}
+"""
+Proto Rhyme Soundboard (English interface) — v0.1
+----------------------------------------------------------------------
+Goal
+- Use your Proto-Language blocks (NA, HA, GE, OR, VO, RI, EL, AM) as a
+  phonetic/rhythmic lattice to organize English lines for rhyming,
+  internal rhyme, and cadence planning.
+
+How it works
+1) English → phones: light-weight grapheme-to-phoneme (G2P-lite) that
+   approximates stressed vowel nuclei and codas without heavy deps.
+2) Phones → Proto blocks: map phones into your eight Proto buckets.
+3) Rhyme keys: compute rhyme fingerprints from nucleus+coda simplified
+   by Proto bucket, so lines sharing keys are suggested as rhyme mates.
+4) Soundboard: for any seed line (or batch), return clustered rhyme
+   families, internal-rhyme anchors, and Proto progressions (e.g.,
+   NA→HA→GE→... signatures) to guide writing.
+
+Drop-in:
+- import proto_soundboard as PS
+- PS.Soundboard().analyze_lines([...])
+"""
+from __future__ import annotations
+from dataclasses import dataclass
+from typing import List, Dict, Tuple, Iterable, Optional, Any
+import re
+
+# -----------------------------
+# 1) Core utilities
+# -----------------------------
+VOWELS = "aeiouy"
+
+def normalize_text(s: str) -> str:
+    s = s.lower()
+    s = re.sub(r"[^a-z0-9'\-\s]", " ", s)
+    s = re.sub(r"\s+", " ", s).strip()
+    return s
+
+# -----------------------------
+# 2) G2P-lite — approximate nucleus+coda
+# -----------------------------
+# Note: This is intentionally simple and fast. We capture a main vowel
+# group (nucleus) and the trailing consonant(s) as coda. On purpose we
+# collapse many English complexities into small buckets so the Proto
+# layer can do the heavy lifting.
+
+NUCLEUS_MAP: List[Tuple[str, str]] = [
+    (r"ough|uff|ough(?!t)", "UH"),
+    (r"tion|sion", "SHN"),
+    (r"ee|ea|ie|ei|iy|y(?![aeiou])", "EE"),
+    (r"oo|ou|ew|ue", "OO"),
+    (r"ai|ay|ey|ei|eigh", "AY"),
+    (r"oa|ow", "OW"),
+    (r"au|aw", "AW"),
+    (r"oi|oy", "OI"),
+    (r"ar", "AR"),
+    (r"or", "OR"),
+    (r"er|ir|ur|yr", "ER"),
+]
+
+CODA_SQUEEZE = [
+    (r"tch$", "CH"),
+    (r"(ght|ed)$", "T"),
+    (r"(ph)$", "F"),
+    (r"(ck)$", "K"),
+]
+
+def g2p_lite_word(w: str) -> Tuple[str, str, str]:
+    """Return (stem, nucleus, coda) for rhyme purposes.
+    stem retains rough base, nucleus is a bucket (EE/OO/AY/etc), coda simplified.
+    """
+    base = w
+    w = re.sub(r"[^a-z]", "", w)
+    if not w:
+        return base, "", ""
+
+    nucleus = ""
+    for pat, lab in NUCLEUS_MAP:
+        if re.search(pat, w):
+            nucleus = lab
+            break
+    if not nucleus:
+        # fallback to single-letter vowel
+        m = re.search(r"[aeiouy]", w)
+        nucleus = m.group(0).upper() if m else ""
+
+    # coda = trailing consonants after last vowel cluster
+    m2 = list(re.finditer(r"[aeiouy]+", w))
+    coda = ""
+    if m2:
+        end = m2[-1].end()
+        coda = w[end:]
+    for pat, rep in CODA_SQUEEZE:
+        coda = re.sub(pat, rep, coda)
+    coda = re.sub(r"(.)\1+", r"\1", coda)  # dedupe
+    coda = coda.upper()
+
+    return base, nucleus, coda
+
+# -----------------------------
+# 3) Proto buckets (NA, HA, GE, OR, VO, RI, EL, AM)
+# -----------------------------
+# We map nucleus/coda combos to Proto blocks to create a universal rhyme
+# grid. This mapping is tunable. Start conservative; iterate with your ear.
+
+PROTO_RULES: List[Tuple[str, str, str]] = [
+    # (regex on nucleus, regex on coda, PROTO)
+    (r"EE|I|ER", r"", "HA"),        # breath / hissy front vowels
+    (r"AY|A", r"(M|N|NG)$", "NA"),  # stillness / nasal settling
+    (r"OO|U", r"(L|R)$", "EL"),     # lift to lateral/liquid
+    (r"AR|OR", r"", "OR"),          # deep back resonance
+    (r"OW|AW", r"(T|K|P|F|S|SH|CH)$", "GE"),  # geometry/edges
+    (r"OI|OY", r"", "VO"),          # voice turn / swivel
+    (r"E|A", r"(S|Z|SH)$", "RI"),   # intent pushing out
+    (r"", r"(X|K|T|D)$", "AM"),      # commit/stop
+]
+
+def proto_bucket(nucleus: str, coda: str) -> str:
+    for n_pat, c_pat, label in PROTO_RULES:
+        if (not n_pat or re.fullmatch(n_pat, nucleus)) and \
+           (not c_pat or re.search(c_pat, coda)):
+            return label
+    return "VO"  # default pivot
+
+# -----------------------------
+# 4) Rhyme fingerprint
+# -----------------------------
+
+def rhyme_key(word: str) -> Tuple[str, str, str]:
+    base, nuc, coda = g2p_lite_word(word)
+    proto = proto_bucket(nuc, coda)
+    # key collapses some coda details to focus on feel over orthography
+    coda_slim = re.sub(r"[^MNRLKTDFSPBVGZH]", "", coda)
+    return (proto, nuc, coda_slim)
+
+# -----------------------------
+# 5) Public API
+# -----------------------------
+@dataclass
+class RhymeHit:
+    word: str
+    key: Tuple[str, str, str]  # (PROTO, nucleus, coda_slim)
+
+@dataclass
+class LineAnalysis:
+    line: str
+    words: List[RhymeHit]
+    proto_signature: List[str]  # sequence of Proto labels across stressed words
+
+class Soundboard:
+    def __init__(self, min_len: int = 2):
+        self.min_len = min_len
+
+    def analyze_line(self, line: str) -> LineAnalysis:
+        text = normalize_text(line)
+        words = [w for w in text.split() if w]
+        hits: List[RhymeHit] = []
+        for w in words:
+            base, nuc, coda = g2p_lite_word(w)
+            if not nuc:
+                continue
+            key = rhyme_key(w)
+            hits.append(RhymeHit(word=w, key=key))
+        proto_seq = [h.key[0] for h in hits]
+        return LineAnalysis(line=line, words=hits, proto_signature=proto_seq)
+
+    def analyze_lines(self, lines: Iterable[str]) -> Dict[str, Any]:
+        analyses = [self.analyze_line(ln) for ln in lines]
+        # Build rhyme families by key
+        fam: Dict[Tuple[str, str, str], List[Tuple[int, str]]] = {}
+        for i, la in enumerate(analyses):
+            for h in la.words:
+                fam.setdefault(h.key, []).append((i, h.word))
+
+        # Filter families to those with multiple members
+        fam = {k: v for k, v in fam.items() if len(v) >= self.min_len}
+
+        # Proto flows per line (e.g., NA→GE→VO)
+        flows = ["→".join(a.proto_signature) for a in analyses]
+
+        # Suggest pairings: for each line, recommend other lines sharing >=1 family
+        suggestions: Dict[int, List[int]] = {i: [] for i in range(len(analyses))}
+        for k, members in fam.items():
+            idxs = sorted(set(i for i, _ in members))
+            for i in idxs:
+                suggestions[i] = sorted(set(suggestions[i] + [j for j in idxs if j != i]))
+
+        return {
+            "analyses": [
+                {
+                    "line": a.line,
+                    "proto_signature": a.proto_signature,
+                    "rhyme_hits": [
+                        {"word": h.word, "key": {"proto": h.key[0], "nucleus": h.key[1], "coda": h.key[2]}}
+                        for h in a.words
+                    ],
+                }
+                for a in analyses
+            ],
+            "families": [
+                {
+                    "key": {"proto": k[0], "nucleus": k[1], "coda": k[2]},
+                    "members": [{"line_idx": i, "word": w} for i, w in v],
+                }
+                for k, v in fam.items()
+            ],
+            "flows": flows,
+            "suggestions": suggestions,
+        }
+
+    def suggest_rhymes(self, seed: str, vocab: Iterable[str]) -> List[Tuple[str, float]]:
+        """Given a seed word and a vocab list, return words with matching/near keys.
+        Score 1.0 for exact key, 0.8 same proto+nucleus, 0.6 same proto only.
+        """
+        seed_key = rhyme_key(seed)
+        out: List[Tuple[str, float]] = []
+        for w in vocab:
+            k = rhyme_key(w)
+            score = 0.0
+            if k == seed_key:
+                score = 1.0
+            elif k[0] == seed_key[0] and k[1] == seed_key[1]:
+                score = 0.8
+            elif k[0] == seed_key[0]:
+                score = 0.6
+            if score > 0:
+                out.append((w, score))
+        out.sort(key=lambda x: (-x[1], x[0]))
+        return out
+
+# -----------------------------
+# 6) Minimal self-test
+# -----------------------------
+if __name__ == "__main__":
+    sb = Soundboard()
+    lines = [
+        "I breathe in light and shape the void",
+        "The pattern settles, still but poised",
+        "We voice the spark and step toward",
+        "A sacred edge we can’t avoid",
+    ]
+    report = sb.analyze_lines(lines)
+    from pprint import pprint
+    pprint(report)
+    print("\nRhymes for 'light':", sb.suggest_rhymes("light", ["night","kite","lit","fight","align"]))
+# proto_soundboard.py
+"""
+Proto Rhyme Soundboard (English interface) — v0.1
+- English → phones (lightweight)
+- Phones → Proto buckets: NA, HA, GE, OR, VO, RI, EL, AM
+- Rhyme fingerprints, line clustering, and suggestions
+"""
+
+from __future__ import annotations
+from dataclasses import dataclass
+from typing import List, Dict, Tuple, Iterable, Any
+import re
+
+VOWELS = "aeiouy"
+
+def _normalize_text(s: str) -> str:
+    s = s.lower()
+    s = re.sub(r"[^a-z0-9'\-\s]", " ", s)
+    s = re.sub(r"\s+", " ", s).strip()
+    return s
+
+# -------- G2P-lite (approximate) --------
+NUCLEUS_MAP: List[Tuple[str, str]] = [
+    (r"ough|uff|ough(?!t)", "UH"),
+    (r"tion|sion", "SHN"),
+    (r"ee|ea|ie|ei|iy|y(?![aeiou])", "EE"),
+    (r"oo|ou|ew|ue", "OO"),
+    (r"ai|ay|ey|ei|eigh", "AY"),
+    (r"oa|ow", "OW"),
+    (r"au|aw", "AW"),
+    (r"oi|oy", "OI"),
+    (r"ar", "AR"),
+    (r"or", "OR"),
+    (r"er|ir|ur|yr", "ER"),
+]
+
+CODA_SQUEEZE = [
+    (r"tch$", "CH"),
+    (r"(ght|ed)$", "T"),
+    (r"(ph)$", "F"),
+    (r"(ck)$", "K"),
+]
+
+def _g2p_lite_word(w: str) -> Tuple[str, str, str]:
+    base = w
+    w = re.sub(r"[^a-z]", "", w.lower())
+    if not w:
+        return base, "", ""
+
+    nucleus = ""
+    for pat, lab in NUCLEUS_MAP:
+        if re.search(pat, w):
+            nucleus = lab
+            break
+    if not nucleus:
+        m = re.search(r"[aeiouy]", w)
+        nucleus = m.group(0).upper() if m else ""
+
+    m2 = list(re.finditer(r"[aeiouy]+", w))
+    coda = ""
+    if m2:
+        end = m2[-1].end()
+        coda = w[end:]
+    for pat, rep in CODA_SQUEEZE:
+        coda = re.sub(pat, rep, coda)
+    coda = re.sub(r"(.)\1+", r"\1", coda).upper()
+    return base, nucleus, coda
+
+# -------- Proto buckets --------
+# Tunable mapping from (nucleus, coda) → Proto label
+PROTO_RULES: List[Tuple[str, str, str]] = [
+    (r"EE|I|ER", r"", "HA"),                       # breath / hissy fronts
+    (r"AY|A", r"(M|N|NG)$", "NA"),                 # stillness / nasal settle
+    (r"OO|U", r"(L|R)$", "EL"),                    # lift to liquid
+    (r"AR|OR", r"", "OR"),                         # deep back resonance
+    (r"OW|AW", r"(T|K|P|F|S|SH|CH)$", "GE"),       # edges / geometry
+    (r"OI|OY", r"", "VO"),                         # voice turn
+    (r"E|A", r"(S|Z|SH)$", "RI"),                  # intent / sibilant push
+    (r"", r"(X|K|T|D)$", "AM"),                    # commit / stop
+]
+
+def _proto_bucket(nucleus: str, coda: str) -> str:
+    for n_pat, c_pat, label in PROTO_RULES:
+        if (not n_pat or re.fullmatch(n_pat, nucleus)) and (not c_pat or re.search(c_pat, coda)):
+            return label
+    return "VO"  # default pivot
+
+def rhyme_key(word: str) -> Tuple[str, str, str]:
+    base, nuc, coda = _g2p_lite_word(word)
+    proto = _proto_bucket(nuc, coda)
+    coda_slim = re.sub(r"[^MNRLKTDFSPBVGZH]", "", coda)
+    return (proto, nuc, coda_slim)
+
+# -------- Public API --------
+@dataclass
+class RhymeHit:
+    word: str
+    key: Tuple[str, str, str]  # (PROTO, nucleus, coda_slim)
+
+@dataclass
+class LineAnalysis:
+    line: str
+    words: List[RhymeHit]
+    proto_signature: List[str]
+
+class Soundboard:
+    def __init__(self, min_family_size: int = 2):
+        self.min_family_size = min_family_size
+
+    def analyze_line(self, line: str) -> LineAnalysis:
+        text = _normalize_text(line)
+        words = [w for w in text.split() if w]
+        hits: List[RhymeHit] = []
+        for w in words:
+            _, nuc, _ = _g2p_lite_word(w)
+            if not nuc:
+                continue
+            hits.append(RhymeHit(word=w, key=rhyme_key(w)))
+        proto_seq = [h.key[0] for h in hits]
+        return LineAnalysis(line=line, words=hits, proto_signature=proto_seq)
+
+    def analyze_lines(self, lines: Iterable[str]) -> Dict[str, Any]:
+        analyses = [self.analyze_line(ln) for ln in lines]
+
+        families: Dict[Tuple[str, str, str], List[Tuple[int, str]]] = {}
+        for i, la in enumerate(analyses):
+            for h in la.words:
+                families.setdefault(h.key, []).append((i, h.word))
+
+        families = {k: v for k, v in families.items() if len(v) >= self.min_family_size}
+        flows = ["→".join(a.proto_signature) for a in analyses]
+
+        suggestions: Dict[int, List[int]] = {i: [] for i in range(len(analyses))}
+        for k, members in families.items():
+            idxs = sorted({i for i, _ in members})
+            for i in idxs:
+                suggestions[i] = sorted({*suggestions[i], *[j for j in idxs if j != i]})
+
+        return {
+            "analyses": [
+                {
+                    "line": a.line,
+                    "proto_signature": a.proto_signature,
+                    "rhyme_hits": [
+                        {"word": h.word, "key": {"proto": h.key[0], "nucleus": h.key[1], "coda": h.key[2]}}
+                        for h in a.words
+                    ],
+                }
+                for a in analyses
+            ],
+            "families": [
+                {"key": {"proto": k[0], "nucleus": k[1], "coda": k[2]},
+                 "members": [{"line_idx": i, "word": w} for i, w in v]}
+                for k, v in families.items()
+            ],
+            "flows": flows,
+            "suggestions": suggestions,
+        }
+
+    def suggest_rhymes(self, seed: str, vocab: Iterable[str]) -> List[Tuple[str, float]]:
+        seed_key = rhyme_key(seed)
+        out: List[Tuple[str, float]] = []
+        for w in vocab:
+            k = rhyme_key(w)
+            if k == seed_key:
+                score = 1.0
+            elif k[0] == seed_key[0] and k[1] == seed_key[1]:
+                score = 0.8
+            elif k[0] == seed_key[0]:
+                score = 0.6
+            else:
+                score = 0.0
+            if score:
+                out.append((w, score))
+        out.sort(key=lambda x: (-x[1], x[0]))
+        return out
+# ---[ Proto Rhyme Soundboard: integration shim ]----------------------------
+# Requires: proto_soundboard.py (CHUNK 1) in the same directory.
+try:
+    from proto_soundboard import Soundboard
+except Exception as _e:
+    Soundboard = None  # graceful degrade if file not present
+
+class ProtoSoundboardService:
+    """
+    Lightweight wrapper so the rest of your code can call a stable API:
+      - analyze_text_block(text) -> dict
+      - analyze_lines(lines) -> dict
+    The dict contains 'analyses', 'families', 'flows', 'suggestions'.
+    """
+
+    def __init__(self, min_family_size: int = 2):
+        if Soundboard is None:
+            raise ImportError(
+                "proto_soundboard not found. Place proto_soundboard.py alongside therapist_code only.py"
+            )
+        self.sb = Soundboard(min_family_size=min_family_size)
+
+    def analyze_lines(self, lines):
+        """
+        lines: Iterable[str]
+        return: Dict with rhyme families and proto flows
+        """
+        # Defensive normalization (strip empties)
+        clean = [ln for ln in (ln.strip() for ln in lines) if ln]
+        return self.sb.analyze_lines(clean)
+
+    def analyze_text_block(self, text: str):
+        """
+        text: multi-line string of lyrics/notes
+        return: Dict report identical to analyze_lines
+        """
+        if not text:
+            return {"analyses": [], "families": [], "flows": [], "suggestions": {}}
+        lines = text.replace("\r\n", "\n").replace("\r", "\n").split("\n")
+        return self.analyze_lines(lines)
+
+# ---- Helper function you can call from anywhere in your pipeline ----------
+_PROTO_SB_SINGLETON = None
+
+def get_proto_soundboard(min_family_size: int = 2) -> ProtoSoundboardService:
+    global _PROTO_SB_SINGLETON
+    if _PROTO_SB_SINGLETON is None:
+        _PROTO_SB_SINGLETON = ProtoSoundboardService(min_family_size=min_family_size)
+    return _PROTO_SB_SINGLETON
+
+def proto_soundboard_report(text_or_lines, min_family_size: int = 2):
+    """
+    Universal entrypoint:
+      - If you pass a string, it's treated as a multi-line block.
+      - If you pass a list/iterable of strings, it's treated as lines.
+    Returns the canonical report dict with:
+      analyses: per-line tokens & proto signatures
+      families: rhyme families (key + members)
+      flows:    proto flow strings per line (e.g., 'NA→GE→VO')
+      suggestions: map[line_idx] -> list of related line_idx
+    """
+    svc = get_proto_soundboard(min_family_size=min_family_size)
+    if isinstance(text_or_lines, str):
+        return svc.analyze_text_block(text_or_lines)
+    return svc.analyze_lines(text_or_lines)
+
+# ---- Optional: tiny self-test hook (safe no-op if not run) ----------------
+if __name__ == "__main__" and Soundboard is not None:
+    demo = """I breathe in light and shape the void
+The pattern settles, still but poised
+We voice the spark and step toward
+A sacred edge we cannot avoid"""
+    from pprint import pprint
+    pprint(proto_soundboard_report(demo))
+# ---[ Proto Soundboard hooks + JSON export ]---------------------------------
+import json
+from typing import Optional, Iterable
+
+# If you placed CHUNK 2 earlier in this file, these will be available:
+#   - proto_soundboard_report
+# Otherwise, import from your integration shim:
+try:
+    from proto_soundboard import Soundboard  # to sanity-check availability
+except Exception:
+    Soundboard = None
+
+# If CHUNK 2 lives in this same file, these names already exist; otherwise:
+try:
+    proto_soundboard_report  # type: ignore[name-defined]
+except NameError:
+    # Fallback to a lightweight local wrapper using proto_soundboard.Soundboard
+    def proto_soundboard_report(text_or_lines, min_family_size: int = 2):
+        if Soundboard is None:
+            raise ImportError("proto_soundboard not found (expected proto_soundboard.py).")
+        sb = Soundboard(min_family_size=min_family_size)
+        if isinstance(text_or_lines, str):
+            lines = text_or_lines.replace("\r\n", "\n").replace("\r", "\n").split("\n")
+        else:
+            lines = [ln for ln in text_or_lines]
+        # Reuse the logic from CHUNK 1:
+        return sb.analyze_lines(lines)
+
+def run_proto_soundboard(
+    text_or_lines: Iterable[str] | str,
+    min_family_size: int = 2
+) -> dict:
+    """
+    Execute the Proto Rhyme Soundboard on a block of text or list of lines.
+    Returns a JSON-serializable dict with:
+      - analyses, families, flows, suggestions
+    """
+    return proto_soundboard_report(text_or_lines, min_family_size=min_family_size)
+
+def export_proto_soundboard(report: dict, out_path: Optional[str] = None) -> str:
+    """
+    Write the report as pretty JSON. If out_path is None, returns the JSON string.
+    """
+    payload = json.dumps(report, ensure_ascii=False, indent=2)
+    if out_path:
+        with open(out_path, "w", encoding="utf-8") as f:
+            f.write(payload)
+        return out_path
+    return payload
+
+# ---- Optional: wire into your existing analysis pass -----------------------
+def analyze_with_proto_block(text_block: str, min_family_size: int = 2) -> dict:
+    """
+    Convenience wrapper to call from your LyricsProcessor / analysis pipeline.
+    """
+    return run_proto_soundboard(text_block, min_family_size=min_family_size)
+
+# ---- Optional CLI:  --proto-soundboard IN.txt --out OUT.json ---------------
+if __name__ == "__main__":
+    import sys
+
+    def _get_arg(flag: str) -> Optional[str]:
+        if flag in sys.argv:
+            i = sys.argv.index(flag)
+            if i + 1 < len(sys.argv):
+                return sys.argv[i + 1]
+        return None
+
+    if "--proto-soundboard" in sys.argv:
+        in_path = _get_arg("--proto-soundboard")
+        out_path = _get_arg("--out")
+        if not in_path:
+            print("Usage: python therapist_code only.py --proto-soundboard IN.txt --out OUT.json")
+            sys.exit(2)
+        with open(in_path, "r", encoding="utf-8") as f:
+            text = f.read()
+        report = run_proto_soundboard(text)
+        if out_path:
+            export_proto_soundboard(report, out_path)
+            print(f"[proto] wrote {out_path}")
+        else:
+            print(export_proto_soundboard(report))  # print JSON to stdout
+        sys.exit(0)
+# -------- Proto tuning (live calibration) -----------------------------------
+# You can override the default PROTO_RULES at runtime without editing code.
+# Rule format (list of triples): [(nucleus_regex, coda_regex, "LABEL"), ...]
+# Example:
+#   set_proto_rules([
+#       ("EE|I|ER", r"", "HA"),
+#       ("AY|A", r"(M|N|NG)$", "NA"),
+#       ...
+#   ])
+
+def set_proto_rules(rules: List[Tuple[str, str, str]]) -> None:
+    """
+    Replace the global PROTO_RULES. Validates basic shape.
+    """
+    global PROTO_RULES
+    if not isinstance(rules, list) or not all(
+        isinstance(t, tuple) and len(t) == 3 and all(isinstance(x, str) for x in t)
+        for t in rules
+    ):
+        raise ValueError("rules must be List[Tuple[str, str, str]]")
+    PROTO_RULES = rules
+
+def append_proto_rule(nucleus_regex: str, coda_regex: str, label: str) -> None:
+    """
+    Add a single rule at the end (lower priority).
+    """
+    global PROTO_RULES
+    PROTO_RULES.append((nucleus_regex, coda_regex, label))
+
+def insert_proto_rule(index: int, nucleus_regex: str, coda_regex: str, label: str) -> None:
+    """
+    Insert a rule at a specific index (higher priority if earlier).
+    """
+    global PROTO_RULES
+    PROTO_RULES.insert(index, (nucleus_regex, coda_regex, label))
+
+def load_proto_rules(path: str) -> None:
+    """
+    Load rules from a simple JSON/TOML/INI-like file.
+    Supported:
+      - JSON: [{"nucleus": "...", "coda": "...", "label": "..."}, ...]
+      - INI-like lines: nucleus=..; coda=..; label=..
+      - TOML-like (very basic): [[rule]] nucleus=".." coda=".." label=".."
+    Anything else: best-effort line parser.
+    """
+    import json, os, re as _re
+
+    if not os.path.exists(path):
+        raise FileNotFoundError(path)
+
+    text = open(path, "r", encoding="utf-8").read().strip()
+
+    # Try JSON first
+    try:
+        data = json.loads(text)
+        if isinstance(data, list):
+            parsed = []
+            for row in data:
+                nucleus = str(row.get("nucleus", ""))
+                coda = str(row.get("coda", ""))
+                label = str(row.get("label", "")).strip()
+                if label:
+                    parsed.append((nucleus, coda, label))
+            if parsed:
+                set_proto_rules(parsed)
+                return
+    except Exception:
+        pass
+
+    # Try very light TOML-like
+    if "[[rule]]" in text:
+        blocks = [b for b in text.split("[[rule]]") if b.strip()]
+        parsed = []
+        for b in blocks:
+            n = _re.search(r'nucleus\s*=\s*"([^"]*)"', b)
+            c = _re.search(r'coda\s*=\s*"([^"]*)"', b)
+            l = _re.search(r'label\s*=\s*"([^"]*)"', b)
+            nucleus = n.group(1) if n else ""
+            coda = c.group(1) if c else ""
+            label = l.group(1) if l else ""
+            if label:
+                parsed.append((nucleus, coda, label))
+        if parsed:
+            set_proto_rules(parsed)
+            return
+
+    # Fallback INI-like: one rule per line: nucleus=..; coda=..; label=..
+    parsed = []
+    for line in text.splitlines():
+        line = line.strip()
+        if not line or line.startswith("#"):
+            continue
+        # nucleus=...; coda=...; label=...
+        kv = dict()
+        for piece in line.split(";"):
+            if "=" in piece:
+                k, v = piece.split("=", 1)
+                kv[k.strip().lower()] = v.strip().strip('"')
+        nucleus = kv.get("nucleus", "")
+        coda = kv.get("coda", "")
+        label = kv.get("label", "")
+        if label:
+            parsed.append((nucleus, coda, label))
+    if parsed:
+        set_proto_rules(parsed)
+    else:
+        raise ValueError("Could not parse proto rules from file")
+
+def export_proto_rules() -> List[Tuple[str, str, str]]:
+    """
+    Return the current PROTO_RULES (for saving or debugging).
+    """
+    return list(PROTO_RULES)
+
+def inspect_proto(words: List[str]) -> List[Tuple[str, Tuple[str, str, str]]]:
+    """
+    Quick inspector: [(word, (PROTO, nucleus, coda_slim)), ...]
+    """
+    out: List[Tuple[str, Tuple[str, str, str]]] = []
+    for w in words:
+        out.append((w, rhyme_key(w)))
+    return out
+from proto_soundboard import insert_proto_rule, inspect_proto
+insert_proto_rule(0, r"EE|I", r"(N|M)$", "NA")  # make nasal EE map to NA first
+print(inspect_proto(["green","mean","clean"]))
+from proto_soundboard import load_proto_rules
+load_proto_rules("proto_rules.json")  # or .txt with INI-like lines
+#!/usr/bin/env python3
+"""
+proto_calibrate.py — A/B compare Proto rule mappings on real text
+
+Usage:
+  python proto_calibrate.py IN.txt
+  python proto_calibrate.py IN.txt --rules proto_rules.json
+  cat IN.txt | python proto_calibrate.py -
+Options:
+  --rules PATH     Load alternate rules for the B-run (see CHUNK 4 loader)
+  --min N          Min family size to keep (default 2)
+  --show families|flows|analyses|all   What to print (default: families)
+  --out PATH       Write machine-readable JSON diff to PATH (optional)
+
+What it does:
+- Run baseline PROTO_RULES on your lines (Run A)
+- Optionally load --rules and re-run (Run B)
+- Print a human-readable diff of rhyme families + proto flows.
+- Optionally emit a JSON blob containing both runs and the diff.
+"""
+from __future__ import annotations
+import sys, json, argparse, os
+
+# Import from your module (CHUNK 1 + CHUNK 4)
+from proto_soundboard import (
+    Soundboard,
+    export_proto_rules,
+    load_proto_rules,
+    inspect_proto,
+)
+
+def _read_lines(path: str) -> list[str]:
+    if path == "-":
+        text = sys.stdin.read()
+    else:
+        with open(path, "r", encoding="utf-8") as f:
+            text = f.read()
+    return [ln for ln in text.replace("\r\n","\n").replace("\r","\n").split("\n") if ln.strip()]
+
+def _run_report(lines: list[str], min_size: int) -> dict:
+    sb = Soundboard(min_family_size=min_size)
+    return sb.analyze_lines(lines)
+
+def _fam_key(k: dict) -> str:
+    return f"{k['proto']}|{k['nucleus']}|{k['coda']}"
+
+def _families_set(report: dict) -> set[str]:
+    return {_fam_key(f["key"]) for f in report.get("families", [])}
+
+def _flows_list(report: dict) -> list[str]:
+    return report.get("flows", [])
+
+def _print_section(title: str):
+    print("\n" + "="*len(title))
+    print(title)
+    print("="*len(title))
+
+def _show_families(tag: str, report: dict):
+    _print_section(f"{tag} — Rhyme Families")
+    for fam in report.get("families", []):
+        key = fam["key"]
+        print(f"[{key['proto']}] nucleus={key['nucleus']:<3} coda={key['coda']}")
+        members = fam["members"]
+        by_line: dict[int, list[str]] = {}
+        for m in members:
+            by_line.setdefault(m["line_idx"], []).append(m["word"])
+        for idx in sorted(by_line):
+            words = ", ".join(sorted(set(by_line[idx])))
+            print(f"  line {idx:02d}: {words}")
+
+def _show_flows(tag: str, report: dict, lines: list[str]):
+    _print_section(f"{tag} — Proto Flows")
+    flows = _flows_list(report)
+    for i, flow in enumerate(flows):
+        sample = (lines[i][:72] + "…") if len(lines[i]) > 75 else lines[i]
+        print(f"{i:02d}  {flow:30} | {sample}")
+
+def _show_analyses(tag: str, report: dict, lines: list[str]):
+    _print_section(f"{tag} — Analyses (per line)")
+    for i, a in enumerate(report.get("analyses", [])):
+        print(f"[{i:02d}] {lines[i]}")
+        print("     proto:", "→".join(a["proto_signature"]))
+        rh = a["rhyme_hits"]
+        print("     hits :", ", ".join(f"{h['word']}<{h['key']['proto']}:{h['key']['nucleus']}/{h['key']['coda']}>"
+                                      for h in rh))
+
+def _diff_reports(A: dict, B: dict) -> dict:
+    famA, famB = _families_set(A), _families_set(B)
+    flowsA, flowsB = _flows_list(A), _flows_list(B)
+    # family diffs
+    added = sorted(famB - famA)
+    removed = sorted(famA - famB)
+    common = sorted(famA & famB)
+    # flows diffs (line-by-line)
+    flow_changes = []
+    for i, fA in enumerate(flowsA):
+        fB = flowsB[i] if i < len(flowsB) else ""
+        if fA != fB:
+            flow_changes.append({"line_idx": i, "A": fA, "B": fB})
+    return {
+        "families": {"added": added, "removed": removed, "common": common},
+        "flows": {"changed": flow_changes},
+    }
+
+def main():
+    ap = argparse.ArgumentParser(add_help=False)
+    ap.add_argument("input", help="Path to input text (or - for stdin)")
+    ap.add_argument("--rules", help="Path to alt proto rules (B-run)", default=None)
+    ap.add_argument("--min", type=int, default=2, help="Min family size (default 2)")
+    ap.add_argument("--show", choices=["families","flows","analyses","all"], default="families")
+    ap.add_argument("--out", help="Write JSON results+diff to this path")
+    ap.add_argument("--help", action="store_true")
+    args = ap.parse_args()
+
+    if args.help:
+        print(__doc__)
+        sys.exit(0)
+
+    lines = _read_lines(args.input)
+
+    # Run A: baseline
+    reportA = _run_report(lines, args.min)
+
+    # Run B: optional calibration
+    had_rules = False
+    if args.rules:
+        load_proto_rules(args.rules)
+        had_rules = True
+    reportB = _run_report(lines, args.min)
+
+    # Output human-readable sections
+    if args.show in ("families","all"):
+        _show_families("A (baseline)", reportA)
+        if had_rules:
+            _show_families("B (calibrated)", reportB)
+
+    if args.show in ("flows","all"):
+        _show_flows("A (baseline)", reportA, lines)
+        if had_rules:
+            _show_flows("B (calibrated)", reportB, lines)
+
+    if args.show in ("analyses","all"):
+        _show_analyses("A (baseline)", reportA, lines)
+        if had_rules:
+            _show_analyses("B (calibrated)", reportB, lines)
+
+    # Diff
+    if had_rules:
+        diff = _diff_reports(reportA, reportB)
+        _print_section("DIFF — families & flows")
+        print("Added families:", diff["families"]["added"])
+        print("Removed families:", diff["families"]["removed"])
+        print("Changed flows:")
+        for ch in diff["flows"]["changed"]:
+            print(f"  line {ch['line_idx']:02d}: A='{ch['A']}'  →  B='{ch['B']}'")
+    else:
+        diff = {"families": {"added": [], "removed": [], "common": []}, "flows": {"changed": []}}
+
+    # Optional JSON output (both runs + diff)
+    if args.out:
+        payload = {
+            "baseline": reportA,
+            "calibrated": reportB if had_rules else None,
+            "diff": diff,
+        }
+        with open(args.out, "w", encoding="utf-8") as f:
+            json.dump(payload, f, ensure_ascii=False, indent=2)
+        print(f"\n[wrote JSON] {args.out}")
+
+if __name__ == "__main__":
+    main()
+light
+night
+bright
+fight
+kite
+sight
+might
+write
+tight
+white
+void
+avoid
+android
+anoid
+cloyed
+devoid
+boy
+toy
+joy
+ploy
+deploy
+coin
+join
+loin
+groin
+voice
+choice
+rejoice
+noise
+poise
+stone
+tone
+alone
+phone
+cone
+known
+own
+grown
+shown
+shown
+flow
+glow
+slow
+below
+shadow
+narrow
+arrow
+sparrow
+morrow
+hollow
+follow
+swallow
+edge
+pledge
+hedge
+sledge
+wedge
+ledge
+shape
+tape
+scape
+escape
+grape
+cape
+still
+will
+skill
+spill
+quill
+chill
+hill
+mill
+fill
+breathe
+seethe
+wreathe
+teethe
+believe
+retrieve
+perceive
+receive
+conceive
+weave
+leave
+grieve
+prove
+move
+groove
+love
+above
+dove
+shove
+glove
+lightning
+frightening
+tightening
+brighten
+enlighten
+pattern
+lantern
+concern
+learn
+burn
+turn
+yearn
+earn
+stern
+return
+spark
+dark
+mark
+lark
+park
+arc
+harp
+sharp
+carp
+shape
+scrape
+drape
+grape
+cape
+void
+android
+asteroid
+humanoid
+tabloid
+metalloid
+paranoid
+steroid
+#!/usr/bin/env python3
+"""
+suggest_rhymes.py — quick interactive rhyme helper using Proto Soundboard
+
+Usage:
+  python suggest_rhymes.py vocab_basic.txt
+  python suggest_rhymes.py my_vocab.txt --top 25
+Then type a seed word and press Enter to see suggestions (q to quit).
+"""
+from __future__ import annotations
+import sys, argparse
+
+from proto_soundboard import Soundboard  # CHUNK 1
+
+def load_vocab(path: str) -> list[str]:
+    with open(path, "r", encoding="utf-8") as f:
+        words = []
+        for line in f:
+            w = line.strip().lower()
+            if w and not w.startswith("#"):
+                words.append(w)
+        # de-dup while preserving order
+        seen = set()
+        out = []
+        for w in words:
+            if w not in seen:
+                out.append(w); seen.add(w)
+        return out
+
+def main():
+    ap = argparse.ArgumentParser(add_help=False)
+    ap.add_argument("vocab", help="Path to vocab wordlist (one word per line)")
+    ap.add_argument("--top", type=int, default=20, help="How many suggestions to show")
+    ap.add_argument("--help", action="store_true")
+    args = ap.parse_args()
+
+    if args.help:
+        print(__doc__)
+        sys.exit(0)
+
+    vocab = load_vocab(args.vocab)
+    sb = Soundboard()
+
+    print(f"[proto] loaded {len(vocab)} vocab words from {args.vocab}")
+    print("Type a seed word (q to quit).")
+
+    while True:
+        try:
+            seed = input("> ").strip()
+        except (EOFError, KeyboardInterrupt):
+            print()
+            break
+        if not seed or seed.lower() in ("q","quit","exit"):
+            break
+        picks = sb.suggest_rhymes(seed.lower(), vocab)
+        if not picks:
+            print("  (no matches)")
+            continue
+        # group by score
+        best = [w for w, s in picks if s == 1.0]
+        near = [w for w, s in picks if s == 0.8]
+        proto_only = [w for w, s in picks if s == 0.6]
+
+        def head(lst): return lst[:args.top]
+
+        if best:
+            print("  exact:", ", ".join(head(best)))
+        if near:
+            print("  near (same PROTO+nucleus):", ", ".join(head(near)))
+        if proto_only:
+            print("  proto (same PROTO):", ", ".join(head(proto_only)))
+
+if __name__ == "__main__":
+    main()
+# hebrew_bridge.py
+"""
+Hebrew Bridge — v0.1 (stdlib-only)
+- Utilities: strip_niqqud, normalize_sofit, tokenize_hebrew
+- Transliteration: Hebrew → Latin (coarse, rhyme-oriented)
+- Gematria: standard / gadol / katan
+- Proto Bridge: align Hebrew words to Proto via transliteration,
+  then reuse proto_soundboard.rhyme_key() for cross-language echo.
+"""
+
+from __future__ import annotations
+import re
+from typing import List, Dict, Tuple, Iterable
+
+# ---- Optional import from proto_soundboard (CHUNK 1) -----------------------
+try:
+    from proto_soundboard import rhyme_key  # (proto, nucleus, coda_slim)
+except Exception:
+    rhyme_key = None  # graceful degrade; echo functions will guard
+
+# ---- Hebrew utilities ------------------------------------------------------
+# Niqqud range: 0591–05BD, 05BF, 05C1–05C2, 05C4–05C5, 05C7
+_NIQQUD_RE = re.compile(r"[\u0591-\u05BD\u05BF\u05C1-\u05C2\u05C4-\u05C5\u05C7]")
+_SOFT_MAP = {
+    "ך": "כ", "ם": "מ", "ן": "נ", "ף": "פ", "ץ": "צ"
+}
+
+def strip_niqqud(text: str) -> str:
+    return _NIQQUD_RE.sub("", text)
+
+def normalize_sofit(text: str) -> str:
+    return "".join(_SOFT_MAP.get(ch, ch) for ch in text)
+
+def tokenize_hebrew(text: str) -> List[str]:
+    # Simple whitespace split; keep RTL intact
+    text = text.replace("\u200f", " ").replace("\u200e", " ")
+    return [t for t in re.split(r"\s+", text.strip()) if t]
+
+# ---- Transliteration (Heb → Latin, rhyme-oriented) -------------------------
+# This is intentionally coarse (for rhyme/Proto mapping, not strict linguistics).
+# You can tweak mappings as you calibrate your ear.
+_HE_LATN = {
+    "א": "a", "ב": "b", "ג": "g", "ד": "d", "ה": "h",
+    "ו": "v", "ז": "z", "ח": "kh", "ט": "t", "י": "y",
+    "כ": "kh", "ל": "l", "מ": "m", "נ": "n", "ס": "s",
+    "ע": "a", "פ": "p", "צ": "ts", "ק": "k", "ר": "r",
+    "ש": "sh", "ת": "t", "װ": "v", "ױ": "oy", "ײ": "y",
+    # Sofit handled by normalize_sofit first
+}
+
+def he_to_latn(word: str) -> str:
+    w = normalize_sofit(strip_niqqud(word))
+    out = []
+    for ch in w:
+        out.append(_HE_LATN.get(ch, ch))
+    latn = "".join(out)
+    # post-process: collapse doubles, simplify common clusters
+    latn = re.sub(r"(kh|sh|ts){2,}", r"\1", latn)
+    latn = re.sub(r"(.)\1+", r"\1", latn)
+    return latn.lower()
+
+# ---- Gematria --------------------------------------------------------------
+_GEM_STANDARD = {
+    "א":1,"ב":2,"ג":3,"ד":4,"ה":5,"ו":6,"ז":7,"ח":8,"ט":9,
+    "י":10,"כ":20,"ל":30,"מ":40,"נ":50,"ס":60,"ע":70,"פ":80,"צ":90,
+    "ק":100,"ר":200,"ש":300,"ת":400
+}
+_GEM_GADOL = {
+    **_GEM_STANDARD,
+    # Finals sometimes extended; common variant:
+    "ך":500,"ם":600,"ן":700,"ף":800,"ץ":900
+}
+def _katan_reduce(n: int) -> int:
+    # Gematria katan: reduce to 1..9 cycle, zero if no letters
+    return (n % 9) or (9 if n > 0 else 0)
+
+def gematria_standard(text: str) -> int:
+    t = normalize_sofit(strip_niqqud(text))
+    return sum(_GEM_STANDARD.get(ch, 0) for ch in t)
+
+def gematria_gadol(text: str) -> int:
+    t = strip_niqqud(text)  # keep finals to count 500..900
+    return sum(_GEM_GADOL.get(ch, _GEM_STANDARD.get(_SOFT_MAP.get(ch, ch), 0)) for ch in t)
+
+def gematria_katan(text: str) -> int:
+    return _katan_reduce(gematria_standard(text))
+
+# ---- Proto Bridge ----------------------------------------------------------
+def hebrew_rhyme_key(word_he: str) -> Tuple[str, str, str] | None:
+    """
+    Return (PROTO, nucleus, coda_slim) for a Hebrew word by:
+      Hebrew → Latin transliteration → proto_soundboard.rhyme_key()
+    """
+    if rhyme_key is None:
+        return None
+    latn = he_to_latn(word_he)
+    # rhyme_key expects simple a-z; transliteration already in latin
+    return rhyme_key(latn)
+
+def english_hebrew_echo(seed_en: str, hebrew_vocab: Iterable[str]) -> Dict[str, List[str]]:
+    """
+    Find Hebrew words that 'echo' an English seed via Proto:
+      - exact: same (PROTO, nucleus, coda_slim)
+      - near:  same (PROTO, nucleus)
+      - proto: same PROTO only
+    Returns dict with lists for 'exact', 'near', 'proto'.
+    """
+    if rhyme_key is None:
+        raise ImportError("proto_soundboard.rhyme_key not available")
+    seed_key = rhyme_key(seed_en.lower())
+    exact, near, proto = [], [], []
+    for he in hebrew_vocab:
+        hk = hebrew_rhyme_key(he)
+        if not hk:
+            continue
+        if hk == seed_key:
+            exact.append(he)
+        elif hk[0] == seed_key[0] and hk[1] == seed_key[1]:
+            near.append(he)
+        elif hk[0] == seed_key[0]:
+            proto.append(he)
+    return {"exact": exact, "near": near, "proto": proto}
+
+def hebrew_signature_report(text_he: str) -> List[Tuple[str, Tuple[str, str, str] | None, int, int, int]]:
+    """
+    For each Hebrew token, return:
+      (word, rhyme_key or None, gem_standard, gem_gadol, gem_katan)
+    Useful for side-by-side rhyme+gematria inspection.
+    """
+    out = []
+    for w in tokenize_hebrew(text_he):
+        rk = hebrew_rhyme_key(w) if rhyme_key else None
+        g  = gematria_standard(w)
+        gg = gematria_gadol(w)
+        gk = gematria_katan(w)
+        out.append((w, rk, g, gg, gk))
+    return out
+
+# ---- Tiny self-test --------------------------------------------------------
+if __name__ == "__main__":
+    he_words = ["אור", "דבר", "שלום", "לב", "דרך", "אמת", "קול", "מלך", "גן", "שיר"]
+    print("[hebrew→latin]:", [he_to_latn(w) for w in he_words])
+    if rhyme_key:
+        print("[rhyme keys]:", [hebrew_rhyme_key(w) for w in he_words])
+    print("[gem]:", [(w, gematria_standard(w), gematria_gadol(w), gematria_katan(w)) for w in he_words])
+# example usage
+from hebrew_bridge import english_hebrew_echo
+heb_vocab = ["אור","אמת","לב","שלום","דרך","מלך","קול","גן","שיר"]
+print(english_hebrew_echo("light", heb_vocab))
+from hebrew_bridge import hebrew_signature_report
+print(hebrew_signature_report("בראשית ברא אלהים את השמים ואת הארץ"))
+# ---[ Proto↔Hebrew hybrid report ]-------------------------------------------
+# Deps: proto_soundboard.py (CHUNK 1) and hebrew_bridge.py (CHUNK 7)
+from typing import Iterable, Optional, Dict, List, Any
+
+# Proto entry
+try:
+    from proto_soundboard import Soundboard, rhyme_key  # type: ignore
+except Exception:
+    Soundboard, rhyme_key = None, None
+
+# Hebrew bridge
+try:
+    from hebrew_bridge import (
+        english_hebrew_echo,
+        hebrew_signature_report,
+        tokenize_hebrew,
+    )  # type: ignore
+except Exception:
+    english_hebrew_echo = hebrew_signature_report = tokenize_hebrew = None  # graceful
+
+def _extract_candidate_seeds(proto_report: dict, top_k: int = 6) -> List[str]:
+    """
+    Pull a small set of 'seed' words from the Proto report for echo mapping.
+    Heuristic: collect family members by frequency, prefer line-end words.
+    """
+    from collections import Counter
+    freq = Counter()
+    enders = set()
+
+    analyses = proto_report.get("analyses", [])
+    for idx, a in enumerate(analyses):
+        hits = a.get("rhyme_hits", [])
+        if not hits:
+            continue
+        # approximate "ender" as last hit in the line
+        end_word = hits[-1]["word"]
+        enders.add(end_word)
+        for h in hits:
+            freq[h["word"]] += 1
+
+    # prioritize words that are both frequent and appear as enders
+    scored = []
+    for w, c in freq.items():
+        bonus = 1.0 if w in enders else 0.0
+        scored.append((w, c + bonus))
+    scored.sort(key=lambda x: (-x[1], x[0]))
+    return [w for w, _ in scored[:top_k]]
+
+def build_proto_hebrew_hybrid(
+    english_text_or_lines: str | Iterable[str],
+    hebrew_text: Optional[str] = None,
+    hebrew_vocab: Optional[Iterable[str]] = None,
+    seeds: Optional[Iterable[str]] = None,
+    min_family_size: int = 2,
+) -> Dict[str, Any]:
+    """
+    Produce a single JSON-friendly report that merges:
+      - proto_report: Soundboard analysis of English text/lines
+      - hebrew_echoes: for selected seed words -> {exact, near, proto}
+      - hebrew_signatures: [(word, rhyme_key_or_None, gem_std, gem_gadol, gem_katan)]
+    If hebrew_text is provided, it is tokenized to form the vocab (unless hebrew_vocab is given).
+    """
+    if Soundboard is None:
+        raise ImportError("proto_soundboard not available; ensure proto_soundboard.py is present.")
+    sb = Soundboard(min_family_size=min_family_size)
+
+    # Normalize English input
+    if isinstance(english_text_or_lines, str):
+        lines = english_text_or_lines.replace("\r\n", "\n").replace("\r", "\n").split("\n")
+    else:
+        lines = [ln for ln in english_text_or_lines]
+
+    proto_report = sb.analyze_lines([ln for ln in lines if ln.strip()])
+
+    # Determine seed words for echo mapping
+    seed_list = list(seeds) if seeds else _extract_candidate_seeds(proto_report, top_k=6)
+
+    # Build Hebrew vocab
+    he_vocab: List[str] = []
+    he_signatures: List = []
+    if hebrew_vocab is not None:
+        he_vocab = [w for w in hebrew_vocab if str(w).strip()]
+    elif hebrew_text and tokenize_hebrew:
+        he_vocab = list(dict.fromkeys(tokenize_hebrew(hebrew_text)))  # dedup preserving order
+
+    # Signatures (rhyme keys + gematria) for the Hebrew text (if provided)
+    if hebrew_text and hebrew_signature_report:
+        he_signatures = hebrew_signature_report(hebrew_text)
+
+    # Echoes per seed
+    echoes: Dict[str, Dict[str, List[str]]] = {}
+    if english_hebrew_echo and he_vocab:
+        for s in seed_list:
+            try:
+                echoes[s] = english_hebrew_echo(s, he_vocab)
+            except Exception:
+                echoes[s] = {"exact": [], "near": [], "proto": []}
+
+    return {
+        "meta": {
+            "min_family_size": min_family_size,
+            "seeds": seed_list,
+            "hebrew_vocab_size": len(he_vocab),
+        },
+        "proto_report": proto_report,
+        "hebrew_echoes": echoes,             # {seed: {"exact": [...], "near": [...], "proto": [...]} }
+        "hebrew_signatures": he_signatures,  # [(word, (PROTO,nucleus,coda)|None, gem_std, gem_gadol, gem_katan)]
+    }
+
+# ---- Optional CLI:  --proto-hybrid EN.txt [--hebrew HE.txt] [--seeds "a,b,c"] --
+if __name__ == "__main__":
+    import sys, json
+
+    def _arg(flag: str) -> Optional[str]:
+        if flag in sys.argv:
+            i = sys.argv.index(flag)
+            if i + 1 < len(sys.argv):
+                return sys.argv[i + 1]
+        return None
+
+    if "--proto-hybrid" in sys.argv:
+        en_path = _arg("--proto-hybrid")
+        he_path = _arg("--hebrew")
+        seeds_arg = _arg("--seeds")
+        out_path = _arg("--out")
+
+        if not en_path:
+            print("Usage: python therapist_code only.py --proto-hybrid EN.txt [--hebrew HE.txt] [--seeds \"w1,w2\"] [--out OUT.json]")
+            sys.exit(2)
+
+        # read English
+        with open(en_path, "r", encoding="utf-8") as f:
+            en_text = f.read()
+
+        he_text = None
+        if he_path:
+            try:
+                with open(he_path, "r", encoding="utf-8") as f:
+                    he_text = f.read()
+            except Exception:
+                he_text = None
+
+        seeds_list = [s.strip() for s in seeds_arg.split(",")] if seeds_arg else None
+
+        report = build_proto_hebrew_hybrid(
+            english_text_or_lines=en_text,
+            hebrew_text=he_text,
+            hebrew_vocab=None,
+            seeds=seeds_list,
+            min_family_size=2,
+        )
+
+        payload = json.dumps(report, ensure_ascii=False, indent=2)
+        if out_path:
+            with open(out_path, "w", encoding="utf-8") as f:
+                f.write(payload)
+            print(f"[proto-hybrid] wrote {out_path}")
+        else:
+            print(payload)
+        sys.exit(0)
+# ---[ ProtoHybridMixin: attach Proto↔Hebrew report to analyses ]-------------
+# Deps: CHUNK 8 build_proto_hebrew_hybrid()
+try:
+    from typing import Any, Dict, Optional
+    # If CHUNK 8 lives in this same file, the import below is not needed.
+    try:
+        from __main__ import build_proto_hebrew_hybrid  # when running as script
+    except Exception:
+        from therapist_code import build_proto_hebrew_hybrid  # adjust if packaged
+except Exception:
+    build_proto_hebrew_hybrid = None  # graceful degrade
+
+
+class ProtoHybridMixin:
+    """
+    Mixin that exposes: _maybe_attach_proto_hybrid(section)
+    Expects 'section' to have:
+      - section.text (str)  -> English lines / lyrics
+      - optionally section.hebrew (str) -> parallel Hebrew text (if any)
+      - section.meta (dict) -> will receive 'proto_hybrid' report
+    """
+
+    proto_hybrid_enabled: bool = True
+    proto_hybrid_min_family_size: int = 2
+
+    def _maybe_attach_proto_hybrid(self, section) -> None:
+        if not self.proto_hybrid_enabled or not build_proto_hebrew_hybrid:
+            return
+        text_en = getattr(section, "text", "") or ""
+        text_he = getattr(section, "hebrew", None)
+        if not text_en.strip():
+            return
+        try:
+            report = build_proto_hebrew_hybrid(
+                english_text_or_lines=text_en,
+                hebrew_text=text_he,
+                hebrew_vocab=None,
+                seeds=None,
+                min_family_size=self.proto_hybrid_min_family_size,
+            )
+        except Exception as _e:
+            # Non-fatal: attach a small error note for debugging
+            report = {"error": f"proto_hybrid failed: {_e.__class__.__name__}"}
+        meta = getattr(section, "meta", None)
+        if isinstance(meta, dict):
+            meta["proto_hybrid"] = report
+        else:
+            # Create meta if missing
+            setattr(section, "meta", {"proto_hybrid": report})
+
+
+# ---[ LyricsProcessor hook ]--------------------------------------------------
+# 1) Make LyricsProcessor inherit the mixin (add ProtoHybridMixin to bases):
+#
+# class LyricsProcessor(ProtoHybridMixin, <your other bases>):
+#     ...
+
+# 2) Inside your main per-section analysis (e.g., in analyze(), analyze_section(), etc.)
+#    call the mixin hook AFTER you’ve populated section.text and (optionally) section.hebrew.
+#
+# Example patch (drop these lines where you finish computing section data):
+#
+#     # existing analysis steps...
+#     # section.text is ready; section.hebrew exists if you set it elsewhere
+#     self._maybe_attach_proto_hybrid(section)
+#
+# That’s it. A 'proto_hybrid' JSON blob will be available at section.meta['proto_hybrid'].
+# ---[ Proto pretty-printer ]--------------------------------------------------
+from typing import Dict, List, Any, Optional
+
+def _format_family(fam: Dict[str, Any]) -> str:
+    k = fam["key"]
+    header = f"[{k['proto']}] nucleus={k['nucleus']}  coda={k['coda']}"
+    lines_map: Dict[int, List[str]] = {}
+    for m in fam.get("members", []):
+        lines_map.setdefault(m["line_idx"], []).append(m["word"])
+    body = []
+    for idx in sorted(lines_map):
+        words = ", ".join(sorted(set(lines_map[idx])))
+        body.append(f"  line {idx:02d}: {words}")
+    return header + ("\n" + "\n".join(body) if body else "")
+
+def render_proto_report(report: Dict[str, Any], lines: Optional[List[str]] = None, max_families: int = 12) -> str:
+    """
+    Pretty text for a plain Proto report (Soundboard.analyze_lines).
+    Pass 'lines' to show sample text next to flows.
+    """
+    out: List[str] = []
+    fams = report.get("families", [])
+    fams = fams[:max_families] if max_families else fams
+
+    out.append("=== PROTO RHYME FAMILIES ===")
+    if not fams:
+        out.append("(none)")
+    else:
+        for fam in fams:
+            out.append(_format_family(fam))
+            out.append("")
+
+    flows = report.get("flows", [])
+    out.append("=== PROTO FLOWS (per line) ===")
+    if not flows:
+        out.append("(none)")
+    else:
+        for i, flow in enumerate(flows):
+            if lines and i < len(lines):
+                sample = lines[i]
+                sample = (sample[:72] + "…") if len(sample) > 75 else sample
+                out.append(f"{i:02d}  {flow:28} | {sample}")
+            else:
+                out.append(f"{i:02d}  {flow}")
+
+    sug = report.get("suggestions", {})
+    out.append("=== SUGGESTED LINE PAIRINGS ===")
+    if not sug:
+        out.append("(none)")
+    else:
+        for i in sorted(sug.keys()):
+            mates = ", ".join(f"{j:02d}" for j in sug[i])
+            out.append(f"line {i:02d} ↔ {mates if mates else '(no pairs)'}")
+    return "\n".join(out)
+
+def render_proto_hybrid(hybrid: Dict[str, Any], english_text: Optional[str] = None, max_families: int = 12) -> str:
+    """
+    Pretty text for the combined Proto↔Hebrew hybrid report (CHUNK 8).
+    """
+    out: List[str] = []
+    meta = hybrid.get("meta", {})
+    seeds = meta.get("seeds", [])
+    out.append("=== PROTO↔HEBREW HYBRID ===")
+    out.append(f"min_family_size={meta.get('min_family_size', 2)}  seeds={', '.join(seeds)}")
+    out.append(f"hebrew_vocab_size={meta.get('hebrew_vocab_size', 0)}")
+    out.append("")
+
+    # Proto core
+    proto = hybrid.get("proto_report", {})
+    lines = None
+    if isinstance(english_text, str):
+        lines = english_text.replace("\r\n","\n").replace("\r","\n").split("\n")
+    out.append(render_proto_report(proto, lines=lines, max_families=max_families))
+    out.append("")
+
+    # Echoes
+    echoes = hybrid.get("hebrew_echoes", {})
+    out.append("=== HEBREW ECHOES (by seed) ===")
+    if not echoes:
+        out.append("(none)")
+    else:
+        for seed, buckets in echoes.items():
+            exact = ", ".join(buckets.get("exact", [])) or "—"
+            near  = ", ".join(buckets.get("near", [])) or "—"
+            proto_only = ", ".join(buckets.get("proto", [])) or "—"
+            out.append(f"{seed}: exact=[{exact}]  near=[{near}]  proto=[{proto_only}]")
+    out.append("")
+
+    # Hebrew signatures (word, key, gem_std, gem_gadol, gem_katan)
+    out.append("=== HEBREW SIGNATURES ===")
+    sig = hybrid.get("hebrew_signatures", [])
+    if not sig:
+        out.append("(none)")
+    else:
+        for item in sig[:200]:  # keep it tidy
+            word, rk, g, gg, gk = item
+            if rk:
+                proto, nucleus, coda = rk
+                out.append(f"{word}  <{proto}:{nucleus}/{coda}>  gem={g} gadol={gg} katan={gk}")
+            else:
+                out.append(f"{word}  <no-proto>  gem={g} gadol={gg} katan={gk}")
+    return "\n".join(out)
+# After you build a proto report:
+report = run_proto_soundboard(my_text)          # from CHUNK 3
+print(render_proto_report(report, my_text.splitlines()))
+
+# After you build a hybrid:
+hybrid = build_proto_hebrew_hybrid(my_text, hebrew_text=he_text)
+print(render_proto_hybrid(hybrid, english_text=my_text))
+#!/usr/bin/env python3
+"""
+test_proto_min.py — minimal stdlib-only tests for Proto Soundboard stack
+
+Run:
+  python test_proto_min.py
+"""
+
+from __future__ import annotations
+import json
+
+# Imports under test
+from proto_soundboard import (
+    rhyme_key,            # (proto, nucleus, coda_slim)
+    Soundboard,           # analyzer
+    export_proto_rules,   # inspect rules
+)
+from hebrew_bridge import (
+    strip_niqqud,
+    normalize_sofit,
+    he_to_latn,
+    gematria_standard,
+    gematria_gadol,
+    gematria_katan,
+    hebrew_rhyme_key,
+    english_hebrew_echo,
+)
+# Hybrid (optional)
+try:
+    from therapist_code import build_proto_hebrew_hybrid  # if integrated there
+except Exception:
+    build_proto_hebrew_hybrid = None
+
+
+def assert_eq(a, b, msg=""):
+    if a != b:
+        raise AssertionError(f"assert_eq failed: {a!r} != {b!r} {msg}")
+
+def assert_true(cond, msg=""):
+    if not cond:
+        raise AssertionError(f"assert_true failed: {msg}")
+
+def _print_ok(name):
+    print(f"[ok] {name}")
+
+def test_rules_export():
+    rules = export_proto_rules()
+    assert_true(isinstance(rules, list) and len(rules) >= 4, "rules list looks small")
+    assert_true(all(len(t) == 3 for t in rules), "rule triples invalid")
+    _print_ok("rules export")
+
+def test_rhyme_key_basics():
+    k1 = rhyme_key("light")
+    k2 = rhyme_key("night")
+    k3 = rhyme_key("kite")
+    # Expect same PROTO for common -ight family; nucleus may differ by mapping, but proto should align.
+    assert_true(k1[0] == k2[0] == k3[0], f"proto mismatch: {k1}, {k2}, {k3}")
+    _print_ok("rhyme_key basics")
+
+def test_soundboard_groups():
+    lines = [
+        "I breathe in light and shape the void",
+        "The pattern settles, still but poised",
+        "We voice the spark and step toward",
+        "A sacred edge we cannot avoid",
+    ]
+    sb = Soundboard()
+    report = sb.analyze_lines(lines)
+    assert_true("families" in report and "flows" in report and "analyses" in report)
+    # Expect at least one family across lines (avoid/void/poised often cluster)
+    fams = report["families"]
+    assert_true(isinstance(fams, list))
+    assert_true(len(fams) >= 1, "expected >=1 rhyme family")
+    _print_ok("soundboard families/flows")
+
+def test_hebrew_utils():
+    # niqqud removal + sofit normalization
+    s = "מֶלֶךְ"           # with niqqud and final kaf dagesh
+    no_niqq = strip_niqqud(s)
+    norm = normalize_sofit(no_niqq)
+    assert_true("ֶ" not in no_niqq, "niqqud not stripped")
+    assert_eq(norm[-1], "כ", "sofit kaf not normalized")
+    # transliteration sketch
+    lat = he_to_latn("אמת")  # 'emet' (coarse)
+    assert_true(isinstance(lat, str) and len(lat) >= 2)
+    # gematria
+    g = gematria_standard("אמת")
+    gg = gematria_gadol("אמת")
+    gk = gematria_katan("אמת")
+    assert_true(g > 0 and gg >= g and 1 <= gk <= 9)
+    _print_ok("hebrew utils + gematria")
+
+def test_hebrew_rhyme_key_and_echo():
+    # rhyme key should return a triple
+    rk = hebrew_rhyme_key("אור")
+    assert_true(isinstance(rk, tuple) and len(rk) == 3, "hebrew rhyme_key invalid")
+    # echo mapping English→Hebrew
+    heb_vocab = ["אור", "אמת", "שלום", "לב", "דרך", "מלך", "קול", "גן", "שיר"]
+    echo = english_hebrew_echo("light", heb_vocab)
+    assert_true(set(echo.keys()) == {"exact", "near", "proto"})
+    assert_true(all(isinstance(v, list) for v in echo.values()))
+    _print_ok("hebrew rhyme + echoes")
+
+def test_hybrid_if_available():
+    if build_proto_hebrew_hybrid is None:
+        print("[skip] hybrid glue not imported from therapist_code")
+        return
+    en = "I breathe in light\nAnd step toward the edge"
+    he = "בראשית ברא אלהים את השמים ואת הארץ"
+    rep = build_proto_hebrew_hybrid(en, hebrew_text=he)
+    assert_true("proto_report" in rep and "hebrew_signatures" in rep)
+    # Ensure JSON-serializable
+    js = json.dumps(rep, ensure_ascii=False)
+    assert_true(len(js) > 0)
+    _print_ok("hybrid glue")
+
+def main():
+    test_rules_export()
+    test_rhyme_key_basics()
+    test_soundboard_groups()
+    test_hebrew_utils()
+    test_hebrew_rhyme_key_and_echo()
+    test_hybrid_if_available()
+    print("\nAll minimal tests passed.")
+
+if __name__ == "__main__":
+    main()
+# Proto Rhyme Soundboard + Hebrew Bridge — Quickstart
+
+## 1) Files
+- `proto_soundboard.py` — core Proto lattice for English rhyme
+- `proto_calibrate.py` — A/B compare baseline vs tuned Proto rules
+- `hebrew_bridge.py` — Hebrew utils + gematria + Proto echo
+- `suggest_rhymes.py` — interactive rhyme suggester
+- `vocab_basic.txt` — small starter vocab for suggestions
+- `therapist_code only.py` — your main pipeline (now with hybrid hooks)
+
+## 2) Instant tests
+```bash
+python test_proto_min.py
+python therapist_code\ only.py --proto-soundboard IN.txt --out OUT.json
+from therapist_code import run_proto_soundboard
+from therapist_code import render_proto_report   # if you placed CHUNK 10 here
+text = open("IN.txt","r",encoding="utf-8").read()
+rep = run_proto_soundboard(text)
+print(render_proto_report(rep, text.splitlines()))
+python suggest_rhymes.py vocab_basic.txt
+# then type: light
+[
+  {"nucleus": "EE|I", "coda": "(N|M)$", "label": "NA"},
+  {"nucleus": "OW|AW", "coda": "(T|K|P|F|S|SH|CH)$", "label": "GE"}
+]python proto_calibrate.py IN.txt --rules proto_rules.json --show all
+python therapist_code\ only.py --proto-hybrid EN.txt --hebrew HE.txt --out HYBRID.json
+from therapist_code import build_proto_hebrew_hybrid, render_proto_hybrid
+en = open("EN.txt","r",encoding="utf-8").read()
+he = open("HE.txt","r",encoding="utf-8").read()
+hy = build_proto_hebrew_hybrid(en, hebrew_text=he)
+print(render_proto_hybrid(hy, english_text=en))
+from proto_soundboard import load_proto_rules, inspect_proto
+load_proto_rules("proto_rules.json")
+print(inspect_proto(["light","night","avoid","void","poised"]))
+
