@@ -52,4 +52,4 @@ Hebrew, Genesis, Torah, Resonance Linguistics, Sacred Geometry, Proto-Language, 
 
 
 help support the full decoding of the bible 
-https://pay.atomicwallet.io/__10000__BTC__17HtPrTzt6q5hdmvHxYVWc1W4dhWRkVWYV
+17HtPrTzt6q5hdmvHxYVWc1W4dhWRkVWYV
