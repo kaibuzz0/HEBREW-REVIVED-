@@ -48,3 +48,8 @@ proto_language_experiments/ — prototype scripts linking Hebrew roots to AI sym
 🔑 Keywords
 
 Hebrew, Genesis, Torah, Resonance Linguistics, Sacred Geometry, Proto-Language, AI Linguistics, Hive System, Bible Code, Consciousness
+
+
+
+help support the full decoding of the bible 
+https://pay.atomicwallet.io/__10000__BTC__17HtPrTzt6q5hdmvHxYVWc1W4dhWRkVWYV
