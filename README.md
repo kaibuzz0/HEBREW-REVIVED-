@@ -53,3 +53,6 @@ Hebrew, Genesis, Torah, Resonance Linguistics, Sacred Geometry, Proto-Language, 
 
 help support the full decoding of the bible 
 17HtPrTzt6q5hdmvHxYVWc1W4dhWRkVWYV
+
+connect 
+https://t.me/+vCm13Es3JuU2ZTEx
