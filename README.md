@@ -1,3 +1,8 @@
+
+YOU MUST DONWNLOD THE RAW FILES TO GET THE FULL DOCUMENTS 
+they are word documents 
+
+
 ![1000168003](https://github.com/user-attachments/assets/fd01e095-918a-49f7-8014-2adbc4e1d8a6)
 ![1000168002](https://github.com/user-attachments/assets/6e34dc4b-9887-4dc8-bb25-bf1927e6a635)
 🕎 GENESIS CHAPTER 1 DECODED
