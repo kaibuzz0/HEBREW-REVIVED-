@@ -61,3 +61,7 @@ help support the full decoding of the bible
 
 connect 
 https://t.me/+vCm13Es3JuU2ZTEx
+
+
+hebrew was discovered no invented by man 
+
