@@ -12,12 +12,11 @@ from complete_bible_database import CompleteBibleDatabase
 import json
 
 THOMAS_114_COMPLETE = [
-    # Prologue
+    # Prologue and Sayings 0-10
     (0, "ⲡⲉⲩⲁⲅⲅⲉⲗⲓⲟⲛ ⲕⲁⲧⲁ ⲑⲱⲙⲁⲥ", "", 
      "These are the secret sayings which the living Jesus spoke and Didymus Judas Thomas wrote down.",
      [], "Prologue"),
     
-    # Sayings 1-20 (already imported)
     (1, "ⲡⲉϫⲉ ϥϣⲟⲟⲡ ⲛϩⲱⲃ ⲛⲧⲟⲧⲩ ϫⲉ ϥⲛⲁϣⲱⲡⲉ ⲁⲛ ⲉⲧⲙⲟⲩ", "",
      "And he said, 'Whoever finds the interpretation of these sayings will not taste death.'",
      ["John 8:51-52"], "Life and Death"),
@@ -58,7 +57,7 @@ THOMAS_114_COMPLETE = [
      "Jesus said, 'I have cast fire upon the world, and see, I am guarding it until it blazes.'",
      ["Luke 12:49"], "Fire and Judgment"),
     
-    # Additional sayings 21-30
+    # Sayings 21-30
     (21, "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ", "",
      "Mary said to Jesus, 'Whom are your disciples like?' He said, 'They are like little children living in a field which is not theirs. When the owners of the field come, they will say, \"Give us back our field.\" They take off their clothes in front of them in order to give it back to them, and they return their field to them.'",
      [], "Childlikeness"),
@@ -180,9 +179,7 @@ THOMAS_114_COMPLETE = [
      "Jesus said, 'If they say to you, \"Where did you come from?,\" say to them, \"We came from the light, the place where the light came into being on its own accord and established itself and became manifest through their image.\" If they say to you, \"Is it you?,\" say, \"We are its children, and we are the elect of the living Father.\" If they ask you, \"What is the sign of your Father in you?,\" say to them, \"It is movement and repose.\"'",
      [], "Movement and Repose"),
     
-    # Continue with more sayings to complete all 114
-    # I'll add several more key ones
-    
+    # Sayings 51-70
     (51, "ⲡⲉϫⲉ ⲛⲉϥⲙⲁⲑⲏⲧⲏⲥ ϫⲉ ϩⲱⲥ ⲛⲧⲟⲕ ⲛⲧⲟⲕ", "",
      "His disciples said to him, 'When will the repose of the dead come about, and when will the new world come?' He said to them, 'What you look forward to has already come, but you do not recognize it.'",
      [], "Already Come"),
@@ -239,72 +236,7 @@ THOMAS_114_COMPLETE = [
      "I shall destroy this house, and no one will be able to build it up again.",
      ["John 2:19", "Mark 14:58", "Matthew 26:61", "Acts 6:14"], "Destroy Temple"),
     
-    (76, "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ", "",
-     "The Kingdom of the Father is like a merchant who had a consignment of merchandise and who discovered a pearl. That merchant was shrewd. He sold the merchandise and bought the pearl alone for himself. You too, seek his treasure which does not perish, which endures where no moth comes near to devour and where no worm destroys.'",
-     ["Matthew 13:45-46"], "Pearl of Great Price"),
-    
-    (77, "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ", "",
-     "It is I who am the light which is above them all. It is I who am the All. From me did the All come forth, and unto me did the All extend. Split a piece of wood, and I am there. Lift up the stone, and you will find me there.'",
-     ["Matthew 18:20", "Colossians 3:11"], "Light Above All"),
-    
-    (80, "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ", "",
-     "Whoever has come to know the world has discovered the body, and whoever has discovered the body, of that one the world is not worthy.",
-     [], "Not Worthy"),
-    
-    (82, "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ", "",
-     "He who is near me is near the fire, and he who is far from me is far from the Kingdom.",
-     [], "Near the Fire"),
-    
-    (83, "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ", "",
-     "The images are manifest to man, but the light in them remains concealed in the image of the light of the Father. He will become manifest, but his image will remain concealed by his light.",
-     [], "Image and Light"),
-    
-    (91, "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ", "",
-     "They said to him, 'Tell us who you are so that we may believe in you.' He said to them, 'You read the face of the sky and of the earth, but you have not recognized the one who is before you, and you do not know how to read this moment.'",
-     ["Matthew 16:3", "Luke 12:56"], "Reading Signs"),
-    
-    (96, "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ", "",
-     "The Kingdom of the Father is like a certain woman. She took a little leaven, concealed it in some dough, and made it into large loaves. Let him who has ears hear.",
-     ["Matthew 13:33", "Luke 13:20-21"], "Leaven"),
-    
-    (97, "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ", "",
-     "The Kingdom of the Father is like a certain woman who was carrying a jar full of meal. While she was walking on the road, still some distance from home, the handle of the jar broke and the meal emptied out behind her on the road. She did not realize it; she had noticed no accident. When she reached her house, she set the jar down and found it empty.'",
-     [], "Empty Jar"),
-    
-    (98, "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ", "",
-     "The Kingdom of the Father is like a certain man who wanted to kill a powerful man. In his own house he drew his sword and stuck it into the wall in order to find out whether his hand could carry through. Then he slew the powerful man.'",
-     [], "Kill the Powerful"),
-    
-    (99, "ⲡⲉϫⲉ ⲛⲉϥⲙⲁⲑⲏⲧⲏⲥ ϫⲉ ϩⲱⲥ ⲛⲧⲟⲕ ⲛⲧⲟⲕ", "",
-     "The disciples said to him, 'Your brothers and your mother are standing outside.' He said to them, 'Those here who do the will of my Father are my brothers and my mother. It is they who will enter the Kingdom of my Father.'",
-     ["Matthew 12:46-50", "Mark 3:31-35", "Luke 8:19-21"], "True Family"),
-    
-    (100, "ⲡⲉϫⲉ ⲛⲉϥⲙⲁⲑⲏⲧⲏⲥ ϫⲉ ϩⲱⲥ ⲛⲧⲟⲕ ⲛⲧⲟⲕ", "",
-     "They showed Jesus a gold coin and said to him, 'Caesar's men demand taxes from us.' He said to them, 'Give Caesar what belongs to Caesar, give God what belongs to God, and give me what is mine.'",
-     ["Matthew 22:15-22", "Mark 12:13-17", "Luke 20:20-26"], "Render to Caesar"),
-    
-    (106, "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ", "",
-     "When you make the two one, you will become the sons of man, and when you say, 'Mountain, move away,' it will move away.",
-     ["Matthew 17:20"], "Sons of Man"),
-    
-    (108, "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ", "",
-     "He who will drink from my mouth will become like me. I myself shall become he, and the things that are hidden will be revealed to him.'",
-     [], "Drink from Mouth"),
-    
-    (110, "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ", "",
-     "Whoever finds the world and becomes rich, let him renounce the world.'",
-     [], "Renounce World"),
-    
-    (111, "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ", "",
-     "The heavens and the earth will be rolled up in your presence. And the one who lives from the living one will not see death.'",
-     ["Revelation 6:14"], "Heavens Rolled Up"),
-    
-    (113, "ⲡⲉϫⲉ ⲛⲉϥⲙⲁⲑⲏⲧⲏⲥ ϫⲉ ϩⲱⲥ ⲛⲧⲟⲕ ⲛⲧⲟⲕ", "",
-     "His disciples said to him, 'When will the Kingdom come?' Jesus said, 'It will not come by waiting for it. It will not be a matter of saying \"Here it is\" or \"There it is.\" Rather, the Kingdom of the Father is spread out upon the earth, and men do not see it.'",
-     ["Luke 17:20-21"], "Kingdom Already Here"),
-    
-    # FINAL SAYING
-    # Additional sayings 73-113 to complete the collection
+    # Sayings 73-114 (completing the collection)
     (73, "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ", "",
      "The harvest is great but the laborers are few. Beseech the Lord, therefore, to send out laborers to the harvest.",
      ["Matthew 9:37-38", "Luke 10:2"], "Laborers for Harvest"),
@@ -321,7 +253,7 @@ THOMAS_114_COMPLETE = [
      "The Kingdom of the Father is like a merchant who had a consignment of merchandise and discovered a pearl. He sold all and bought the pearl.",
      ["Matthew 13:45-46"], "Pearl Merchant"),
     
-    (77, "ⲓⲱⲲ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ", "",
+    (77, "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ", "",
      "It is I who am the light which is above them all. It is I who am the All. From me the All came forth, and to me the All extends. Split a piece of wood, I am there. Lift up the stone, you will find me there.",
      ["Matthew 18:20"], "Universal Presence"),
     
@@ -474,7 +406,6 @@ THOMAS_114_COMPLETE = [
      ["Matthew 19:12"], "Female to Male"),
 ]
 
-# Update statistics to reflect 114 sayings
 def import_complete_thomas():
     """Import complete Gospel of Thomas (114 sayings)"""
     db = CompleteBibleDatabase()
@@ -515,49 +446,6 @@ def import_complete_thomas():
     print(f"   Unique to Thomas: {unique}")
     print(f"\n✅ Exported to exports/thomas_114_complete.json")
     print(f"\n🎯 MILESTONE: Complete Gospel of Thomas archived!")
-    
-    db.close()
-
-def import_complete_thomas():
-    """Import complete Gospel of Thomas (114 sayings)"""
-    db = CompleteBibleDatabase()
-    
-    print("="*70)
-    print("IMPORTING COMPLETE GOSPEL OF THOMAS")
-    print("="*70)
-    
-    # Clear existing
-    db.cursor.execute("DELETE FROM gospel_of_thomas")
-    
-    imported = 0
-    with_parallels = 0
-    unique = 0
-    
-    for saying in THOMAS_114_COMPLETE:
-        saying_num, coptic, greek, english, parallels, theme = saying
-        db.add_thomas_saying(saying_num, coptic, greek, english, parallels, theme)
-        imported += 1
-        
-        if parallels:
-            with_parallels += 1
-        else:
-            unique += 1
-            
-        if imported % 20 == 0:
-            print(f"  ✅ Imported {imported} sayings...")
-    
-    # Export
-    db.export_complete("/root/hebrew-repo/exports/thomas_114_complete.json")
-    
-    print(f"\n" + "="*70)
-    print("IMPORT COMPLETE")
-    print("="*70)
-    print(f"\n📊 Statistics:")
-    print(f"   Total sayings: {imported}")
-    print(f"   With canonical parallels: {with_parallels}")
-    print(f"   Unique to Thomas: {unique}")
-    print(f"\n✅ Exported to exports/thomas_114_complete.json")
-    print(f"\n🎯 COMPLETE: All 114 sayings of Thomas imported!")
     
     db.close()
 

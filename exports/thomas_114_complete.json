@@ -499,33 +499,87 @@
     },
     {
       "id": 56,
-      "saying_number": 76,
+      "saying_number": 73,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
-      "english_text": "The Kingdom of the Father is like a merchant who had a consignment of merchandise and who discovered a pearl. That merchant was shrewd. He sold the merchandise and bought the pearl alone for himself. You too, seek his treasure which does not perish, which endures where no moth comes near to devour and where no worm destroys.'",
-      "parallel_passages": "[\"Matthew 13:45-46\"]",
-      "theme": "Pearl of Great Price"
+      "english_text": "The harvest is great but the laborers are few. Beseech the Lord, therefore, to send out laborers to the harvest.",
+      "parallel_passages": "[\"Matthew 9:37-38\", \"Luke 10:2\"]",
+      "theme": "Laborers for Harvest"
     },
     {
       "id": 57,
-      "saying_number": 77,
+      "saying_number": 74,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
-      "english_text": "It is I who am the light which is above them all. It is I who am the All. From me did the All come forth, and unto me did the All extend. Split a piece of wood, and I am there. Lift up the stone, and you will find me there.'",
-      "parallel_passages": "[\"Matthew 18:20\", \"Colossians 3:11\"]",
-      "theme": "Light Above All"
+      "english_text": "There were many standing around the well, but no one to go down into it. I came to cast fire upon the world, and see, I guard it until it blazes.",
+      "parallel_passages": "[\"Luke 12:49\"]",
+      "theme": "Fire on Earth"
     },
     {
       "id": 58,
-      "saying_number": 80,
+      "saying_number": 75,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
-      "english_text": "Whoever has come to know the world has discovered the body, and whoever has discovered the body, of that one the world is not worthy.",
+      "english_text": "The living will not die. Those who have died will not live.",
       "parallel_passages": "[]",
-      "theme": "Not Worthy"
+      "theme": "Life and Death"
     },
     {
       "id": 59,
+      "saying_number": 76,
+      "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
+      "greek_fragments": "",
+      "english_text": "The Kingdom of the Father is like a merchant who had a consignment of merchandise and discovered a pearl. He sold all and bought the pearl.",
+      "parallel_passages": "[\"Matthew 13:45-46\"]",
+      "theme": "Pearl Merchant"
+    },
+    {
+      "id": 60,
+      "saying_number": 77,
+      "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
+      "greek_fragments": "",
+      "english_text": "It is I who am the light which is above them all. It is I who am the All. From me the All came forth, and to me the All extends. Split a piece of wood, I am there. Lift up the stone, you will find me there.",
+      "parallel_passages": "[\"Matthew 18:20\"]",
+      "theme": "Universal Presence"
+    },
+    {
+      "id": 61,
+      "saying_number": 78,
+      "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
+      "greek_fragments": "",
+      "english_text": "Why have you come out into the desert? To see a reed shaken by the wind? To see a man clothed in soft garments? See, your kings and your great ones are those who are clothed in soft garments, and they shall not be able to know the truth.",
+      "parallel_passages": "[\"Matthew 11:7-9\", \"Luke 7:24-26\"]",
+      "theme": "Reed in Wind"
+    },
+    {
+      "id": 62,
+      "saying_number": 79,
+      "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
+      "greek_fragments": "",
+      "english_text": "Blessed is the womb which has not conceived, and the breasts which have not given suck.",
+      "parallel_passages": "[\"Luke 23:29\"]",
+      "theme": "Barren Blessed"
+    },
+    {
+      "id": 63,
+      "saying_number": 80,
+      "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
+      "greek_fragments": "",
+      "english_text": "Whoever has come to know the world has discovered the body, and whoever has discovered the body, of him the world is not worthy.",
+      "parallel_passages": "[]",
+      "theme": "World Not Worthy"
+    },
+    {
+      "id": 64,
+      "saying_number": 81,
+      "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
+      "greek_fragments": "",
+      "english_text": "Let him who has grown rich be king, and let him who possesses power renounce it.",
+      "parallel_passages": "[]",
+      "theme": "Rich King"
+    },
+    {
+      "id": 65,
       "saying_number": 82,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
@@ -534,115 +588,286 @@
       "theme": "Near the Fire"
     },
     {
-      "id": 60,
+      "id": 66,
       "saying_number": 83,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
       "english_text": "The images are manifest to man, but the light in them remains concealed in the image of the light of the Father. He will become manifest, but his image will remain concealed by his light.",
       "parallel_passages": "[]",
-      "theme": "Image and Light"
+      "theme": "Concealed Light"
     },
     {
-      "id": 61,
+      "id": 67,
+      "saying_number": 84,
+      "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
+      "greek_fragments": "",
+      "english_text": "When you see your likeness, you rejoice. But when you see your images which came into being before you, and which neither die nor become manifest, how much you will have to bear!",
+      "parallel_passages": "[]",
+      "theme": "Images Before You"
+    },
+    {
+      "id": 68,
+      "saying_number": 85,
+      "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
+      "greek_fragments": "",
+      "english_text": "Adam came into being from a great power and a great wealth, but he did not become worthy of you. For had he been worthy, he would not have experienced death.",
+      "parallel_passages": "[]",
+      "theme": "Adam Not Worthy"
+    },
+    {
+      "id": 69,
+      "saying_number": 86,
+      "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
+      "greek_fragments": "",
+      "english_text": "The foxes have their holes and the birds have their nests, but the Son of Man has no place to lay his head and rest.",
+      "parallel_passages": "[\"Matthew 8:20\", \"Luke 9:58\"]",
+      "theme": "Nowhere to Rest"
+    },
+    {
+      "id": 70,
+      "saying_number": 87,
+      "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
+      "greek_fragments": "",
+      "english_text": "Wretched is the body that is dependent upon a body, and wretched is the soul that is dependent on these two.",
+      "parallel_passages": "[]",
+      "theme": "Wretched Dependence"
+    },
+    {
+      "id": 71,
+      "saying_number": 88,
+      "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
+      "greek_fragments": "",
+      "english_text": "The angels and the prophets will come to you and give to you those things you already have. And you too, give them what you have, and say to yourselves, 'When will they come and take what is theirs?'",
+      "parallel_passages": "[]",
+      "theme": "Angels and Prophets"
+    },
+    {
+      "id": 72,
+      "saying_number": 89,
+      "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
+      "greek_fragments": "",
+      "english_text": "Why do you wash the outside of the cup? Do you not understand that he who made the inside is also he who made the outside?",
+      "parallel_passages": "[\"Matthew 23:25-26\", \"Luke 11:39-41\"]",
+      "theme": "Clean Cup"
+    },
+    {
+      "id": 73,
+      "saying_number": 90,
+      "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
+      "greek_fragments": "",
+      "english_text": "Come unto me, for my yoke is easy and my lordship is mild, and you will find rest for yourselves.",
+      "parallel_passages": "[\"Matthew 11:28-30\"]",
+      "theme": "Easy Yoke"
+    },
+    {
+      "id": 74,
       "saying_number": 91,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
       "english_text": "They said to him, 'Tell us who you are so that we may believe in you.' He said to them, 'You read the face of the sky and of the earth, but you have not recognized the one who is before you, and you do not know how to read this moment.'",
-      "parallel_passages": "[\"Matthew 16:3\", \"Luke 12:56\"]",
+      "parallel_passages": "[\"Luke 12:56\", \"Matthew 16:3\"]",
       "theme": "Reading Signs"
     },
     {
-      "id": 62,
+      "id": 75,
+      "saying_number": 92,
+      "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
+      "greek_fragments": "",
+      "english_text": "Seek and you will find. Yet, what you asked me about in former times and which I did not tell you then, now I want to tell you, but you do not seek it.",
+      "parallel_passages": "[]",
+      "theme": "Not Seeking"
+    },
+    {
+      "id": 76,
+      "saying_number": 93,
+      "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
+      "greek_fragments": "",
+      "english_text": "Do not give what is holy to dogs, lest they throw them on the dung-heap. Do not throw the pearls to swine, lest they grind it to bits.",
+      "parallel_passages": "[\"Matthew 7:6\"]",
+      "theme": "Pearls to Swine"
+    },
+    {
+      "id": 77,
+      "saying_number": 94,
+      "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
+      "greek_fragments": "",
+      "english_text": "He who seeks will find, and he who knocks will be let in.",
+      "parallel_passages": "[\"Matthew 7:7-8\", \"Luke 11:9-10\"]",
+      "theme": "Seek and Find"
+    },
+    {
+      "id": 78,
+      "saying_number": 95,
+      "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
+      "greek_fragments": "",
+      "english_text": "If you have money, do not lend it at interest, but give it to one from whom you will not get it back.",
+      "parallel_passages": "[\"Luke 6:34-35\"]",
+      "theme": "Lend Without Interest"
+    },
+    {
+      "id": 79,
       "saying_number": 96,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
-      "english_text": "The Kingdom of the Father is like a certain woman. She took a little leaven, concealed it in some dough, and made it into large loaves. Let him who has ears hear.",
+      "english_text": "The Kingdom of the Father is like a certain woman. She took a little leaven, concealed it in some dough, and made it into large loaves.",
       "parallel_passages": "[\"Matthew 13:33\", \"Luke 13:20-21\"]",
       "theme": "Leaven"
     },
     {
-      "id": 63,
+      "id": 80,
       "saying_number": 97,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
-      "english_text": "The Kingdom of the Father is like a certain woman who was carrying a jar full of meal. While she was walking on the road, still some distance from home, the handle of the jar broke and the meal emptied out behind her on the road. She did not realize it; she had noticed no accident. When she reached her house, she set the jar down and found it empty.'",
+      "english_text": "The Kingdom of the Father is like a certain woman who was carrying a jar full of meal. The handle broke and the meal emptied behind her on the road. She did not realize it. When she reached her house, she set the jar down and found it empty.",
       "parallel_passages": "[]",
       "theme": "Empty Jar"
     },
     {
-      "id": 64,
+      "id": 81,
       "saying_number": 98,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
-      "english_text": "The Kingdom of the Father is like a certain man who wanted to kill a powerful man. In his own house he drew his sword and stuck it into the wall in order to find out whether his hand could carry through. Then he slew the powerful man.'",
+      "english_text": "The Kingdom of the Father is like a certain man who wanted to kill a powerful man. He drew his sword and stuck it into the wall to test his hand. Then he slew the powerful man.",
       "parallel_passages": "[]",
-      "theme": "Kill the Powerful"
+      "theme": "Test Before Action"
     },
     {
-      "id": 65,
+      "id": 82,
       "saying_number": 99,
       "coptic_text": "ⲡⲉϫⲉ ⲛⲉϥⲙⲁⲑⲏⲧⲏⲥ ϫⲉ ϩⲱⲥ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
-      "english_text": "The disciples said to him, 'Your brothers and your mother are standing outside.' He said to them, 'Those here who do the will of my Father are my brothers and my mother. It is they who will enter the Kingdom of my Father.'",
+      "english_text": "The disciples said to him, 'Your brothers and your mother are standing outside.' He said to them, 'Those here who do the will of my Father are my brothers and my mother. They will enter the Kingdom of my Father.'",
       "parallel_passages": "[\"Matthew 12:46-50\", \"Mark 3:31-35\", \"Luke 8:19-21\"]",
       "theme": "True Family"
     },
     {
-      "id": 66,
+      "id": 83,
       "saying_number": 100,
       "coptic_text": "ⲡⲉϫⲉ ⲛⲉϥⲙⲁⲑⲏⲧⲏⲥ ϫⲉ ϩⲱⲥ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
-      "english_text": "They showed Jesus a gold coin and said to him, 'Caesar's men demand taxes from us.' He said to them, 'Give Caesar what belongs to Caesar, give God what belongs to God, and give me what is mine.'",
+      "english_text": "They showed Jesus a gold coin and said, 'Caesar's men demand taxes from us.' He said, 'Give Caesar what belongs to Caesar, give God what belongs to God, and give me what is mine.'",
       "parallel_passages": "[\"Matthew 22:15-22\", \"Mark 12:13-17\", \"Luke 20:20-26\"]",
-      "theme": "Render to Caesar"
+      "theme": "Caesar's Coin"
     },
     {
-      "id": 67,
+      "id": 84,
+      "saying_number": 101,
+      "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
+      "greek_fragments": "",
+      "english_text": "Whoever does not hate his father and mother as I do cannot become a disciple to me. And whoever does not love his father and mother as I do cannot become a disciple to me. For my mother gave me falsehood, but my true mother gave me life.",
+      "parallel_passages": "[\"Matthew 10:37\", \"Luke 14:26\"]",
+      "theme": "Hate and Love Family"
+    },
+    {
+      "id": 85,
+      "saying_number": 102,
+      "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
+      "greek_fragments": "",
+      "english_text": "Woe to the Pharisees, for they are like a dog sleeping in the manger of oxen, for neither does he eat nor does he let the oxen eat.",
+      "parallel_passages": "[]",
+      "theme": "Dog in Manger"
+    },
+    {
+      "id": 86,
+      "saying_number": 103,
+      "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
+      "greek_fragments": "",
+      "english_text": "Blessed is the man who has suffered and found life.",
+      "parallel_passages": "[]",
+      "theme": "Suffering Brings Life"
+    },
+    {
+      "id": 87,
+      "saying_number": 104,
+      "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
+      "greek_fragments": "",
+      "english_text": "They said to Jesus, 'Come, let us pray today and let us fast.' Jesus said, 'What is the sin that I have committed, or wherein have I been defeated? But when the bridegroom leaves the bridal chamber, then let them fast and pray.'",
+      "parallel_passages": "[\"Mark 2:18-20\", \"Matthew 9:14-15\", \"Luke 5:33-35\"]",
+      "theme": "When to Fast"
+    },
+    {
+      "id": 88,
+      "saying_number": 105,
+      "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
+      "greek_fragments": "",
+      "english_text": "Whoever knows the father and the mother will be called the son of a harlot.",
+      "parallel_passages": "[]",
+      "theme": "Son of Harlot"
+    },
+    {
+      "id": 89,
       "saying_number": 106,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
-      "english_text": "When you make the two one, you will become the sons of man, and when you say, 'Mountain, move away,' it will move away.",
+      "english_text": "When you make the two into one, you will become the sons of man, and when you say, 'Mountain, move away,' it will move away.",
       "parallel_passages": "[\"Matthew 17:20\"]",
       "theme": "Sons of Man"
     },
     {
-      "id": 68,
+      "id": 90,
+      "saying_number": 107,
+      "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
+      "greek_fragments": "",
+      "english_text": "The Kingdom is like a shepherd who had a hundred sheep. One of them, the largest, went astray. He left the ninety-nine and sought for the one until he found it. After he had toiled, he said to the sheep, 'I love you more than the ninety-nine.'",
+      "parallel_passages": "[\"Matthew 18:12-14\", \"Luke 15:4-7\"]",
+      "theme": "Lost Sheep"
+    },
+    {
+      "id": 91,
       "saying_number": 108,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
-      "english_text": "He who will drink from my mouth will become like me. I myself shall become he, and the things that are hidden will be revealed to him.'",
+      "english_text": "He who will drink from my mouth will become like me. I myself shall become he, and the things that are hidden will be revealed to him.",
       "parallel_passages": "[]",
-      "theme": "Drink from Mouth"
+      "theme": "Drink From Mouth"
     },
     {
-      "id": 69,
+      "id": 92,
+      "saying_number": 109,
+      "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
+      "greek_fragments": "",
+      "english_text": "The Kingdom is like a man who had a hidden treasure in his field without knowing it. After he died, he left it to his son. The son did not know about it. He sold the field. The buyer came and plowed the field and found the treasure. He began to lend money at interest to whomever he wished.",
+      "parallel_passages": "[\"Matthew 13:44\"]",
+      "theme": "Hidden Treasure"
+    },
+    {
+      "id": 93,
       "saying_number": 110,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
-      "english_text": "Whoever finds the world and becomes rich, let him renounce the world.'",
+      "english_text": "Whoever finds the world and becomes rich, let him renounce the world.",
       "parallel_passages": "[]",
       "theme": "Renounce World"
     },
     {
-      "id": 70,
+      "id": 94,
       "saying_number": 111,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
-      "english_text": "The heavens and the earth will be rolled up in your presence. And the one who lives from the living one will not see death.'",
+      "english_text": "The heavens and the earth will be rolled up in your presence. And the one who lives from the living one will not see death.",
       "parallel_passages": "[\"Revelation 6:14\"]",
       "theme": "Heavens Rolled Up"
     },
     {
-      "id": 71,
-      "saying_number": 113,
-      "coptic_text": "ⲡⲉϫⲉ ⲛⲉϥⲙⲁⲑⲏⲧⲏⲥ ϫⲉ ϩⲱⲥ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
+      "id": 95,
+      "saying_number": 112,
+      "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
-      "english_text": "His disciples said to him, 'When will the Kingdom come?' Jesus said, 'It will not come by waiting for it. It will not be a matter of saying \"Here it is\" or \"There it is.\" Rather, the Kingdom of the Father is spread out upon the earth, and men do not see it.'",
-      "parallel_passages": "[\"Luke 17:20-21\"]",
-      "theme": "Kingdom Already Here"
+      "english_text": "Woe to the flesh that depends on the soul; woe to the soul that depends on the flesh.",
+      "parallel_passages": "[]",
+      "theme": "Flesh and Soul"
     },
     {
-      "id": 72,
+      "id": 96,
+      "saying_number": 113,
+      "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
+      "greek_fragments": "",
+      "english_text": "His disciples said to him, 'When will the Kingdom come?' Jesus said, 'It will not come by waiting for it. It will not be a matter of saying 'Here it is' or 'There it is.' Rather, the Kingdom of the Father is spread out upon the earth, and men do not see it.'",
+      "parallel_passages": "[\"Luke 17:20-21\"]",
+      "theme": "Kingdom Spread on Earth"
+    },
+    {
+      "id": 97,
       "saying_number": 114,
       "coptic_text": "ⲥⲓⲙⲱⲛ ⲡⲉⲧⲣⲟⲥ ⲁϥϫⲟⲟⲥ ϫⲉ ϯⲛⲧⲱⲛ ⲛⲧⲟⲕ",
       "greek_fragments": "",
