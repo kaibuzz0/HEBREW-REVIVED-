@@ -1,0 +1,286 @@
+{
+  "canons": [],
+  "books": [],
+  "thomas_sayings": [
+    {
+      "id": 1,
+      "saying_number": 0,
+      "coptic_text": "ⲡⲉⲩⲁⲅⲅⲉⲗⲓⲟⲛ ⲕⲁⲧⲁ ⲑⲱⲙⲁⲥ",
+      "greek_fragments": "",
+      "english_text": "These are the secret sayings which the living Jesus spoke and Didymus Judas Thomas wrote down.",
+      "parallel_passages": "[]",
+      "theme": "Prologue"
+    },
+    {
+      "id": 2,
+      "saying_number": 1,
+      "coptic_text": "ⲡⲉϫⲉ ϥϣⲟⲟⲡ ⲛϩⲱⲃ ⲛⲧⲟⲧⲩ ϫⲉ ϥⲛⲁϣⲱⲡⲉ ⲁⲛ ⲉⲧⲙⲟⲩ",
+      "greek_fragments": "",
+      "english_text": "And he said, 'Whoever finds the interpretation of these sayings will not taste death.'",
+      "parallel_passages": "[\"John 8:51-52\"]",
+      "theme": "Life and Death"
+    },
+    {
+      "id": 3,
+      "saying_number": 2,
+      "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϣⲟⲡⲉ ⲡⲁⲉⲓⲱⲧ ⲙⲛⲡⲁⲉⲓⲱⲧ ⲛϩⲏⲧ ϩⲛⲧⲙⲉ ϥⲛⲁϩⲉ",
+      "greek_fragments": "",
+      "english_text": "Jesus said, 'Let him who seeks continue seeking until he finds. When he finds, he will be troubled. When he becomes troubled, he will be astonished, and he will rule over the All.'",
+      "parallel_passages": "[\"Matthew 7:7-8\", \"Luke 11:9-10\"]",
+      "theme": "Seeking and Finding"
+    },
+    {
+      "id": 4,
+      "saying_number": 3,
+      "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲱⲣⲕ ⲛⲧⲟⲧⲩ ⲛⲛⲁⲓ ⲉⲧϩⲛⲧⲡⲉ",
+      "greek_fragments": "",
+      "english_text": "Jesus said, 'If those who lead you say to you, \"See, the Kingdom is in the sky,\" then the birds of the sky will precede you. If they say to you, \"It is in the sea,\" then the fish will precede you. Rather, the Kingdom is inside of you, and it is outside of you. When you come to know yourselves, then you will become known, and you will realize that it is you who are the sons of the living Father. But if you will not know yourselves, you dwell in poverty and it is you who are that poverty.'",
+      "parallel_passages": "[\"Luke 17:20-21\", \"John 3:3-5\"]",
+      "theme": "Kingdom Within"
+    },
+    {
+      "id": 5,
+      "saying_number": 4,
+      "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ⲡⲣⲱⲙⲉ ⲡⲁⲓ ⲉϥⲛⲁϣⲱⲡⲉ",
+      "greek_fragments": "",
+      "english_text": "Jesus said, 'The man old in days will not hesitate to ask a small child seven days old about the place of life, and he will live. For many who are first will become last, and they will become one and the same.'",
+      "parallel_passages": "[\"Mark 10:31\", \"Matthew 19:30\"]",
+      "theme": "Reversal of Status"
+    },
+    {
+      "id": 6,
+      "saying_number": 5,
+      "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ⲥⲱⲧⲙ ⲉⲣⲟⲓ ϩⲙⲡⲁⲓ ⲡⲁⲓ ⲛⲧⲟⲕ ⲛϩⲏⲧ",
+      "greek_fragments": "",
+      "english_text": "Jesus said, 'Recognize what is in your sight, and that which is hidden from you will become plain to you. For there is nothing hidden which will not become manifest.'",
+      "parallel_passages": "[\"Mark 4:22\", \"Luke 8:17\", \"Matthew 10:26\"]",
+      "theme": "Hidden and Revealed"
+    },
+    {
+      "id": 7,
+      "saying_number": 6,
+      "coptic_text": "ⲡⲉϫⲉ ⲛⲉϥⲙⲁⲑⲏⲧⲏⲥ ϫⲉ ⲙⲡⲣⲟϩⲟⲩⲉ ⲛⲧⲉⲧⲛⲉⲩⲓⲉ",
+      "greek_fragments": "",
+      "english_text": "His disciples questioned him and said to him, 'Do you want us to fast? How shall we pray? Shall we give alms? What diet shall we observe?' Jesus said, 'Do not tell lies, and do not do what you hate, for all things are plain in the sight of Heaven. For nothing hidden will not become manifest, and nothing covered will remain without being uncovered.'",
+      "parallel_passages": "[\"Mark 4:22\", \"Luke 12:2\"]",
+      "theme": "Truth and Authenticity"
+    },
+    {
+      "id": 8,
+      "saying_number": 7,
+      "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϥⲥⲟⲟⲩⲛ ⲛⲧⲟⲕ ⲛⲧⲟⲕ ⲉⲧⲃⲉⲛⲏⲩⲉ",
+      "greek_fragments": "",
+      "english_text": "Jesus said, 'Blessed is the lion which becomes man when consumed by man; and cursed is the man whom the lion consumes, and the lion becomes man.'",
+      "parallel_passages": "[]",
+      "theme": "Transformation"
+    },
+    {
+      "id": 9,
+      "saying_number": 8,
+      "coptic_text": "ⲁⲩⲱ ⲡⲉϫⲉ ϫⲉ ⲟⲩⲣⲱⲙⲉ ⲛⲁⲓ ϩⲏⲧ ⲉⲧⲛⲁⲛⲟⲩ",
+      "greek_fragments": "",
+      "english_text": "And he said, 'The man is like a wise fisherman who cast his net into the sea and drew it up from the sea full of small fish. Among them the wise fisherman found a fine large fish. He threw all the small fish back into the sea and chose the large fish without difficulty. Whoever has ears to hear, let him hear.'",
+      "parallel_passages": "[\"Matthew 13:47-50\"]",
+      "theme": "Selection and Discernment"
+    },
+    {
+      "id": 10,
+      "saying_number": 9,
+      "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲓⲇⲉ ⲛⲟⲩⲥⲱⲧⲏⲣ ⲛⲁⲓ ϩⲏⲧ",
+      "greek_fragments": "",
+      "english_text": "Jesus said, 'Behold, the sower went out to sow. He filled his hand with seed and cast it. Some fell upon the road and were eaten by birds. Others fell upon rock and could not take root, nor did they produce grain. Others fell among thorns and choked the seed, and worms ate them. And others fell upon the good earth and brought forth good fruit. It bore sixty per measure and one hundred twenty per measure.'",
+      "parallel_passages": "[\"Mark 4:3-8\", \"Matthew 13:3-8\", \"Luke 8:5-8\"]",
+      "theme": "Parable of Sower"
+    },
+    {
+      "id": 11,
+      "saying_number": 10,
+      "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϯⲛⲧⲱⲛ ⲁϩⲏⲣⲁϫⲉ ⲙⲟⲟⲩ ⲉⲧⲃⲉⲛⲏⲩⲉ",
+      "greek_fragments": "",
+      "english_text": "Jesus said, 'I have cast fire upon the world, and see, I am guarding it until it blazes.'",
+      "parallel_passages": "[\"Luke 12:49\"]",
+      "theme": "Fire and Judgment"
+    },
+    {
+      "id": 12,
+      "saying_number": 11,
+      "coptic_text": "ⲡⲉϫⲉ ⲛⲉϥⲙⲁⲑⲏⲧⲏⲥ ϫⲉ ϣⲟⲟⲡⲉ ⲡⲁⲓ ϩⲛⲧⲁⲣⲭⲏ",
+      "greek_fragments": "",
+      "english_text": "This heaven will pass away, and the one above it will pass away. The dead are not alive, and the living will not die. In the days when you consumed what is dead, you made it what is alive. When you come to dwell in the light, what will you do? On the day when you were one you became two. But when you become two, what will you do?'",
+      "parallel_passages": "[\"Matthew 24:35\", \"Mark 13:31\"]",
+      "theme": "End Times"
+    },
+    {
+      "id": 13,
+      "saying_number": 12,
+      "coptic_text": "ⲡⲉϫⲉ ⲛⲉϥⲙⲁⲑⲏⲧⲏⲥ ϫⲉ ⲁⲙⲟⲩⲏⲛ ϩⲙⲡⲁⲓ ϫⲉ",
+      "greek_fragments": "",
+      "english_text": "The disciples said to Jesus, 'We know that you will depart from us. Who is to be our leader?' Jesus said to them, 'Wherever you are, you are to go to James the righteous, for whose sake heaven and earth came into being.'",
+      "parallel_passages": "[\"Galatians 1:19\", \"Galatians 2:9\"]",
+      "theme": "James the Just"
+    },
+    {
+      "id": 14,
+      "saying_number": 13,
+      "coptic_text": "ⲡⲉϫⲉ ⲓⲱⲥ ⲛⲥⲓⲙⲱⲛ ⲡⲉⲧⲣⲟⲥ",
+      "greek_fragments": "",
+      "english_text": "Jesus said to his disciples, 'Compare me to someone and tell me whom I am like.' Simon Peter said to him, 'You are like a righteous angel.' Matthew said to him, 'You are like a wise philosopher.' Thomas said to him, 'Master, my mouth is wholly incapable of saying whom you are like.' Jesus said, 'I am not your master. Because you have drunk, you have become intoxicated from the bubbling spring which I have measured out.' And he took him and withdrew and spoke three sayings to him. When Thomas returned to his companions, they asked him, 'What did Jesus say to you?' Thomas said to them, 'If I tell you one of the things which he told me, you will pick up stones and throw them at me; and a fire will come out of the stones and burn you up.'",
+      "parallel_passages": "[]",
+      "theme": "Thomas' Privilege"
+    },
+    {
+      "id": 15,
+      "saying_number": 14,
+      "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲥⲏⲥⲧⲉ ϥⲛⲁϩⲉ ⲛⲟⲩⲥⲃⲱ",
+      "greek_fragments": "",
+      "english_text": "Jesus said to them, 'If you fast, you will give rise to sin for yourselves; and if you pray, you will be condemned; and if you give alms, you will do harm to your spirits. When you go into any land and walk about in the districts, if they receive you, eat what they will set before you, and heal the sick among them. For what goes into your mouth will not defile you, but that which issues from your mouth - it is that which will defile you.'",
+      "parallel_passages": "[\"Mark 7:15\", \"Matthew 15:11\"]",
+      "theme": "True Purity"
+    },
+    {
+      "id": 16,
+      "saying_number": 15,
+      "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
+      "greek_fragments": "",
+      "english_text": "Jesus said, 'When you see one who was not born of woman, prostrate yourselves on your faces and worship him. That one is your Father.'",
+      "parallel_passages": "[]",
+      "theme": "Divine Birth"
+    },
+    {
+      "id": 17,
+      "saying_number": 16,
+      "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲱⲥ ⲛⲧⲟⲕ ⲛⲧⲟⲕ ⲉⲧⲣⲉ ⲙⲙⲁⲣⲓⲁ",
+      "greek_fragments": "",
+      "english_text": "Jesus said, 'Perhaps people think that I have come to cast peace upon the world, and they do not know that I have come to cast divisions upon the earth - fire, sword, war. For there shall be five in a house: three shall be against two and two against three; the father against the son and the son against the father. And they shall stand as solitaries.'",
+      "parallel_passages": "[\"Matthew 10:34-36\", \"Luke 12:51-53\"]",
+      "theme": "Division"
+    },
+    {
+      "id": 18,
+      "saying_number": 17,
+      "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ⲛⲧⲟⲕ ⲛⲧⲟⲕ ⲉⲧϣⲟⲟⲡⲉ ⲛⲁⲓ",
+      "greek_fragments": "",
+      "english_text": "Jesus said, 'I shall give you what no eye has seen and what no ear has heard and what no hand has touched and what has never occurred to the human mind.'",
+      "parallel_passages": "[\"1 Corinthians 2:9\"]",
+      "theme": "Hidden Mysteries"
+    },
+    {
+      "id": 19,
+      "saying_number": 18,
+      "coptic_text": "ⲡⲉϫⲉ ⲛⲉϥⲙⲁⲑⲏⲧⲏⲥ ϫⲉ ϣⲟⲟⲡⲉ ⲡⲁⲓ ϩⲛⲧⲁⲣⲭⲏ",
+      "greek_fragments": "",
+      "english_text": "The disciples said to Jesus, 'Tell us how our end will be.' Jesus said, 'Have you discovered, then, the beginning, that you look for the end? For where the beginning is, there will the end be. Blessed is he who will take his place in the beginning; and he will know the end and will not taste death.'",
+      "parallel_passages": "[]",
+      "theme": "Beginning and End"
+    },
+    {
+      "id": 20,
+      "saying_number": 19,
+      "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϥⲥⲟⲟⲩⲛ ⲛⲧⲟⲕ ⲛⲧⲟⲕ ⲉⲧⲃⲉⲛⲏⲩⲉ",
+      "greek_fragments": "",
+      "english_text": "Jesus said, 'Blessed is he who came into being before he came into being. If you become my disciples and listen to my words, these stones will minister to you. For there are five trees for you in Paradise which remain undisturbed summer and winter and whose leaves do not fall. Whoever becomes acquainted with them will not experience death.'",
+      "parallel_passages": "[]",
+      "theme": "Pre-existence"
+    },
+    {
+      "id": 21,
+      "saying_number": 20,
+      "coptic_text": "ⲡⲉϫⲉ ⲛⲉϥⲙⲁⲑⲏⲧⲏⲥ ϫⲉ ⲡⲏⲩⲉ ⲛⲁⲓ ϩⲏⲧ",
+      "greek_fragments": "",
+      "english_text": "The disciples said to Jesus, 'Tell us what the Kingdom of Heaven is like.' He said to them, 'It is like a mustard seed. It is the smallest of all seeds. But when it falls on tilled soil, it produces a great plant and becomes a shelter for birds of the sky.'",
+      "parallel_passages": "[\"Mark 4:30-32\", \"Matthew 13:31-32\", \"Luke 13:18-19\"]",
+      "theme": "Mustard Seed"
+    },
+    {
+      "id": 22,
+      "saying_number": 21,
+      "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
+      "greek_fragments": "",
+      "english_text": "Mary said to Jesus, 'Whom are your disciples like?' He said, 'They are like little children living in a field which is not theirs. When the owners of the field come, they will say, \"Give us back our field.\" They take off their clothes in front of them in order to give it back to them, and they return their field to them.'",
+      "parallel_passages": "[]",
+      "theme": "Childlikeness"
+    },
+    {
+      "id": 23,
+      "saying_number": 22,
+      "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ⲁⲓⲛⲁⲩ ⲉϩⲟⲩⲛ",
+      "greek_fragments": "",
+      "english_text": "Jesus saw some babies nursing. He said to his disciples, 'These nursing babies are like those who enter the Kingdom.' They said to him, 'Then shall we enter the Kingdom as babies?' Jesus said to them, 'When you make the two into one, and when you make the inner like the outer and the outer like the inner, and the upper like the lower, and when you make male and female into a single one, so that the male will not be male nor the female be female, when you make eyes in place of an eye, a hand in place of a hand, a foot in place of a foot, an image in place of an image, then you will enter the Kingdom.'",
+      "parallel_passages": "[\"Matthew 18:3\", \"Mark 10:15\"]",
+      "theme": "Union of Opposites"
+    },
+    {
+      "id": 24,
+      "saying_number": 23,
+      "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ⲛⲧⲟⲕ ⲛⲧⲟⲕ ⲉⲧϣⲟⲟⲡⲉ ⲛⲁⲓ",
+      "greek_fragments": "",
+      "english_text": "Jesus said, 'I shall choose you, one out of a thousand, and two out of ten thousand, and they shall stand as a single one.'",
+      "parallel_passages": "[]",
+      "theme": "Elect"
+    },
+    {
+      "id": 25,
+      "saying_number": 24,
+      "coptic_text": "ⲡⲉϫⲉ ⲛⲉϥⲙⲁⲑⲏⲧⲏⲥ ϫⲉ ϣⲟⲟⲡⲉ ⲛⲁⲓ ϩⲏⲧ",
+      "greek_fragments": "",
+      "english_text": "His disciples said, 'Show us the place where you are, since it is necessary for us to seek it.' He said to them, 'Whoever has ears, let him hear. There is light within a man of light, and he lights up the whole world. If he does not shine, he is darkness.'",
+      "parallel_passages": "[\"Matthew 6:22-23\", \"Luke 11:34-35\"]",
+      "theme": "Inner Light"
+    },
+    {
+      "id": 26,
+      "saying_number": 25,
+      "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲱⲥ ⲛⲧⲟⲕ ⲛⲧⲟⲕ ⲉⲧϣⲟⲟⲡⲉ",
+      "greek_fragments": "",
+      "english_text": "Jesus said, 'Love your brother like your soul, guard him like the pupil of your eye.'",
+      "parallel_passages": "[]",
+      "theme": "Brotherly Love"
+    },
+    {
+      "id": 27,
+      "saying_number": 26,
+      "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ⲡⲉⲧⲣⲟⲥ ⲛⲧⲟⲕ ⲛⲧⲟⲕ ⲉⲧϣⲟⲟⲡⲉ",
+      "greek_fragments": "",
+      "english_text": "Jesus said, 'You see the mote in your brother's eye, but you do not see the beam in your own eye. When you cast the beam out of your own eye, then you will see clearly to cast the mote from your brother's eye.'",
+      "parallel_passages": "[\"Matthew 7:3-5\", \"Luke 6:41-42\"]",
+      "theme": "Hypocrisy"
+    },
+    {
+      "id": 28,
+      "saying_number": 27,
+      "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
+      "greek_fragments": "",
+      "english_text": "'If you do not fast as regards the world, you will not find the Kingdom. If you do not observe the Sabbath as a Sabbath, you will not see the Father.'",
+      "parallel_passages": "[]",
+      "theme": "True Sabbath"
+    },
+    {
+      "id": 29,
+      "saying_number": 28,
+      "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ⲁⲓⲥⲱⲧⲙ ⲉⲣⲟⲕ ⲛϩⲏⲧ",
+      "greek_fragments": "",
+      "english_text": "Jesus said, 'I took my place in the midst of the world, and I appeared to them in flesh. I found all of them intoxicated; I found none of them thirsty. And my soul became afflicted for the sons of men, because they are blind in their hearts and do not see that empty they came into the world, and empty they seek to leave the world again. But now they are intoxicated. When they have shaken off their wine, then they will repent.'",
+      "parallel_passages": "[]",
+      "theme": "Intoxication of World"
+    },
+    {
+      "id": 30,
+      "saying_number": 29,
+      "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
+      "greek_fragments": "",
+      "english_text": "Jesus said, 'If the flesh came into being because of spirit, it is a wonder. But if spirit came into being because of the body, it is a wonder of wonders. Indeed, I am amazed at how this great wealth has made its home in this poverty.'",
+      "parallel_passages": "[]",
+      "theme": "Spirit and Flesh"
+    },
+    {
+      "id": 31,
+      "saying_number": 30,
+      "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲱⲥ ⲛⲧⲟⲕ ⲛⲧⲟⲕ ⲉⲧϣⲟⲟⲡⲉ",
+      "greek_fragments": "",
+      "english_text": "Jesus said, 'Where there are three gods, they are gods. Where there are two or one, I am with him.'",
+      "parallel_passages": "[\"Matthew 18:20\"]",
+      "theme": "Presence in Unity"
+    }
+  ],
+  "jesus_years": []
+}
