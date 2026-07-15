@@ -1,0 +1,456 @@
+{
+  "title": "Gospel of Mary Magdalene",
+  "source": "Berlin Codex BG 8502",
+  "language": "Coptic (Sahidic)",
+  "total_pages": 8,
+  "extant_pages": 8,
+  "complete_lines": 33,
+  "lacunae": 12,
+  "pages": [
+    {
+      "page": 1,
+      "lines": [
+        {
+          "id": 1,
+          "page": 1,
+          "line": 1,
+          "coptic_text": "ⲡⲉⲩⲁⲅⲅⲉⲗⲓⲟⲛ ⲙⲙⲁⲣⲓⲁ",
+          "english_text": "The Gospel of Mary",
+          "topic": "Title",
+          "lacuna": 0
+        },
+        {
+          "id": 2,
+          "page": 1,
+          "line": 2,
+          "coptic_text": "ⲡⲗⲏⲥ ⲥⲁⲣⲭⲏⲥ ⲛⲁⲓ ⲛⲧⲟⲕ ⲛⲧⲟⲕ ⲉⲧⲃⲉⲛⲏⲩⲉ",
+          "english_text": "...the Savior made her worthy...",
+          "topic": "Introduction",
+          "lacuna": 1
+        },
+        {
+          "id": 3,
+          "page": 1,
+          "line": 3,
+          "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϫⲉ ϯⲛⲧⲱⲛ ⲛϩⲱⲃ ⲛⲁⲓ ⲉⲧϩⲛⲧⲏⲩⲉ",
+          "english_text": "Jesus said, 'Blessed is one who exists before coming into being.'",
+          "topic": "Secret Teaching",
+          "lacuna": 0
+        },
+        {
+          "id": 4,
+          "page": 1,
+          "line": 4,
+          "coptic_text": "ⲥⲱⲧⲙ ⲉⲣⲟⲓ ϩⲙⲡⲁⲓ ⲡⲁⲓ ⲛⲧⲟⲕ ⲛϩⲏⲧ",
+          "english_text": "'Listen to this: where the mind is, there is the treasure.'",
+          "topic": "Mind and Treasure",
+          "lacuna": 0
+        },
+        {
+          "id": 5,
+          "page": 1,
+          "line": 5,
+          "coptic_text": "ⲡⲉϫⲉ ⲙⲁⲣⲓⲁ ϫⲉ ⲁⲕϣⲁϫⲉ ⲛⲁⲓ ϩⲏⲧ",
+          "english_text": "Mary said, 'You have spoken these things to us in parables.'",
+          "topic": "Mary Questions",
+          "lacuna": 0
+        },
+        {
+          "id": 6,
+          "page": 1,
+          "line": 6,
+          "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϫⲉ ϯⲛⲧⲱⲛ ⲛⲧⲟⲕ ⲡⲉⲧϣⲟⲟⲡⲉ",
+          "english_text": "Jesus said, 'Blessed is one who seeks.'",
+          "topic": "Seeking",
+          "lacuna": 0
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "lines": [
+        {
+          "id": 7,
+          "page": 2,
+          "line": 1,
+          "coptic_text": "ⲙⲁⲣⲓⲁ ⲁⲥϭⲱ ϩⲙⲡⲏⲩⲉ ⲁⲥⲛⲁⲩ ⲉϩⲟⲩⲛ",
+          "english_text": "Mary turned to the inward, she saw a vision.",
+          "topic": "Mary's Vision",
+          "lacuna": 0
+        },
+        {
+          "id": 8,
+          "page": 2,
+          "line": 2,
+          "coptic_text": "ⲁⲥⲛⲁⲩ ⲉⲥⲉⲓⲏⲗⲉ ⲛⲧⲟⲕ ⲡⲉⲧⲥⲏⲟⲟⲡⲉ",
+          "english_text": "She saw the soul ascending past the seven powers.",
+          "topic": "Soul's Ascent",
+          "lacuna": 0
+        },
+        {
+          "id": 9,
+          "page": 2,
+          "line": 3,
+          "coptic_text": "ⲡϣⲟⲣϥ ⲡⲁⲓ ⲡⲉⲧϫⲟⲟⲥ ϫⲉ ⲁⲛⲟⲕ ϯⲛⲁϩⲉ",
+          "english_text": "The first power said, 'I am Darkness.'",
+          "topic": "First Power - Darkness",
+          "lacuna": 0
+        },
+        {
+          "id": 10,
+          "page": 2,
+          "line": 4,
+          "coptic_text": "ⲡⲥⲉⲥⲏⲩⲉ ⲡⲁⲓ ⲡⲉⲧϫⲟⲟⲥ ϫⲉ ⲁⲛⲟⲕ ⲟⲩⲱϣⲏ",
+          "english_text": "The second said, 'I am Desire.'",
+          "topic": "Second Power - Desire",
+          "lacuna": 0
+        },
+        {
+          "id": 11,
+          "page": 2,
+          "line": 5,
+          "coptic_text": "ⲡϩⲟⲙⲛⲧ ⲡⲁⲓ ⲡⲉⲧϫⲟⲟⲥ ϫⲉ ⲁⲛⲟⲕ ⲟⲩⲕⲟⲧϣ",
+          "english_text": "The third said, 'I am Ignorance.'",
+          "topic": "Third Power - Ignorance",
+          "lacuna": 0
+        },
+        {
+          "id": 12,
+          "page": 2,
+          "line": 6,
+          "coptic_text": "ⲡϩⲟⲩⲉⲓⲇⲉ ⲡⲁⲓ ⲡⲉⲧϫⲟⲟⲥ ϫⲉ ⲁⲛⲟⲕ ⲟⲩϣⲧⲣⲧⲏⲣ",
+          "english_text": "The fourth said, 'I am Envy of Death.'",
+          "topic": "Fourth Power - Envy",
+          "lacuna": 0
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "lines": [
+        {
+          "id": 13,
+          "page": 3,
+          "line": 1,
+          "coptic_text": "ⲡϧⲟⲩϩⲉ ⲡⲁⲓ ⲡⲉⲧϫⲟⲟⲥ ϫⲉ ⲁⲛⲟⲕ ⲟⲩⲗⲓⲏⲑⲏ",
+          "english_text": "The fifth said, 'I am the Domain of the Flesh.'",
+          "topic": "Fifth Power - Flesh",
+          "lacuna": 0
+        },
+        {
+          "id": 14,
+          "page": 3,
+          "line": 2,
+          "coptic_text": "ⲡⲥⲉ ⲡⲁⲓ ⲡⲉⲧϫⲟⲟⲥ ϫⲉ ⲁⲛⲟⲕ ⲟⲩϣⲧⲣⲧⲏⲣ ⲛⲧⲉⲡⲏⲩⲉ",
+          "english_text": "The sixth said, 'I am the Foolish Wisdom of the Flesh.'",
+          "topic": "Sixth Power - Foolish Wisdom",
+          "lacuna": 0
+        },
+        {
+          "id": 15,
+          "page": 3,
+          "line": 3,
+          "coptic_text": "ⲡⲥⲁϩϨⲉ ⲡⲁⲓ ⲡⲉⲧϫⲟⲟⲥ ϫⲉ ⲁⲛⲟⲕ ⲟⲩⲱⲣⲅⲏⲩⲥⲓⲁ",
+          "english_text": "The seventh said, 'I am Wrathful Wisdom.'",
+          "topic": "Seventh Power - Wrath",
+          "lacuna": 0
+        },
+        {
+          "id": 16,
+          "page": 3,
+          "line": 4,
+          "coptic_text": "ⲁϩⲏⲣⲁϫⲉ ϫⲉ ϯⲛⲧⲱⲛ ⲛⲧⲟⲕ ⲡⲉⲧⲛⲁⲛⲟⲩ",
+          "english_text": "Then the soul said, 'What binds me is slain.'",
+          "topic": "Soul's Response",
+          "lacuna": 0
+        },
+        {
+          "id": 17,
+          "page": 3,
+          "line": 5,
+          "coptic_text": "ⲁⲩⲱ ⲁⲥϥⲓ ⲉⲃⲟⲗ ϩⲛⲟⲩⲥⲙⲏⲛⲏ",
+          "english_text": "And she rose up to the Eighth Sphere.",
+          "topic": "Ascent Complete",
+          "lacuna": 0
+        },
+        {
+          "id": 18,
+          "page": 3,
+          "line": 6,
+          "coptic_text": "ⲁⲩⲱ ⲁⲥⲛⲁⲩ ⲉⲧⲉⲣⲟⲥⲧⲁⲧⲏⲥ",
+          "english_text": "And she saw the Rest.",
+          "topic": "The Rest (Ogdoad)",
+          "lacuna": 0
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "lines": [
+        {
+          "id": 19,
+          "page": 4,
+          "line": 1,
+          "coptic_text": "ⲙⲁⲣⲓⲁ ⲁⲥⲃⲱⲕ ϩⲙⲡⲏⲩⲉ ⲁⲥⲉⲓ ⲉⲃⲟⲗ",
+          "english_text": "Mary turned outward, she came forth.",
+          "topic": "Mary Returns",
+          "lacuna": 0
+        },
+        {
+          "id": 20,
+          "page": 4,
+          "line": 2,
+          "coptic_text": "ⲁⲥϣⲁϫⲉ ⲛⲛⲉϥⲙⲁⲑⲏⲧⲏⲥ ϫⲉ ⲁⲓⲛⲁⲩ ⲉϩⲟⲩⲛ",
+          "english_text": "She spoke to the disciples: 'I saw the Lord.'",
+          "topic": "Mary Testifies",
+          "lacuna": 0
+        },
+        {
+          "id": 21,
+          "page": 4,
+          "line": 3,
+          "coptic_text": "ⲁⲩⲱ ⲁϥϫⲟⲟⲥ ⲛⲁⲓ ⲛⲧⲟⲩⲉ",
+          "english_text": "'And he spoke these things to me.'",
+          "topic": "Secret Teachings",
+          "lacuna": 0
+        },
+        {
+          "id": 22,
+          "page": 4,
+          "line": 4,
+          "coptic_text": "ⲛⲉϥⲙⲁⲑⲏⲧⲏⲥ ⲁⲩⲁⲥⲉ ⲛⲥⲱⲟⲩ ⲁⲩⲱ",
+          "english_text": "The disciples were grieved...",
+          "topic": "Disciples React",
+          "lacuna": 1
+        },
+        {
+          "id": 23,
+          "page": 4,
+          "line": 5,
+          "coptic_text": "ⲁⲛⲇⲣⲉⲁⲥ ⲁϥϫⲟⲟⲥ ϫⲉ ϯⲛⲧⲱⲛ ⲛⲧⲟⲕ",
+          "english_text": "Andrew spoke: 'Say what you think...'",
+          "topic": "Andrew Challenges",
+          "lacuna": 0
+        },
+        {
+          "id": 24,
+          "page": 4,
+          "line": 6,
+          "coptic_text": "ⲁⲗⲗⲁ ⲛⲧⲟⲕ ⲛⲧⲟⲕ ⲉⲧⲃⲉⲛⲏⲩⲉ",
+          "english_text": "'...but we know the Savior did not speak this way.'",
+          "topic": "Andrew's Doubt",
+          "lacuna": 0
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "lines": [
+        {
+          "id": 25,
+          "page": 5,
+          "line": 1,
+          "coptic_text": "ⲡⲉⲧⲣⲟⲥ ⲁϥⲣⲟⲩϩⲏ ⲁϥϫⲟⲟⲥ ϫⲉ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
+          "english_text": "Peter arose, he said: 'Did he really speak with a woman...'",
+          "topic": "Peter's Challenge",
+          "lacuna": 0
+        },
+        {
+          "id": 26,
+          "page": 5,
+          "line": 2,
+          "coptic_text": "ϩⲱⲥ ⲁⲛⲕⲱ ⲉⲃⲟⲗ ϩⲙⲡⲉⲓⲱⲧⲉ",
+          "english_text": "'...privately from us and not openly?'",
+          "topic": "Peter's Jealousy",
+          "lacuna": 0
+        },
+        {
+          "id": 27,
+          "page": 5,
+          "line": 3,
+          "coptic_text": "ϩⲱⲥ ⲛⲧⲟⲕ ⲛⲧⲟⲕ ⲉⲧⲣⲉ ⲙⲙⲁⲣⲓⲁ ⲉⲣⲟⲛ",
+          "english_text": "'Shall we turn about and all listen to her?'",
+          "topic": "Peter Questions Mary's Authority",
+          "lacuna": 0
+        },
+        {
+          "id": 28,
+          "page": 5,
+          "line": 4,
+          "coptic_text": "ⲙⲏⲁⲥ ⲛⲧⲟⲕ ⲡⲉⲧⲛⲁⲛⲟⲩ",
+          "english_text": "'Did he prefer her to us?'",
+          "topic": "Peter's Envy",
+          "lacuna": 0
+        },
+        {
+          "id": 29,
+          "page": 5,
+          "line": 5,
+          "coptic_text": "ⲙⲁⲣⲓⲁ ⲁⲥⲣⲓⲙⲉ ⲁⲥϫⲟⲟⲥ ⲛⲃⲱⲕ",
+          "english_text": "Mary wept, she said: 'My brothers...'",
+          "topic": "Mary Responds",
+          "lacuna": 0
+        },
+        {
+          "id": 30,
+          "page": 5,
+          "line": 6,
+          "coptic_text": "ⲁⲓⲛⲁⲩ ⲉϩⲟⲩⲛ ⲁⲓⲥⲱⲧⲙ ⲉⲣⲟϥ",
+          "english_text": "'I saw him, I listened to him.'",
+          "topic": "Mary Defends",
+          "lacuna": 0
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "lines": [
+        {
+          "id": 31,
+          "page": 6,
+          "line": 1,
+          "coptic_text": "ⲗⲉⲩⲉⲓⲥ ⲁϥϫⲟⲟⲥ ϫⲉ ϩⲱⲃ ⲛⲁⲓ ⲉⲧϩⲛⲧⲏⲩⲉ",
+          "english_text": "Levi spoke: 'Sister, we know...'",
+          "topic": "Levi (Matthew) Speaks",
+          "lacuna": 0
+        },
+        {
+          "id": 32,
+          "page": 6,
+          "line": 2,
+          "coptic_text": "ⲡⲉⲧⲣⲟⲥ ⲁϥⲉⲓ ⲉⲃⲟⲗ ϩⲙⲡⲉⲓⲱⲧⲉ",
+          "english_text": "'The Savior made her worthy.'",
+          "topic": "Levi Defends Mary",
+          "lacuna": 0
+        },
+        {
+          "id": 33,
+          "page": 6,
+          "line": 3,
+          "coptic_text": "ⲛⲧⲟⲕ ⲛⲧⲟⲕ ⲉⲧϣⲟⲟⲡⲉ ⲛⲁⲓ ⲉⲧⲃⲉⲛⲏⲩⲉ",
+          "english_text": "'Let us be ashamed and put on...'",
+          "topic": "Call to Action",
+          "lacuna": 1
+        },
+        {
+          "id": 34,
+          "page": 6,
+          "line": 4,
+          "coptic_text": "ⲁⲩⲱ ⲁⲛⲛⲟⲩⲥ ⲧⲏⲩϩⲏ ⲉⲧⲃⲉⲛⲏⲩⲉ",
+          "english_text": "'...the Perfect Human and go forth...'",
+          "topic": "The Perfect Human",
+          "lacuna": 1
+        },
+        {
+          "id": 35,
+          "page": 6,
+          "line": 5,
+          "coptic_text": "ϩⲱⲥ ⲛⲧⲟⲕ ⲛⲧⲟⲕ ⲉⲧⲣⲉ ⲙⲙⲁⲣⲓⲁ ⲉⲣⲟⲛ",
+          "english_text": "'...as he commanded us.'",
+          "topic": "Obedience",
+          "lacuna": 0
+        },
+        {
+          "id": 36,
+          "page": 6,
+          "line": 6,
+          "coptic_text": "ⲁⲩⲱ ⲁⲛϥⲓ ⲉⲃⲟⲗ ϩⲙⲡⲏⲩⲉ",
+          "english_text": "'And we will become as he is.'",
+          "topic": "Transformation",
+          "lacuna": 0
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "lines": [
+        {
+          "id": 37,
+          "page": 7,
+          "line": 1,
+          "coptic_text": "ⲛⲉϥⲙⲁⲑⲏⲧⲏⲥ ⲁⲩϩⲉ ⲉⲃⲟⲗ ⲁⲩϭⲱ ⲉⲧⲉⲣⲟⲥⲧⲁⲧⲏⲥ",
+          "english_text": "The disciples went forth to preach.",
+          "topic": "Mission Begins",
+          "lacuna": 0
+        },
+        {
+          "id": 38,
+          "page": 7,
+          "line": 2,
+          "coptic_text": "ⲁⲩⲱ ⲙⲁⲣⲓⲁ ⲁⲥϣⲱⲡⲉ ⲉⲣⲟⲥ ⲁⲥϫⲟⲟⲥ",
+          "english_text": "And Mary remained, she spoke...",
+          "topic": "Mary's Continued Ministry",
+          "lacuna": 1
+        },
+        {
+          "id": 39,
+          "page": 7,
+          "line": 3,
+          "coptic_text": "ⲡⲉⲧⲣⲟⲥ ⲁϥϣⲟⲟⲡⲉ ⲛⲥⲱⲟⲩ",
+          "english_text": "The Savior loved her more than...",
+          "topic": "Jesus' Love for Mary",
+          "lacuna": 1
+        },
+        {
+          "id": 40,
+          "page": 7,
+          "line": 4,
+          "coptic_text": "ⲁⲩⲱ ⲛⲧⲟⲕ ⲛⲧⲟⲕ ⲉⲧϣⲟⲟⲡⲉ",
+          "english_text": "'...and we are to follow her example.'",
+          "topic": "Mary as Model",
+          "lacuna": 1
+        },
+        {
+          "id": 41,
+          "page": 7,
+          "line": 5,
+          "coptic_text": "ⲧⲉⲗⲉⲓⲟⲥ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
+          "english_text": "'The perfection is...'",
+          "topic": "Perfection",
+          "lacuna": 1
+        },
+        {
+          "id": 42,
+          "page": 7,
+          "line": 6,
+          "coptic_text": "ⲁⲩⲱ ⲧⲉⲣⲁⲥⲓⲥ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
+          "english_text": "'...and the rest is silence.'",
+          "topic": "End of Text",
+          "lacuna": 1
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "lines": [
+        {
+          "id": 43,
+          "page": 8,
+          "line": 1,
+          "coptic_text": "...",
+          "english_text": "[Text missing - manuscript damaged]",
+          "topic": "Lost Ending",
+          "lacuna": 1
+        },
+        {
+          "id": 44,
+          "page": 8,
+          "line": 2,
+          "coptic_text": "...",
+          "english_text": "[Possibly described Mary's fate or continued teaching]",
+          "topic": "Speculated Content",
+          "lacuna": 1
+        },
+        {
+          "id": 45,
+          "page": 8,
+          "line": 3,
+          "coptic_text": "...",
+          "english_text": "[Manuscript ends here]",
+          "topic": "End of Gospel",
+          "lacuna": 1
+        }
+      ]
+    }
+  ]
+}
