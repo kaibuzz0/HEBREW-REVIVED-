@@ -170,11 +170,24 @@ class CompleteBibleDatabase:
         self.cursor.execute("""
             CREATE TABLE IF NOT EXISTS gospel_of_thomas (
                 id INTEGER PRIMARY KEY,
-                saying_number INTEGER UNIQUE,  -- 1-114
+                saying_number INTEGER UNIQUE,
                 coptic_text TEXT,
-                greek_fragments TEXT,  -- Oxyrhynchus parallels
+                greek_fragments TEXT,
                 english_text TEXT,
-                parallel_passages TEXT,  -- JSON array of canonical parallels
+                parallel_passages TEXT,
+                theme TEXT
+            )
+        """)
+        
+        # Gospel of Philip passages
+        self.cursor.execute("""
+            CREATE TABLE IF NOT EXISTS gospel_of_philip (
+                id INTEGER PRIMARY KEY,
+                passage_number INTEGER,
+                coptic_text TEXT,
+                greek_fragments TEXT,
+                english_text TEXT,
+                parallel_passages TEXT,
                 theme TEXT
             )
         """)
@@ -240,6 +253,16 @@ class CompleteBibleDatabase:
             (saying_number, coptic_text, greek_fragments, english_text, parallel_passages, theme)
             VALUES (?, ?, ?, ?, ?, ?)
         """, (saying_num, coptic, greek, english, json.dumps(parallels), theme))
+        self.conn.commit()
+    
+    def add_philip_passage(self, passage_num: int, coptic: str, greek: str, english: str,
+                           parallels: List[str], theme: str):
+        """Add a passage from Gospel of Philip"""
+        self.cursor.execute("""
+            INSERT INTO gospel_of_philip
+            (passage_number, coptic_text, greek_fragments, english_text, parallel_passages, theme)
+            VALUES (?, ?, ?, ?, ?, ?)
+        """, (passage_num, coptic, greek, english, json.dumps(parallels), theme))
         self.conn.commit()
     
     def add_jesus_year(self, age: int, event: str, source: str, canonical: bool,
