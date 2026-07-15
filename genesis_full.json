@@ -1,0 +1,346 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "name": "Genesis",
+      "hebrew_name": "בראשית",
+      "chapters": 50
+    }
+  ],
+  "verses": [
+    {
+      "id": 2,
+      "book_id": 1,
+      "chapter": 1,
+      "verse": 1,
+      "hebrew": "בְּרֵאשִׁית בָּרָא אֱלֹהִים אֵת הַשָּׁמַיִם וְאֵת הָאָרֶץ",
+      "translit": "",
+      "gematria": 2701
+    },
+    {
+      "id": 3,
+      "book_id": 1,
+      "chapter": 1,
+      "verse": 3,
+      "hebrew": "וַיֹּאמֶר אֱלֹהִים יְהִי אוֹר וַיְהִי אוֹר",
+      "translit": "",
+      "gematria": 813
+    },
+    {
+      "id": 4,
+      "book_id": 1,
+      "chapter": 1,
+      "verse": 27,
+      "hebrew": "וַיִּבְרָא אֱלֹהִים אֶת הָאָדָם בְּצַלְמוֹ בְּצֶלֶם אֱלֹהִים בָּרָא אֹתוֹ",
+      "translit": "",
+      "gematria": 1782
+    },
+    {
+      "id": 5,
+      "book_id": 1,
+      "chapter": 2,
+      "verse": 7,
+      "hebrew": "וַיִּיצֶר יְהוָה אֱלֹהִים אֶת הָאָדָם עָפָר מִן הָאֲדָמָה",
+      "translit": "",
+      "gematria": 1374
+    },
+    {
+      "id": 6,
+      "book_id": 1,
+      "chapter": 2,
+      "verse": 18,
+      "hebrew": "וַיֹּאמֶר יְהוָה לֹא טוֹב הֱיוֹת הָאָדָם לְבַדּוֹ",
+      "translit": "",
+      "gematria": 844
+    },
+    {
+      "id": 7,
+      "book_id": 1,
+      "chapter": 2,
+      "verse": 24,
+      "hebrew": "עַל כֵּן יַעֲזָב אִישׁ אֶת אָבִיו וְאֶת אִמּוֹ",
+      "translit": "",
+      "gematria": 1444
+    },
+    {
+      "id": 8,
+      "book_id": 1,
+      "chapter": 3,
+      "verse": 1,
+      "hebrew": "וְהַנָּחָשׁ הָיָה עָרוּם מִכֹּל חַיַּת הַשָּׂדֶה",
+      "translit": "",
+      "gematria": 1527
+    },
+    {
+      "id": 9,
+      "book_id": 1,
+      "chapter": 3,
+      "verse": 6,
+      "hebrew": "וַתֵּרֶא הָאִשָּׁה כִּי טוֹב הָעֵץ לְמַאֲכָל",
+      "translit": "",
+      "gematria": 1251
+    },
+    {
+      "id": 10,
+      "book_id": 1,
+      "chapter": 3,
+      "verse": 15,
+      "hebrew": "וְאֵיבָה אָשִׁית בֵּינְךָ וּבֵין הָאִשָּׁה",
+      "translit": "",
+      "gematria": 1196
+    },
+    {
+      "id": 11,
+      "book_id": 1,
+      "chapter": 4,
+      "verse": 1,
+      "hebrew": "וְהָאָדָם יָדַע אֶת חַוָּה אִשְׁתּוֹ וַתַּהַר וַתֵּלֶד אֶת קָיִן",
+      "translit": "",
+      "gematria": 2879
+    },
+    {
+      "id": 12,
+      "book_id": 1,
+      "chapter": 4,
+      "verse": 9,
+      "hebrew": "אֵי הֶבֶל אָחִיךָ",
+      "translit": "",
+      "gematria": 87
+    },
+    {
+      "id": 13,
+      "book_id": 1,
+      "chapter": 4,
+      "verse": 10,
+      "hebrew": "קוֹל דְּמֵי אָחִיךָ צֹעֲקִים אֵלַי מִן הָאֲדָמָה",
+      "translit": "",
+      "gematria": 725
+    },
+    {
+      "id": 14,
+      "book_id": 1,
+      "chapter": 5,
+      "verse": 1,
+      "hebrew": "זֶה סֵפֶר תּוֹלְדֹת אָדָם",
+      "translit": "",
+      "gematria": 1237
+    },
+    {
+      "id": 15,
+      "book_id": 1,
+      "chapter": 5,
+      "verse": 24,
+      "hebrew": "וַיִּתְהַלֵּךְ חֲנוֹךְ אֶת הָאֱלֹהִים וְאֵינֶנּוּ כִּי לָקַח אֹתוֹ אֱלֹהִים",
+      "translit": "",
+      "gematria": 1831
+    },
+    {
+      "id": 16,
+      "book_id": 1,
+      "chapter": 5,
+      "verse": 29,
+      "hebrew": "יְהוָה קִלְלָה אֶת הָאֲדָמָה לְמַעֲנִי",
+      "translit": "",
+      "gematria": 847
+    },
+    {
+      "id": 17,
+      "book_id": 1,
+      "chapter": 6,
+      "verse": 5,
+      "hebrew": "וַיַּרְא יְהוָה כִּי רַבָּה רָעַת הָאָדָם בָּאָרֶץ",
+      "translit": "",
+      "gematria": 1493
+    },
+    {
+      "id": 18,
+      "book_id": 1,
+      "chapter": 6,
+      "verse": 8,
+      "hebrew": "וְנֹחַ מָצָא חֵן בְּעֵינֵי יְהוָה",
+      "translit": "",
+      "gematria": 421
+    },
+    {
+      "id": 19,
+      "book_id": 1,
+      "chapter": 6,
+      "verse": 14,
+      "hebrew": "עֲשֵׂה לְךָ תֵּבַת עֲצֵי גֹפֶר",
+      "translit": "",
+      "gematria": 1680
+    },
+    {
+      "id": 20,
+      "book_id": 1,
+      "chapter": 7,
+      "verse": 1,
+      "hebrew": "בֹּא אַתָּה וְכָל בֵּיתְךָ אֶל הַתֵּבָה",
+      "translit": "",
+      "gematria": 1340
+    },
+    {
+      "id": 21,
+      "book_id": 1,
+      "chapter": 7,
+      "verse": 17,
+      "hebrew": "וַיְהִי הַמַּבּוּל אַרְבָּעִים יוֹם עַל הָאָרֶץ",
+      "translit": "",
+      "gematria": 889
+    },
+    {
+      "id": 22,
+      "book_id": 1,
+      "chapter": 7,
+      "verse": 23,
+      "hebrew": "וַיִּמַח אֶת כָּל הַיְקוּם אֲשֶׁר עַל פְּנֵי הָאֲדָמָה",
+      "translit": "",
+      "gematria": 1472
+    },
+    {
+      "id": 23,
+      "book_id": 1,
+      "chapter": 8,
+      "verse": 1,
+      "hebrew": "וַיִּזְכֹּר אֱלֹהִים אֶת נֹחַ",
+      "translit": "",
+      "gematria": 788
+    },
+    {
+      "id": 24,
+      "book_id": 1,
+      "chapter": 8,
+      "verse": 11,
+      "hebrew": "וַתָּבֹא אֵלָיו הַיּוֹנָה לְעֵת עֶרֶב",
+      "translit": "",
+      "gematria": 1304
+    },
+    {
+      "id": 25,
+      "book_id": 1,
+      "chapter": 8,
+      "verse": 21,
+      "hebrew": "לֹא אֹסִף לְקַלֵּל עוֹד אֶת הָאֲדָמָה בַּעֲבוּר הָאָדָם",
+      "translit": "",
+      "gematria": 1228
+    },
+    {
+      "id": 26,
+      "book_id": 1,
+      "chapter": 9,
+      "verse": 1,
+      "hebrew": "וַיְבָרֶךְ אֱלֹהִים אֶת נֹחַ וְאֶת בָּנָיו",
+      "translit": "",
+      "gematria": 1258
+    },
+    {
+      "id": 27,
+      "book_id": 1,
+      "chapter": 9,
+      "verse": 13,
+      "hebrew": "אֶת קַשְׁתִּי נָתַתִּי בֶּעָנָן",
+      "translit": "",
+      "gematria": 2243
+    },
+    {
+      "id": 28,
+      "book_id": 1,
+      "chapter": 9,
+      "verse": 20,
+      "hebrew": "וַיָּחֶל נֹחַ אִישׁ הָאֲדָמָה וַיִּטַּע כָּרֶם",
+      "translit": "",
+      "gematria": 833
+    },
+    {
+      "id": 29,
+      "book_id": 1,
+      "chapter": 10,
+      "verse": 1,
+      "hebrew": "אֵלֶּה תּוֹלְדֹת בְּנֵי נֹחַ שֵׁם חָם וָיָפֶת",
+      "translit": "",
+      "gematria": 1880
+    },
+    {
+      "id": 30,
+      "book_id": 1,
+      "chapter": 10,
+      "verse": 8,
+      "hebrew": "וְכוּשׁ יָלַד אֶת נִמְרֹד",
+      "translit": "",
+      "gematria": 1071
+    },
+    {
+      "id": 31,
+      "book_id": 1,
+      "chapter": 10,
+      "verse": 10,
+      "hebrew": "וַתְּהִי רֵאשִׁית מַמְלַכְתּוֹ בָּבֶל",
+      "translit": "",
+      "gematria": 1902
+    },
+    {
+      "id": 32,
+      "book_id": 1,
+      "chapter": 11,
+      "verse": 1,
+      "hebrew": "וַיְהִי כָל הָאָרֶץ שָׂפָה אֶחָת",
+      "translit": "",
+      "gematria": 1171
+    },
+    {
+      "id": 33,
+      "book_id": 1,
+      "chapter": 11,
+      "verse": 4,
+      "hebrew": "נִבְנֶה לָּנוּ עִיר וּמִגְדָּל",
+      "translit": "",
+      "gematria": 556
+    },
+    {
+      "id": 34,
+      "book_id": 1,
+      "chapter": 11,
+      "verse": 7,
+      "hebrew": "נֵרְדָה וְנָבְלָה שָׁם שְׂפָתָם",
+      "translit": "",
+      "gematria": 1512
+    },
+    {
+      "id": 35,
+      "book_id": 1,
+      "chapter": 11,
+      "verse": 31,
+      "hebrew": "וַיִּקַּח תֶּרַח אֶת אַבְרָם בְּנוֹ",
+      "translit": "",
+      "gematria": 1434
+    },
+    {
+      "id": 36,
+      "book_id": 1,
+      "chapter": 12,
+      "verse": 1,
+      "hebrew": "לֶךְ לְךָ מֵאַרְצְךָ וּמִמּוֹלַדְתְּךָ וּמִבֵּית אָבִיךָ",
+      "translit": "",
+      "gematria": 1488
+    },
+    {
+      "id": 37,
+      "book_id": 1,
+      "chapter": 12,
+      "verse": 2,
+      "hebrew": "וְאֶעֶשְׂךָ לְגוֹי גָּדוֹל",
+      "translit": "",
+      "gematria": 489
+    },
+    {
+      "id": 38,
+      "book_id": 1,
+      "chapter": 12,
+      "verse": 3,
+      "hebrew": "וַאֲבָרְכָה מְבָרְכֶיךָ",
+      "translit": "",
+      "gematria": 526
+    }
+  ],
+  "patterns": []
+}
