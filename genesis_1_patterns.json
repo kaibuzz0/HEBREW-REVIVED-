@@ -1,0 +1,303 @@
+{
+  "gematria_patterns": [
+    {
+      "verse": 1,
+      "gematria": 2701,
+      "katan": 82,
+      "themes": [
+        "creation",
+        "cosmology",
+        "divine_names"
+      ]
+    },
+    {
+      "verse": 2,
+      "gematria": 3546,
+      "katan": 234,
+      "themes": [
+        "chaos",
+        "spirit",
+        "pre-creation"
+      ]
+    },
+    {
+      "verse": 3,
+      "gematria": 813,
+      "katan": 66,
+      "themes": [
+        "light",
+        "speech",
+        "creation_by_word"
+      ]
+    },
+    {
+      "verse": 4,
+      "gematria": 1776,
+      "katan": 147,
+      "themes": [
+        "goodness",
+        "separation",
+        "evaluation"
+      ]
+    },
+    {
+      "verse": 5,
+      "gematria": 2141,
+      "katan": 152,
+      "themes": [
+        "naming",
+        "time",
+        "day_one"
+      ]
+    },
+    {
+      "verse": 6,
+      "gematria": 1660,
+      "katan": 130,
+      "themes": [
+        "firmament",
+        "cosmic_structure",
+        "day_two"
+      ]
+    },
+    {
+      "verse": 9,
+      "gematria": 3068,
+      "katan": 179,
+      "themes": [
+        "dry_land",
+        "gathering",
+        "day_three"
+      ]
+    },
+    {
+      "verse": 11,
+      "gematria": 5165,
+      "katan": 269,
+      "themes": [
+        "vegetation",
+        "reproduction",
+        "kinds"
+      ]
+    },
+    {
+      "verse": 14,
+      "gematria": 3744,
+      "katan": 252,
+      "themes": [
+        "luminaries",
+        "calendar",
+        "signs",
+        "day_four"
+      ]
+    },
+    {
+      "verse": 16,
+      "gematria": 5820,
+      "katan": 276,
+      "themes": [
+        "sun_moon",
+        "dominion",
+        "astronomy"
+      ]
+    },
+    {
+      "verse": 20,
+      "gematria": 3906,
+      "katan": 243,
+      "themes": [
+        "sea_creatures",
+        "birds",
+        "life",
+        "day_five"
+      ]
+    },
+    {
+      "verse": 24,
+      "gematria": 3279,
+      "katan": 219,
+      "themes": [
+        "land_animals",
+        "kinds",
+        "day_six"
+      ]
+    },
+    {
+      "verse": 26,
+      "gematria": 4764,
+      "katan": 327,
+      "themes": [
+        "humanity",
+        "image_of_god",
+        "dominion",
+        "plural_nahaseh"
+      ]
+    },
+    {
+      "verse": 27,
+      "gematria": 2816,
+      "katan": 161,
+      "themes": [
+        "creation",
+        "image",
+        "gender",
+        "human_dignity"
+      ]
+    },
+    {
+      "verse": 28,
+      "gematria": 5457,
+      "katan": 327,
+      "themes": [
+        "blessing",
+        "multiplication",
+        "dominion",
+        "stewardship"
+      ]
+    },
+    {
+      "verse": 31,
+      "gematria": 3065,
+      "katan": 167,
+      "themes": [
+        "very_good",
+        "evaluation",
+        "completion",
+        "day_six"
+      ]
+    }
+  ],
+  "seed_patterns": {
+    "RI": [
+      "1:1",
+      "1:1",
+      "1:3",
+      "1:3",
+      "1:4",
+      "1:6",
+      "1:14",
+      "1:16",
+      "1:20",
+      "1:24",
+      "1:27",
+      "1:27",
+      "1:28",
+      "1:28",
+      "1:28"
+    ],
+    "EL": [
+      "1:1"
+    ],
+    "HA": [
+      "1:1",
+      "1:2",
+      "1:2",
+      "1:3",
+      "1:5",
+      "1:9",
+      "1:16",
+      "1:20",
+      "1:24",
+      "1:24",
+      "1:28",
+      "1:28",
+      "1:31"
+    ],
+    "AM": [
+      "1:1",
+      "1:5",
+      "1:6",
+      "1:9",
+      "1:14",
+      "1:16",
+      "1:26",
+      "1:26",
+      "1:27"
+    ],
+    "VO": [
+      "1:2",
+      "1:2",
+      "1:3",
+      "1:3",
+      "1:4",
+      "1:4",
+      "1:5",
+      "1:9",
+      "1:14",
+      "1:14",
+      "1:16",
+      "1:26",
+      "1:31"
+    ],
+    "OR": [
+      "1:5",
+      "1:6",
+      "1:11",
+      "1:11",
+      "1:14",
+      "1:31"
+    ],
+    "NA": [
+      "1:20",
+      "1:24"
+    ]
+  },
+  "theological_patterns": {
+    "creation_by_word": [
+      3
+    ],
+    "separation": [
+      4
+    ],
+    "naming": [
+      5
+    ],
+    "evaluation_good": [
+      4,
+      31
+    ],
+    "creation_of_life": [
+      20,
+      24
+    ],
+    "humanity": [
+      26,
+      27
+    ]
+  },
+  "day_structure": {
+    "1": [
+      "light"
+    ],
+    "2": [
+      "firmament",
+      "sky",
+      "day_two"
+    ],
+    "3": [
+      "dry_land",
+      "vegetation",
+      "day_three"
+    ],
+    "4": [
+      "luminaries",
+      "calendar",
+      "day_four"
+    ],
+    "5": [
+      "sea_creatures",
+      "birds",
+      "day_five"
+    ],
+    "6": [
+      "land_animals",
+      "humanity",
+      "day_six"
+    ]
+  },
+  "summary": {
+    "total_verses": 16,
+    "total_gematria": 53721,
+    "avg_gematria": 3357.6
+  }
+}
