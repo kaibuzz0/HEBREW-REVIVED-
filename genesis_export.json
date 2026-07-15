@@ -1,0 +1,22 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "name": "Genesis",
+      "hebrew_name": "בראשית",
+      "chapters": 50
+    }
+  ],
+  "verses": [
+    {
+      "id": 1,
+      "book_id": 1,
+      "chapter": 1,
+      "verse": 1,
+      "hebrew": "בְּרֵאשִׁית בָּרָא אֱלֹהִים אֵת הַשָּׁמַיִם וְאֵת הָאָרֶץ",
+      "translit": "bereshit bara elohim et hashamayim ve'et ha'aretz",
+      "gematria": 2701
+    }
+  ],
+  "patterns": []
+}
