@@ -1,0 +1,72 @@
+{
+  "audit_date": "2026-07-15",
+  "agent": "Brain-Plug/Hermes",
+  "repositories_audited": [
+    {
+      "name": "HEBREW-REVIVED-",
+      "url": "https://github.com/kaibuzz0/HEBREW-REVIVED-",
+      "files": [
+        {
+          "path": "README.md",
+          "type": "markdown",
+          "size_bytes": 5094,
+          "sha256": "pending",
+          "purpose": "Project overview and description",
+          "encoding": "UTF-8",
+          "language": "English"
+        },
+        {
+          "path": "DECODING HEBREW",
+          "type": "python_script",
+          "size_bytes": 60086,
+          "sha256": "pending",
+          "purpose": "Hebrew NLP, Gematria, Root mapping",
+          "encoding": "UTF-8",
+          "language": "Python",
+          "dependencies": ["re", "dataclasses", "typing"],
+          "components": [
+            "GematriaEngine",
+            "HebrewNLP",
+            "RootMapper",
+            "EchoLockParser",
+            "HiveRouter"
+          ]
+        },
+        {
+          "path": "GENESIS CHAPTER1 DECODED.docx",
+          "type": "word_document",
+          "size_bytes": 104735,
+          "sha256": "pending",
+          "purpose": "Genesis 1 analysis and decoding",
+          "encoding": "binary",
+          "format": "Office Open XML",
+          "status": "requires_extraction"
+        },
+        {
+          "path": "RECLAIM YOUR SOVEREIGNTY LEGALY.docx",
+          "type": "word_document",
+          "size_bytes": 12202,
+          "sha256": "pending",
+          "purpose": "Legal document (unrelated to scripture)",
+          "encoding": "binary",
+          "format": "Office Open XML"
+        }
+      ]
+    }
+  ],
+  "total_files": 4,
+  "total_size_bytes": 182127,
+  "unreadable_files": [
+    "GENESIS CHAPTER1 DECODED.docx",
+    "RECLAIM YOUR SOVEREIGNTY LEGALY.docx"
+  ],
+  "missing_resources": [
+    "Westminster Leningrad Codex",
+    "Septuagint database",
+    "Dead Sea Scrolls transcriptions",
+    "Hebrew lexicons (BDB, HALOT)",
+    "Greek lexicons (BDAG, LSJ)",
+    "Textual apparatus",
+    "Manuscript images"
+  ]
+}
