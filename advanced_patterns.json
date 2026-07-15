@@ -1,0 +1,319 @@
+{
+  "divine_speech": [
+    {
+      "reference": "Genesis 3:22",
+      "hebrew": "וַיֹּאמֶר יְהוָה אֱלֹהִים הֵן הָאָדָם הָיָה כְּאַח...",
+      "indicator": "וַיֹּאמֶר"
+    },
+    {
+      "reference": "Genesis 25:23",
+      "hebrew": "וַיֹּאמֶר יְהוָה לָהּ שְׁנֵי גֹיִים בְּבִטְנֵךְ",
+      "indicator": "וַיֹּאמֶר"
+    },
+    {
+      "reference": "Genesis 28:16",
+      "hebrew": "וַיִּיקַץ יַעֲקֹב מִשְּׁנָתוֹ וַיֹּאמֶר אָכֵן יֵשׁ...",
+      "indicator": "וַיֹּאמֶר"
+    },
+    {
+      "reference": "Exodus 20:1",
+      "hebrew": "וַיְדַבֵּר אֱלֹהִים אֵת כָּל הַדְּבָרִים הָאֵלֶּה ...",
+      "indicator": "וַיְדַבֵּר"
+    },
+    {
+      "reference": "Exodus 24:12",
+      "hebrew": "וַיֹּאמֶר יְהוָה אֶל מֹשֶׁה עֲלֵה אֵלַי הָהָרָה",
+      "indicator": "וַיֹּאמֶר"
+    },
+    {
+      "reference": "Leviticus 1:1",
+      "hebrew": "וַיִּקְרָא אֶל מֹשֶׁה וַיְדַבֵּר יְהוָה אֵלָיו",
+      "indicator": "וַיְדַבֵּר"
+    },
+    {
+      "reference": "Leviticus 16:2",
+      "hebrew": "וַיֹּאמֶר יְהוָה אֶל מֹשֶׁה דַּבֵּר אֶל אַהֲרֹן",
+      "indicator": "וַיֹּאמֶר"
+    },
+    {
+      "reference": "Leviticus 23:1",
+      "hebrew": "וַיְדַבֵּר יְהוָה אֶל מֹשֶׁה לֵּאמֹר",
+      "indicator": "וַיְדַבֵּר"
+    },
+    {
+      "reference": "Numbers 1:1",
+      "hebrew": "וַיְדַבֵּר יְהוָה אֶל מֹשֶׁה בְּמִדְבַּר סִינַי",
+      "indicator": "וַיְדַבֵּר"
+    }
+  ],
+  "creation_formula": [
+    {
+      "verse": 3,
+      "hebrew": "וַיֹּאמֶר אֱלֹהִים יְהִי אוֹר וַיְהִי אוֹר",
+      "themes": [
+        "light",
+        "speech",
+        "creation_by_word"
+      ]
+    },
+    {
+      "verse": 5,
+      "hebrew": "וַיִּקְרָא אֱלֹהִים לָאוֹר יוֹם וְלַחֹשֶׁךְ קָרָא לָיְלָה וַיְהִי עֶרֶב וַיְהִי בֹקֶר יוֹם אֶחָד",
+      "themes": [
+        "naming",
+        "time",
+        "day_one"
+      ]
+    },
+    {
+      "verse": 6,
+      "hebrew": "וַיֹּאמֶר אֱלֹהִים יְהִי רָקִיעַ בְּתוֹךְ הַמָּיִם וִיהִי מַבְדִּיל בֵּין מַיִם לָמָיִם",
+      "themes": [
+        "firmament",
+        "cosmic_structure",
+        "day_two"
+      ]
+    },
+    {
+      "verse": 9,
+      "hebrew": "וַיֹּאמֶר אֱלֹהִים יִקָּווּ הַמַּיִם מִתַּחַת הַשָּׁמַיִם אֶל מָקוֹם אֶחָד וְתֵרָאֶה הַיַּבָּשָׁה וַיְהִי כֵן",
+      "themes": [
+        "dry_land",
+        "gathering",
+        "day_three"
+      ]
+    },
+    {
+      "verse": 11,
+      "hebrew": "וַיֹּאמֶר אֱלֹהִים תַּדְשֵׁא הָאָרֶץ דֶּשֶׁא עֵשֶׂב מַזְרִיעַ זֶרַע עֵץ פְּרִי עֹשֶׂה פְּרִי לְמִינוֹ אֲשֶׁר זַרְעוֹ בוֹ עַל הָאָרֶץ וַיְהִי כֵן",
+      "themes": [
+        "vegetation",
+        "reproduction",
+        "kinds"
+      ]
+    },
+    {
+      "verse": 14,
+      "hebrew": "וַיֹּאמֶר אֱלֹהִים יְהִי מְאֹרֹת בִּרְקִיעַ הַשָּׁמַיִם לְהַבְדִּיל בֵּין הַיוֹם וּבֵין הַלָּיְלָה וְהָיוּ לְאֹתֹת וּלְמוֹעֲדִים וּלְיָמִים וְשָׁנִים",
+      "themes": [
+        "luminaries",
+        "calendar",
+        "signs",
+        "day_four"
+      ]
+    },
+    {
+      "verse": 24,
+      "hebrew": "וַיֹּאמֶר אֱלֹהִים תּוֹצֵא הָאָרֶץ נֶפֶשׁ חַיָּה לְמִינָהּ בְּהֵמָה וָרֶמֶשׂ וְחַיְתוֹ אֶרֶץ לְמִינָהּ וַיְהִי כֵן",
+      "themes": [
+        "land_animals",
+        "kinds",
+        "day_six"
+      ]
+    },
+    {
+      "verse": 31,
+      "hebrew": "וַיַּרְא אֱלֹהִים אֶת כָּל אֲשֶׁר עָשָׂה וְהִנֵּה טוֹב מְאֹד וַיְהִי עֶרֶב וַיְהִי בֹקֶר יוֹם הַשִּׁשִּׁי",
+      "themes": [
+        "very_good",
+        "evaluation",
+        "completion",
+        "day_six"
+      ]
+    }
+  ],
+  "separation_patterns": [],
+  "evaluation_good": [
+    {
+      "verse": 4,
+      "themes": [
+        "goodness",
+        "separation",
+        "evaluation"
+      ]
+    }
+  ],
+  "naming_patterns": [],
+  "numerical_patterns": {
+    "multiples_of_7": [
+      {
+        "reference": "Genesis 11:7",
+        "gematria": 1512,
+        "hebrew": "נֵרְדָה וְנָבְלָה שָׁם שְׂפָתָ"
+      },
+      {
+        "reference": "Genesis 17:1",
+        "gematria": 1036,
+        "hebrew": "אֲנִי אֵל שַׁדַּי הִתְהַלֵּךְ "
+      },
+      {
+        "reference": "Leviticus 11:44",
+        "gematria": 2681,
+        "hebrew": "וְהִתְקַדִּשְׁתֶּם וִהְיִיתֶם "
+      },
+      {
+        "reference": "Numbers 6:24",
+        "gematria": 854,
+        "hebrew": "יְבָרֶכְךָ יְהוָה וְיִשְׁמְרֶך"
+      },
+      {
+        "reference": "Numbers 14:18",
+        "gematria": 658,
+        "hebrew": "יְהוָה אֶרֶךְ אַפַּיִם וְרַב ח"
+      },
+      {
+        "reference": "Deuteronomy 18:15",
+        "gematria": 896,
+        "hebrew": "נָבִיא מִקִּרְבְּךָ מֵאַחֶיךָ "
+      }
+    ],
+    "multiples_of_13": [
+      {
+        "reference": "Genesis 3:15",
+        "gematria": 1196,
+        "hebrew": "וְאֵיבָה אָשִׁית בֵּינְךָ וּבֵ"
+      },
+      {
+        "reference": "Genesis 3:22",
+        "gematria": 663,
+        "hebrew": "וַיֹּאמֶר יְהוָה אֱלֹהִים הֵן "
+      },
+      {
+        "reference": "Exodus 14:14",
+        "gematria": 1625,
+        "hebrew": "יְהוָה יִלָּחֵם לָכֶם וְאַתֶּם"
+      },
+      {
+        "reference": "Leviticus 1:1",
+        "gematria": 988,
+        "hebrew": "וַיִּקְרָא אֶל מֹשֶׁה וַיְדַבֵ"
+      },
+      {
+        "reference": "Leviticus 19:2",
+        "gematria": 1508,
+        "hebrew": "קְדֹשִׁים תִּהְיוּ כִּי קָדוֹש"
+      },
+      {
+        "reference": "Numbers 6:26",
+        "gematria": 1326,
+        "hebrew": "יִשָּׂא יְהוָה פָּנָיו אֵלֶיךָ"
+      },
+      {
+        "reference": "Numbers 24:17",
+        "gematria": 1742,
+        "hebrew": "אֶרְאֶנּוּ וְלֹא עַתָּה רְאִית"
+      },
+      {
+        "reference": "Deuteronomy 6:4",
+        "gematria": 1118,
+        "hebrew": "שְׁמַע יִשְׂרָאֵל יְהוָה אֱלֹה"
+      }
+    ],
+    "multiples_of_26": [
+      {
+        "reference": "Genesis 3:15",
+        "gematria": 1196,
+        "hebrew": "וְאֵיבָה אָשִׁית בֵּינְךָ וּבֵ"
+      },
+      {
+        "reference": "Leviticus 1:1",
+        "gematria": 988,
+        "hebrew": "וַיִּקְרָא אֶל מֹשֶׁה וַיְדַבֵ"
+      },
+      {
+        "reference": "Leviticus 19:2",
+        "gematria": 1508,
+        "hebrew": "קְדֹשִׁים תִּהְיוּ כִּי קָדוֹש"
+      },
+      {
+        "reference": "Numbers 6:26",
+        "gematria": 1326,
+        "hebrew": "יִשָּׂא יְהוָה פָּנָיו אֵלֶיךָ"
+      },
+      {
+        "reference": "Numbers 24:17",
+        "gematria": 1742,
+        "hebrew": "אֶרְאֶנּוּ וְלֹא עַתָּה רְאִית"
+      },
+      {
+        "reference": "Deuteronomy 6:4",
+        "gematria": 1118,
+        "hebrew": "שְׁמַע יִשְׂרָאֵל יְהוָה אֱלֹה"
+      }
+    ]
+  },
+  "seed_continuity": {
+    "Genesis": {
+      "RI": 26,
+      "EL": 17,
+      "HA": 52,
+      "AM": 29,
+      "VO": 50,
+      "NA": 26,
+      "OR": 12,
+      "GE": 4
+    },
+    "Exodus": {
+      "HA": 25,
+      "RI": 10,
+      "VO": 31,
+      "AM": 15,
+      "EL": 7,
+      "NA": 7,
+      "OR": 6
+    },
+    "Leviticus": {
+      "VO": 18,
+      "RI": 7,
+      "EL": 4,
+      "HA": 11,
+      "AM": 7,
+      "NA": 2,
+      "OR": 1
+    },
+    "Numbers": {
+      "VO": 22,
+      "RI": 10,
+      "HA": 10,
+      "EL": 4,
+      "NA": 5,
+      "AM": 2,
+      "OR": 2
+    },
+    "Deuteronomy": {
+      "EL": 10,
+      "HA": 26,
+      "RI": 10,
+      "AM": 12,
+      "VO": 22,
+      "OR": 7,
+      "NA": 8
+    }
+  },
+  "thematic_bridges": [
+    {
+      "connection": "Creation → Exodus",
+      "theme": "New creation through deliverance",
+      "verses": [
+        "Genesis 1:1",
+        "Exodus 3:14"
+      ]
+    },
+    {
+      "connection": "Deliverance → Holiness",
+      "theme": "Redemption leads to sanctification",
+      "verses": [
+        "Exodus 15:2",
+        "Leviticus 19:2"
+      ]
+    },
+    {
+      "connection": "Law → Covenant renewal",
+      "theme": "Blessing and curse framework",
+      "verses": [
+        "Leviticus 26",
+        "Deuteronomy 28"
+      ]
+    }
+  ]
+}
