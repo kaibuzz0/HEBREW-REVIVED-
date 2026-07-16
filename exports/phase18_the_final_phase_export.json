@@ -1,0 +1,86 @@
+{
+  "phase": "Phase 18",
+  "total_entries": 84,
+  "books": [
+    {
+      "book": "Hypsiphrone (Nag Hammadi)",
+      "count": 4
+    },
+    {
+      "book": "Apocalypse of Moses",
+      "count": 5
+    },
+    {
+      "book": "Life of Adam and Eve (Full)",
+      "count": 6
+    },
+    {
+      "book": "Sentences of the Syriac Fathers",
+      "count": 5
+    },
+    {
+      "book": "Quadratus' Apology",
+      "count": 4
+    },
+    {
+      "book": "Aristides' Apology",
+      "count": 5
+    },
+    {
+      "book": "Rule of the Congregation (DSS)",
+      "count": 5
+    },
+    {
+      "book": "Rule of the Benedictions (DSS)",
+      "count": 4
+    },
+    {
+      "book": "Ma'aseh Merkavah",
+      "count": 4
+    },
+    {
+      "book": "Tikkunei Zohar",
+      "count": 4
+    },
+    {
+      "book": "Book of the Mysteries of the Heavens",
+      "count": 4
+    },
+    {
+      "book": "Book of Enoch (Additional)",
+      "count": 4
+    },
+    {
+      "book": "Martyrdom of Clement",
+      "count": 4
+    },
+    {
+      "book": "Letter of Lentulus",
+      "count": 4
+    },
+    {
+      "book": "Book of the Wars of the Lord",
+      "count": 3
+    },
+    {
+      "book": "Book of Nathan the Prophet",
+      "count": 3
+    },
+    {
+      "book": "Book of Gad the Seer (Complete)",
+      "count": 4
+    },
+    {
+      "book": "Arabic Infancy Gospel",
+      "count": 4
+    },
+    {
+      "book": "Syriac Apocalypse of Paul",
+      "count": 4
+    },
+    {
+      "book": "Armenian Infancy Gospel",
+      "count": 4
+    }
+  ]
+}
