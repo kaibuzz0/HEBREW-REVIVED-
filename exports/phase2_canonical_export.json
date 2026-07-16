@@ -1,0 +1,30 @@
+{
+  "phase": "Phase 2",
+  "total_entries": 53,
+  "books": [
+    {
+      "book": "Matthew",
+      "count": 14
+    },
+    {
+      "book": "Mark",
+      "count": 10
+    },
+    {
+      "book": "Luke",
+      "count": 11
+    },
+    {
+      "book": "Acts",
+      "count": 10
+    },
+    {
+      "book": "Romans",
+      "count": 5
+    },
+    {
+      "book": "1 Corinthians",
+      "count": 3
+    }
+  ]
+}
