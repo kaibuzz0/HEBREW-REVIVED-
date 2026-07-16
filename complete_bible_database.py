@@ -205,6 +205,19 @@ class CompleteBibleDatabase:
             )
         """)
         
+        # Gospel of Judas
+        self.cursor.execute("""
+            CREATE TABLE IF NOT EXISTS gospel_of_judas (
+                id INTEGER PRIMARY KEY,
+                passage_number INTEGER,
+                coptic_text TEXT,
+                greek_fragments TEXT,
+                english_text TEXT,
+                parallel_passages TEXT,
+                theme TEXT
+            )
+        """)
+        
         # Jesus' 30 years reconstruction
         self.cursor.execute("""
             CREATE TABLE IF NOT EXISTS jesus_years (
