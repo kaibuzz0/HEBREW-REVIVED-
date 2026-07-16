@@ -1,0 +1,287 @@
+{
+  "title": "Odes of Solomon",
+  "subtitle": "Early Christian Hymns",
+  "total_odes": 42,
+  "language": "Syriac (original), with Greek fragments",
+  "date": "c. 100-150 CE",
+  "discovery": "Codex Nitriensis (British Museum), 18th century",
+  "significance": "Earliest Christian hymnbook - predates much of New Testament canon",
+  "themes": [
+    "Salvation and deliverance",
+    "Christ as living water",
+    "Incarnation and resurrection",
+    "Personal relationship with God",
+    "Spiritual transformation",
+    "Joy and praise",
+    "Victory over death and evil"
+  ],
+  "distinctive_features": [
+    "First known use of 'Christian' in literature",
+    "Strong emphasis on personal experience of salvation",
+    "Beautiful water imagery (living water, streams, rivers)",
+    "No ecclesiastical structure - direct relationship with God",
+    "Mystical and experiential rather than doctrinal",
+    "Similar themes to Gospel of John but independent"
+  ],
+  "parallels": [
+    "John 4:10 - Living water",
+    "John 7:38 - Streams of living water",
+    "John 15 - Vine and branches",
+    "Psalm 23 - Shepherd imagery",
+    "Revelation 22 - Tree of life, living water"
+  ],
+  "odes": [
+    {
+      "ode": 1,
+      "title": "Christ as Crown",
+      "themes": "Salvation, Crown of Truth",
+      "preview": "The Lord is on my head like a crown, and I shall never be without him. Plaited for me is the crown of truth, and it caused your branches to blossom in..."
+    },
+    {
+      "ode": 2,
+      "title": "Deliverance",
+      "themes": "Light, Truth, Knowledge",
+      "preview": "He who brought me from the deep, brought me from darkness into light. He who scattered my bonds, and set my feet upon the rock of truth. He who gave m..."
+    },
+    {
+      "ode": 3,
+      "title": "Living Waters",
+      "themes": "Wisdom, Truth, Spirit",
+      "preview": "The living waters of rest are from your love, and they give life to my soul. The streams of your wisdom flow, and they water my heart. The fountain of..."
+    },
+    {
+      "ode": 4,
+      "title": "Infinite Love",
+      "themes": "Grace, Power, Beauty",
+      "preview": "No one can find the height of your love, for it is infinite in its greatness. No one can cross the boundary of your grace, for it is boundless in its ..."
+    },
+    {
+      "ode": 5,
+      "title": "Seeking and Finding",
+      "themes": "Grace, Mercy, Salvation",
+      "preview": "I ran toward your grace, and I was brought to your mercy. I sought after your truth, and I found your salvation. I called upon your name, and you hear..."
+    },
+    {
+      "ode": 6,
+      "title": "The Son Appears",
+      "themes": "Resurrection, Truth, Light",
+      "preview": "The Son of the Most High appeared, and the dead were made alive. The Word of truth came forth, and the captives were set free. The light of the Father..."
+    },
+    {
+      "ode": 7,
+      "title": "Joy of the Lord",
+      "themes": "Sun, Dew, Rain, Wind",
+      "preview": "As the sun is the joy of them that seek for the daybreak, so is the Lord my joy. As the dew refreshes the earth, so does his Word refresh my soul. As ..."
+    },
+    {
+      "ode": 8,
+      "title": "Invitation",
+      "themes": "Exchange of Love",
+      "preview": "Open your ears, and I shall speak to you. Give me your soul, and I shall give you mine. Offer me your heart, and I shall offer you understanding. Love..."
+    },
+    {
+      "ode": 9,
+      "title": "Mouth Opened",
+      "themes": "Word, Beauty, Glory",
+      "preview": "The Lord has directed my mouth, and has opened my lips. He has caused his Word to dwell in my heart, and has filled my mind with understanding. He has..."
+    },
+    {
+      "ode": 10,
+      "title": "The Shepherd",
+      "themes": "Psalm 23 imagery",
+      "preview": "The Lord has become my shepherd, and I shall not want. He has made me to lie down in green pastures, and has led me beside still waters. He has restor..."
+    },
+    {
+      "ode": 11,
+      "title": "Transformation",
+      "themes": "Understanding, Light, Truth",
+      "preview": "My heart was split, and I received understanding. My eyes were opened, and I saw the light. My ears were unstopped, and I heard the truth. My mouth wa..."
+    },
+    {
+      "ode": 12,
+      "title": "Victory",
+      "themes": "Abyss, Darkness, Mountains",
+      "preview": "The abyss was destroyed before my face, and the darkness fled from before me. The snares were broken, and I passed over. The rivers were dried up, and..."
+    },
+    {
+      "ode": 13,
+      "title": "The Lord Is My...",
+      "themes": "Hope, Salvation, Refuge",
+      "preview": "The Lord is my hope, and I shall not be confounded. The Lord is my salvation, and I shall not be ashamed. The Lord is my refuge, and I shall not be af..."
+    },
+    {
+      "ode": 14,
+      "title": "Embraced by Love",
+      "themes": "Love, Grace, Truth, Spirit",
+      "preview": "The love of the Most High has embraced me, and I am not moved. The grace of the Father has encompassed me, and I am not shaken. The truth of the Son h..."
+    },
+    {
+      "ode": 15,
+      "title": "Garments of Glory",
+      "themes": "Incorruption, Immortality, Light",
+      "preview": "I put on the garment of incorruption, and I am not corrupted. I put on the crown of immortality, and I die not. I put on the armor of light, and I am ..."
+    },
+    {
+      "ode": 16,
+      "title": "Fruitfulness",
+      "themes": "Dew, Rain, Sun, Wind",
+      "preview": "The dew of the Lord descended upon me, and I became fruitful. The rain of the Most High watered me, and I grew. The sun of righteousness shone upon me..."
+    },
+    {
+      "ode": 17,
+      "title": "Lifted to Heaven",
+      "themes": "Spirit, Love, Truth, Life",
+      "preview": "I rested on the Spirit of the Lord, and she lifted me up to heaven. I mounted on a perfect thought, and it bore me aloft. I flew on the wings of love,..."
+    },
+    {
+      "ode": 18,
+      "title": "Gates Opened",
+      "themes": "Righteousness, Mercy, Grace, Joy",
+      "preview": "The gates of righteousness opened to me, and I entered in. The doors of mercy were opened to me, and I passed through. The windows of grace were opene..."
+    },
+    {
+      "ode": 19,
+      "title": "Satisfaction",
+      "themes": "Living Water, Tree of Life",
+      "preview": "I drank from the living water which never fails, and I thirst no more. I ate from the tree of life which bears fruit always, and I hunger no more. I s..."
+    },
+    {
+      "ode": 20,
+      "title": "The Lord as Harbor",
+      "themes": "Safety, Stability, Guidance",
+      "preview": "The Lord has become my harbor, and I am not tossed. The Lord has become my anchor, and I am not drifted. The Lord has become my pilot, and I err not. ..."
+    },
+    {
+      "ode": 21,
+      "title": "Ministry",
+      "themes": "Priest, Prophet, Apostle, Teacher",
+      "preview": "I am a priest of the Most High, and I minister to him. I am a prophet of the Lord, and I speak his Word. I am an apostle of the Son, and I bear his me..."
+    },
+    {
+      "ode": 22,
+      "title": "The Virgin",
+      "themes": "Christ, Virgin Birth, Kingdom",
+      "preview": "The virgin became a mother with great mercies. And she travailed and bore a son, and he became great. And he received the crown of glory, and the diad..."
+    },
+    {
+      "ode": 23,
+      "title": "Victory Over Evil",
+      "themes": "Dragon, Serpent, Lion, Wolf",
+      "preview": "The dragon was destroyed, and his venom was drunk up. The serpent was crushed, and his head was bruised. The lion was overcome, and his teeth were bro..."
+    },
+    {
+      "ode": 24,
+      "title": "Liberation",
+      "themes": "Prisoners, Captives, Dead",
+      "preview": "The chains were broken, and the prisoners went forth. The doors were opened, and the captives came out. The graves were opened, and the dead arose. Th..."
+    },
+    {
+      "ode": 25,
+      "title": "Grace Received",
+      "themes": "Grace, Truth, Life, Love, Peace",
+      "preview": "Grace was given to me, and I did not reject it. Truth was shown to me, and I did not deny it. Life was offered to me, and I did not refuse it. Love wa..."
+    },
+    {
+      "ode": 26,
+      "title": "Paradox",
+      "themes": "Humility, Poverty, Weakness",
+      "preview": "I was made great, and I became humble. I was exalted, and I was brought low. I was rich, and I became poor. I was wise, and I became foolish. I was st..."
+    },
+    {
+      "ode": 27,
+      "title": "Chosen Portion",
+      "themes": "Inheritance, Possession, Delight",
+      "preview": "The Lord is my chosen portion, and my cup is full. The Lord is my inheritance, and my lot is good. The Lord is my possession, and my treasure is rich...."
+    },
+    {
+      "ode": 28,
+      "title": "Song of Praise",
+      "themes": "Music, Dance, Worship",
+      "preview": "The singers sang, and I joined their song. The musicians played, and I added my voice. The dancers danced, and I moved with them. The trumpeters sound..."
+    },
+    {
+      "ode": 29,
+      "title": "Light Breaks Forth",
+      "themes": "Dawn, Day, Morning",
+      "preview": "The light of the Lord broke forth, and the darkness was driven away. The dawn of righteousness arose, and the night was ended. The day of salvation da..."
+    },
+    {
+      "ode": 30,
+      "title": "Revelation",
+      "themes": "Sealed, Hidden, Secret, Mystery",
+      "preview": "The sealed things were opened, and I read them. The hidden things were revealed, and I understood them. The secret things were made known, and I behel..."
+    },
+    {
+      "ode": 31,
+      "title": "Sowing and Reaping",
+      "themes": "Agricultural imagery",
+      "preview": "The sowers went forth, and they sowed. The reapers came after, and they reaped. The gatherers followed, and they gathered. The storekeepers received, ..."
+    },
+    {
+      "ode": 32,
+      "title": "Building",
+      "themes": "Temple, Church imagery",
+      "preview": "The builders built, and the structure arose. The carpenters worked, and the frame was set up. The masons laid stones, and the wall was raised. The pai..."
+    },
+    {
+      "ode": 33,
+      "title": "The Bridegroom",
+      "themes": "Marriage, Church as Bride",
+      "preview": "The bridegroom came, and the bride was ready. The bridegroom knocked, and the bride opened. The bridegroom entered, and the bride received him. The br..."
+    },
+    {
+      "ode": 34,
+      "title": "Waters",
+      "themes": "Life, Power, Abundance",
+      "preview": "The spring bubbled up, and the water was sweet. The stream flowed, and the current was strong. The river ran, and the flood was deep. The sea was stir..."
+    },
+    {
+      "ode": 35,
+      "title": "The Seed",
+      "themes": "Death and Resurrection, John 12:24",
+      "preview": "The seed fell into the ground, and died. The seed sprang up, and lived. The seed grew, and bore fruit. The seed ripened, and was harvested. The seed w..."
+    },
+    {
+      "ode": 36,
+      "title": "The Branch",
+      "themes": "Grafting, Growth, Fruitfulness",
+      "preview": "The branch was cut off, and grafted in. The branch received sap, and flourished. The branch bore leaves, and was green. The branch produced fruit, and..."
+    },
+    {
+      "ode": 37,
+      "title": "The Way",
+      "themes": "Journey, Progress, Path of Life",
+      "preview": "The way was made, and I walked in it. The path was prepared, and I ran on it. The road was built, and I journeyed on it. The highway was raised, and I..."
+    },
+    {
+      "ode": 38,
+      "title": "Access Granted",
+      "themes": "Door, Gate, Veil, Access to God",
+      "preview": "The door was opened, and I entered. The gate was lifted up, and I passed through. The veil was rent, and I saw within. The curtain was drawn aside, an..."
+    },
+    {
+      "ode": 39,
+      "title": "Assurance",
+      "themes": "Testimony, Witness, Faith",
+      "preview": "The testimony was confirmed, and I believed. The witness was established, and I trusted. The evidence was given, and I accepted. The proof was shown, ..."
+    },
+    {
+      "ode": 40,
+      "title": "Call and Response",
+      "themes": "Awakening, Obedience",
+      "preview": "The trumpet sounded, and I awoke. The voice called, and I answered. The command was given, and I obeyed. The summons came, and I responded. The invita..."
+    },
+    {
+      "ode": 41,
+      "title": "The Race",
+      "themes": "Athletic imagery, Victory",
+      "preview": "The race was set, and I ran. The contest was appointed, and I strove. The battle was arranged, and I fought. The war was declared, and I conquered. Th..."
+    },
+    {
+      "ode": 42,
+      "title": "The Word",
+      "themes": "John 1:1, Incarnation, Resurrection",
+      "preview": "The Word was with God, and the Word was God. The Word was made flesh, and dwelt among us. The Word became man, and walked with us. The Word suffered, ..."
+    }
+  ]
+}

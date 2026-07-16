@@ -218,6 +218,18 @@ class CompleteBibleDatabase:
             )
         """)
         
+        # Odes of Solomon
+        self.cursor.execute("""
+            CREATE TABLE IF NOT EXISTS odes_of_solomon (
+                id INTEGER PRIMARY KEY,
+                ode_number INTEGER,
+                syriac_text TEXT,
+                english_text TEXT,
+                title TEXT,
+                themes TEXT
+            )
+        """)
+        
         # Jesus' 30 years reconstruction
         self.cursor.execute("""
             CREATE TABLE IF NOT EXISTS jesus_years (
