@@ -1,0 +1,78 @@
+{
+  "phase": "Phase 8",
+  "total_entries": 57,
+  "books": [
+    {
+      "book": "DSS: Community Rule",
+      "count": 3
+    },
+    {
+      "book": "DSS: War Scroll",
+      "count": 3
+    },
+    {
+      "book": "DSS: Thanksgiving Hymns",
+      "count": 3
+    },
+    {
+      "book": "DSS: Habakkuk Commentary",
+      "count": 3
+    },
+    {
+      "book": "Gospel of Truth",
+      "count": 3
+    },
+    {
+      "book": "Treatise on Resurrection",
+      "count": 2
+    },
+    {
+      "book": "Tripartite Tractate",
+      "count": 3
+    },
+    {
+      "book": "On Baptism",
+      "count": 2
+    },
+    {
+      "book": "On Eucharist",
+      "count": 2
+    },
+    {
+      "book": "Didache",
+      "count": 5
+    },
+    {
+      "book": "Epistle of Barnabas",
+      "count": 4
+    },
+    {
+      "book": "1 Clement",
+      "count": 4
+    },
+    {
+      "book": "Ignatius to Ephesians",
+      "count": 3
+    },
+    {
+      "book": "Polycarp to Philippians",
+      "count": 3
+    },
+    {
+      "book": "Ginza Rabba",
+      "count": 3
+    },
+    {
+      "book": "Kephalaia",
+      "count": 3
+    },
+    {
+      "book": "Psalms of Solomon",
+      "count": 4
+    },
+    {
+      "book": "Odes of Solomon (Additional)",
+      "count": 4
+    }
+  ]
+}
