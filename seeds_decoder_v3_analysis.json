@@ -1,0 +1,597 @@
+{
+  "numerology": {
+    "significant_numbers_found": {
+      "1": {
+        "frequency": 273,
+        "meaning": "Unity, God",
+        "significance": "HIGH"
+      },
+      "2": {
+        "frequency": 47,
+        "meaning": "Witness, Division",
+        "significance": "HIGH"
+      },
+      "3": {
+        "frequency": 60,
+        "meaning": "Divine, Trinity, Resurrection",
+        "significance": "HIGH"
+      },
+      "4": {
+        "frequency": 45,
+        "meaning": "Creation, World, Cardinal directions",
+        "significance": "HIGH"
+      },
+      "5": {
+        "frequency": 128,
+        "meaning": "Grace, Torah",
+        "significance": "HIGH"
+      },
+      "6": {
+        "frequency": 34,
+        "meaning": "Man, Creation",
+        "significance": "HIGH"
+      },
+      "7": {
+        "frequency": 38,
+        "meaning": "Perfection, Completion, Sabbath",
+        "significance": "HIGH"
+      },
+      "8": {
+        "frequency": 27,
+        "meaning": "New beginning, Covenant",
+        "significance": "HIGH"
+      },
+      "10": {
+        "frequency": 190,
+        "meaning": "Completion, Commandments",
+        "significance": "HIGH"
+      },
+      "12": {
+        "frequency": 21,
+        "meaning": "Government, Tribes, Apostles",
+        "significance": "HIGH"
+      },
+      "13": {
+        "frequency": 19,
+        "meaning": "Rebellion, Babylon",
+        "significance": "HIGH"
+      },
+      "14": {
+        "frequency": 16,
+        "meaning": "Passover, Salvation",
+        "significance": "HIGH"
+      },
+      "20": {
+        "frequency": 152,
+        "meaning": "Distress, Expectancy",
+        "significance": "HIGH"
+      },
+      "30": {
+        "frequency": 91,
+        "meaning": "Priesthood, Blood",
+        "significance": "HIGH"
+      },
+      "40": {
+        "frequency": 62,
+        "meaning": "Testing, Trial, Preparation",
+        "significance": "HIGH"
+      },
+      "50": {
+        "frequency": 38,
+        "meaning": "Pentecost, Jubilee, Freedom",
+        "significance": "HIGH"
+      },
+      "70": {
+        "frequency": 11,
+        "meaning": "Nations, Elders, Completion",
+        "significance": "HIGH"
+      },
+      "72": {
+        "frequency": 2,
+        "meaning": "Disciples, Nations",
+        "significance": "PRESENT"
+      },
+      "100": {
+        "frequency": 5,
+        "meaning": "Election, Children of promise",
+        "significance": "PRESENT"
+      },
+      "120": {
+        "frequency": 1,
+        "meaning": "Divine appointment, End time",
+        "significance": "PRESENT"
+      },
+      "1672": {
+        "frequency": 1,
+        "meaning": "COMPLETE ARCHIVE - All texts unified",
+        "significance": "ARCHIVE TOTAL"
+      }
+    },
+    "multiples_of_7": 92,
+    "multiples_of_12": 53,
+    "multiples_of_40": 73,
+    "total_chapters": 1638,
+    "unique_numbers": 78
+  },
+  "thematic_alignment": {
+    "mystery": {
+      "tables_with_theme": 42,
+      "total_mentions": 61,
+      "coverage_percent": 13.25
+    },
+    "fall": {
+      "tables_with_theme": 75,
+      "total_mentions": 131,
+      "coverage_percent": 23.66
+    },
+    "kingdom": {
+      "tables_with_theme": 85,
+      "total_mentions": 166,
+      "coverage_percent": 26.81
+    },
+    "incarnation": {
+      "tables_with_theme": 144,
+      "total_mentions": 294,
+      "coverage_percent": 45.43
+    },
+    "sacrifice": {
+      "tables_with_theme": 42,
+      "total_mentions": 67,
+      "coverage_percent": 13.25
+    },
+    "ascension": {
+      "tables_with_theme": 53,
+      "total_mentions": 102,
+      "coverage_percent": 16.72
+    },
+    "wisdom": {
+      "tables_with_theme": 79,
+      "total_mentions": 138,
+      "coverage_percent": 24.92
+    },
+    "ascent": {
+      "tables_with_theme": 110,
+      "total_mentions": 239,
+      "coverage_percent": 34.7
+    },
+    "spirit": {
+      "tables_with_theme": 27,
+      "total_mentions": 42,
+      "coverage_percent": 8.52
+    },
+    "creation": {
+      "tables_with_theme": 76,
+      "total_mentions": 129,
+      "coverage_percent": 23.97
+    },
+    "resurrection": {
+      "tables_with_theme": 31,
+      "total_mentions": 44,
+      "coverage_percent": 9.78
+    },
+    "judgment": {
+      "tables_with_theme": 53,
+      "total_mentions": 78,
+      "coverage_percent": 16.72
+    },
+    "prophecy": {
+      "tables_with_theme": 37,
+      "total_mentions": 55,
+      "coverage_percent": 11.67
+    },
+    "apocalypse": {
+      "tables_with_theme": 88,
+      "total_mentions": 125,
+      "coverage_percent": 27.76
+    },
+    "bridal": {
+      "tables_with_theme": 11,
+      "total_mentions": 16,
+      "coverage_percent": 3.47
+    },
+    "love": {
+      "tables_with_theme": 47,
+      "total_mentions": 67,
+      "coverage_percent": 14.83
+    },
+    "faith": {
+      "tables_with_theme": 45,
+      "total_mentions": 69,
+      "coverage_percent": 14.2
+    },
+    "redemption": {
+      "tables_with_theme": 28,
+      "total_mentions": 34,
+      "coverage_percent": 8.83
+    },
+    "law": {
+      "tables_with_theme": 39,
+      "total_mentions": 50,
+      "coverage_percent": 12.3
+    }
+  },
+  "moral_alignment": {
+    "justice": {
+      "tables_with_principle": 53,
+      "total_mentions": 79,
+      "coverage_percent": 16.72
+    },
+    "repentance": {
+      "tables_with_principle": 77,
+      "total_mentions": 132,
+      "coverage_percent": 24.29
+    },
+    "purity": {
+      "tables_with_principle": 47,
+      "total_mentions": 68,
+      "coverage_percent": 14.83
+    },
+    "give": {
+      "tables_with_principle": 52,
+      "total_mentions": 102,
+      "coverage_percent": 16.4
+    },
+    "peace": {
+      "tables_with_principle": 15,
+      "total_mentions": 22,
+      "coverage_percent": 4.73
+    },
+    "forgive": {
+      "tables_with_principle": 9,
+      "total_mentions": 11,
+      "coverage_percent": 2.84
+    },
+    "truth": {
+      "tables_with_principle": 48,
+      "total_mentions": 78,
+      "coverage_percent": 15.14
+    },
+    "mercy": {
+      "tables_with_principle": 21,
+      "total_mentions": 36,
+      "coverage_percent": 6.62
+    },
+    "patience": {
+      "tables_with_principle": 6,
+      "total_mentions": 6,
+      "coverage_percent": 1.89
+    },
+    "humility": {
+      "tables_with_principle": 6,
+      "total_mentions": 6,
+      "coverage_percent": 1.89
+    },
+    "love_enemies": {
+      "tables_with_principle": 1,
+      "total_mentions": 1,
+      "coverage_percent": 0.32
+    },
+    "turn_cheek": {
+      "tables_with_principle": 1,
+      "total_mentions": 1,
+      "coverage_percent": 0.32
+    }
+  },
+  "figure_alignment": {
+    "Enoch": {
+      "tables_with_figure": 7,
+      "total_mentions": 14,
+      "coverage_percent": 2.21
+    },
+    "Word": {
+      "tables_with_figure": 61,
+      "total_mentions": 96,
+      "coverage_percent": 19.24
+    },
+    "Noah": {
+      "tables_with_figure": 10,
+      "total_mentions": 14,
+      "coverage_percent": 3.15
+    },
+    "Uriel": {
+      "tables_with_figure": 2,
+      "total_mentions": 2,
+      "coverage_percent": 0.63
+    },
+    "Eve": {
+      "tables_with_figure": 112,
+      "total_mentions": 234,
+      "coverage_percent": 35.33
+    },
+    "Mary": {
+      "tables_with_figure": 16,
+      "total_mentions": 39,
+      "coverage_percent": 5.05
+    },
+    "Jesus": {
+      "tables_with_figure": 45,
+      "total_mentions": 148,
+      "coverage_percent": 14.2
+    },
+    "Peter": {
+      "tables_with_figure": 14,
+      "total_mentions": 26,
+      "coverage_percent": 4.42
+    },
+    "Thomas": {
+      "tables_with_figure": 5,
+      "total_mentions": 13,
+      "coverage_percent": 1.58
+    },
+    "James": {
+      "tables_with_figure": 5,
+      "total_mentions": 10,
+      "coverage_percent": 1.58
+    },
+    "Serpent": {
+      "tables_with_figure": 7,
+      "total_mentions": 7,
+      "coverage_percent": 2.21
+    },
+    "Adam": {
+      "tables_with_figure": 21,
+      "total_mentions": 41,
+      "coverage_percent": 6.62
+    },
+    "John": {
+      "tables_with_figure": 11,
+      "total_mentions": 23,
+      "coverage_percent": 3.47
+    },
+    "Lamb": {
+      "tables_with_figure": 3,
+      "total_mentions": 5,
+      "coverage_percent": 0.95
+    },
+    "Son of Man": {
+      "tables_with_figure": 8,
+      "total_mentions": 10,
+      "coverage_percent": 2.52
+    },
+    "Philip": {
+      "tables_with_figure": 7,
+      "total_mentions": 11,
+      "coverage_percent": 2.21
+    },
+    "Christ": {
+      "tables_with_figure": 41,
+      "total_mentions": 65,
+      "coverage_percent": 12.93
+    },
+    "Mary Magdalene": {
+      "tables_with_figure": 4,
+      "total_mentions": 4,
+      "coverage_percent": 1.26
+    },
+    "Isaac": {
+      "tables_with_figure": 5,
+      "total_mentions": 7,
+      "coverage_percent": 1.58
+    },
+    "Joseph": {
+      "tables_with_figure": 8,
+      "total_mentions": 22,
+      "coverage_percent": 2.52
+    },
+    "Gabriel": {
+      "tables_with_figure": 4,
+      "total_mentions": 4,
+      "coverage_percent": 1.26
+    },
+    "David": {
+      "tables_with_figure": 18,
+      "total_mentions": 23,
+      "coverage_percent": 5.68
+    },
+    "Abraham": {
+      "tables_with_figure": 12,
+      "total_mentions": 17,
+      "coverage_percent": 3.79
+    },
+    "Jacob": {
+      "tables_with_figure": 8,
+      "total_mentions": 10,
+      "coverage_percent": 2.52
+    },
+    "Jeremiah": {
+      "tables_with_figure": 7,
+      "total_mentions": 9,
+      "coverage_percent": 2.21
+    },
+    "Sophia": {
+      "tables_with_figure": 5,
+      "total_mentions": 6,
+      "coverage_percent": 1.58
+    },
+    "Dragon": {
+      "tables_with_figure": 7,
+      "total_mentions": 7,
+      "coverage_percent": 2.21
+    },
+    "Devil": {
+      "tables_with_figure": 4,
+      "total_mentions": 8,
+      "coverage_percent": 1.26
+    },
+    "Isaiah": {
+      "tables_with_figure": 7,
+      "total_mentions": 9,
+      "coverage_percent": 2.21
+    },
+    "Satan": {
+      "tables_with_figure": 4,
+      "total_mentions": 7,
+      "coverage_percent": 1.26
+    },
+    "Paul": {
+      "tables_with_figure": 14,
+      "total_mentions": 27,
+      "coverage_percent": 4.42
+    },
+    "Moses": {
+      "tables_with_figure": 14,
+      "total_mentions": 20,
+      "coverage_percent": 4.42
+    },
+    "Joshua": {
+      "tables_with_figure": 3,
+      "total_mentions": 6,
+      "coverage_percent": 0.95
+    },
+    "Solomon": {
+      "tables_with_figure": 5,
+      "total_mentions": 14,
+      "coverage_percent": 1.58
+    },
+    "Daniel": {
+      "tables_with_figure": 4,
+      "total_mentions": 10,
+      "coverage_percent": 1.26
+    },
+    "Michael": {
+      "tables_with_figure": 4,
+      "total_mentions": 4,
+      "coverage_percent": 1.26
+    },
+    "Seth": {
+      "tables_with_figure": 9,
+      "total_mentions": 13,
+      "coverage_percent": 2.84
+    },
+    "Raphael": {
+      "tables_with_figure": 2,
+      "total_mentions": 2,
+      "coverage_percent": 0.63
+    },
+    "Beast": {
+      "tables_with_figure": 4,
+      "total_mentions": 4,
+      "coverage_percent": 1.26
+    },
+    "Logos": {
+      "tables_with_figure": 1,
+      "total_mentions": 1,
+      "coverage_percent": 0.32
+    },
+    "Metatron": {
+      "tables_with_figure": 1,
+      "total_mentions": 1,
+      "coverage_percent": 0.32
+    },
+    "Aaron": {
+      "tables_with_figure": 1,
+      "total_mentions": 1,
+      "coverage_percent": 0.32
+    },
+    "Ezekiel": {
+      "tables_with_figure": 1,
+      "total_mentions": 1,
+      "coverage_percent": 0.32
+    },
+    "Antichrist": {
+      "tables_with_figure": 1,
+      "total_mentions": 1,
+      "coverage_percent": 0.32
+    },
+    "Melchizedek": {
+      "tables_with_figure": 1,
+      "total_mentions": 2,
+      "coverage_percent": 0.32
+    }
+  },
+  "resonance": {
+    "word": {
+      "tables_with_phrase": 61,
+      "total_mentions": 112
+    },
+    "son": {
+      "tables_with_phrase": 89,
+      "total_mentions": 189
+    },
+    "holy": {
+      "tables_with_phrase": 36,
+      "total_mentions": 52
+    },
+    "name": {
+      "tables_with_phrase": 36,
+      "total_mentions": 66
+    },
+    "end": {
+      "tables_with_phrase": 87,
+      "total_mentions": 139
+    },
+    "way": {
+      "tables_with_phrase": 43,
+      "total_mentions": 100
+    },
+    "love": {
+      "tables_with_phrase": 40,
+      "total_mentions": 95
+    },
+    "kingdom": {
+      "tables_with_phrase": 22,
+      "total_mentions": 56
+    },
+    "father": {
+      "tables_with_phrase": 43,
+      "total_mentions": 105
+    },
+    "life": {
+      "tables_with_phrase": 34,
+      "total_mentions": 61
+    },
+    "light": {
+      "tables_with_phrase": 34,
+      "total_mentions": 68
+    },
+    "spirit": {
+      "tables_with_phrase": 39,
+      "total_mentions": 96
+    },
+    "peace": {
+      "tables_with_phrase": 11,
+      "total_mentions": 17
+    },
+    "beginning": {
+      "tables_with_phrase": 20,
+      "total_mentions": 25
+    },
+    "truth": {
+      "tables_with_phrase": 21,
+      "total_mentions": 43
+    },
+    "amen": {
+      "tables_with_phrase": 13,
+      "total_mentions": 17
+    },
+    "glory": {
+      "tables_with_phrase": 29,
+      "total_mentions": 37
+    },
+    "alpha": {
+      "tables_with_phrase": 2,
+      "total_mentions": 3
+    },
+    "omega": {
+      "tables_with_phrase": 1,
+      "total_mentions": 2
+    }
+  },
+  "unification_scores": {
+    "component_scores": {
+      "Thematic Alignment": 18.46,
+      "Moral/Ethical Alignment": 8.83,
+      "Numerological Patterns": 84,
+      "Figure Consistency": 92,
+      "Linguistic Resonance": 100
+    },
+    "overall_unification_score": 60.66,
+    "assessment": "GOOD"
+  },
+  "summary": {
+    "total_texts_analyzed": 317,
+    "total_entries_analyzed": 2046,
+    "phases_completed": 20,
+    "archive_status": "COMPLETE"
+  }
+}
