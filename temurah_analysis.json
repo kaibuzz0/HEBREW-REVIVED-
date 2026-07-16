@@ -1,0 +1,19 @@
+{
+  "atbash_patterns": {},
+  "reverse_patterns": {},
+  "caesar_patterns": {},
+  "transformation_mentions": {
+    "made": 47,
+    "turn": 36,
+    "turned": 18,
+    "become": 39,
+    "return": 22,
+    "became": 16,
+    "born again": 2,
+    "transform": 3,
+    "change": 2,
+    "upside down": 2,
+    "convert": 1,
+    "converted": 1
+  }
+}

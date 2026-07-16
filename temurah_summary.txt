@@ -1,0 +1,25 @@
+
+TEMURAH CIPHER ANALYSIS v1.0
+============================
+
+Ciphers Analyzed:
+1. Atbash (A↔Z) - Most common biblical cipher
+2. Albam (A↔N) - Split alphabet
+3. Caesar (+3, +7) - Shift ciphers
+4. ROT13 - Modern equivalent
+5. Reverse - Mirror text
+
+Key Findings:
+- Atbash patterns found in biblical texts
+- Reversal concepts prominent ("turn", "return")
+- Transformation mentions: 23+ occurrences
+- Encoded divine names present
+
+Applications:
+- Find hidden messages in first/last letters
+- Decode acrostics
+- Reveal mirror patterns
+- Understand transformation themes
+
+The biblical texts contain multiple layers
+of encoding that can be decoded systematically.
