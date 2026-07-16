@@ -1,0 +1,90 @@
+{
+  "phase": "Phase 20",
+  "total_entries": 101,
+  "books": [
+    {
+      "book": "Hypsiphrone (Complete)",
+      "count": 5
+    },
+    {
+      "book": "Revelation of Moses",
+      "count": 7
+    },
+    {
+      "book": "Book of Noah (Complete)",
+      "count": 11
+    },
+    {
+      "book": "Acts of Andrew",
+      "count": 5
+    },
+    {
+      "book": "Acts of Matthias",
+      "count": 4
+    },
+    {
+      "book": "The Great Announcement",
+      "count": 4
+    },
+    {
+      "book": "Zostrianos",
+      "count": 4
+    },
+    {
+      "book": "DSS: Calendar",
+      "count": 5
+    },
+    {
+      "book": "DSS: Tohorot",
+      "count": 5
+    },
+    {
+      "book": "Wisdom of Sirach (Final)",
+      "count": 6
+    },
+    {
+      "book": "Psalms of Solomon (Complete)",
+      "count": 6
+    },
+    {
+      "book": "Epistle of Polycarp (Complete)",
+      "count": 5
+    },
+    {
+      "book": "Martyrdom of Polycarp (Complete)",
+      "count": 6
+    },
+    {
+      "book": "Ethiopian Book of Jubilees",
+      "count": 2
+    },
+    {
+      "book": "Ethiopian Heavenly Liturgy",
+      "count": 4
+    },
+    {
+      "book": "Arabic Gospel of Barnabas",
+      "count": 4
+    },
+    {
+      "book": "Armenian Gospel of Bartholomew",
+      "count": 3
+    },
+    {
+      "book": "Syriac Gospel of the Twelve",
+      "count": 3
+    },
+    {
+      "book": "Sefer Raziel HaMalakh",
+      "count": 4
+    },
+    {
+      "book": "Epistle of Pontius Pilate",
+      "count": 4
+    },
+    {
+      "book": "Gospel of Barnabas",
+      "count": 4
+    }
+  ]
+}
