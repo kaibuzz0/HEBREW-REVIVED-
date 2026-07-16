@@ -1,0 +1,66 @@
+{
+  "phase": "Phase 10",
+  "total_entries": 89,
+  "books": [
+    {
+      "book": "Acts of John",
+      "count": 8
+    },
+    {
+      "book": "Acts of Peter",
+      "count": 6
+    },
+    {
+      "book": "Gospel of the Hebrews",
+      "count": 4
+    },
+    {
+      "book": "Gospel of the Egyptians",
+      "count": 4
+    },
+    {
+      "book": "Letter of Peter to Philip",
+      "count": 4
+    },
+    {
+      "book": "Thought of Norea",
+      "count": 4
+    },
+    {
+      "book": "Hypostasis of the Archons",
+      "count": 5
+    },
+    {
+      "book": "On the Origin of the World",
+      "count": 10
+    },
+    {
+      "book": "Exegesis on the Soul",
+      "count": 7
+    },
+    {
+      "book": "Book of Thomas the Contender",
+      "count": 6
+    },
+    {
+      "book": "Dialogue of the Savior",
+      "count": 7
+    },
+    {
+      "book": "Apocryphon of James",
+      "count": 4
+    },
+    {
+      "book": "Apocryphon of John",
+      "count": 8
+    },
+    {
+      "book": "Sentences of Sextus",
+      "count": 6
+    },
+    {
+      "book": "Teachings of Silvanus",
+      "count": 6
+    }
+  ]
+}
