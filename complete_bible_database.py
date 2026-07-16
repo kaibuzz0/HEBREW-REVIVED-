@@ -192,6 +192,19 @@ class CompleteBibleDatabase:
             )
         """)
         
+        # Infancy Gospel of James (Protevangelium)
+        self.cursor.execute("""
+            CREATE TABLE IF NOT EXISTS infancy_james (
+                id INTEGER PRIMARY KEY,
+                chapter_number INTEGER,
+                greek_text TEXT,
+                syriac_text TEXT,
+                english_text TEXT,
+                parallel_passages TEXT,
+                title TEXT
+            )
+        """)
+        
         # Jesus' 30 years reconstruction
         self.cursor.execute("""
             CREATE TABLE IF NOT EXISTS jesus_years (
