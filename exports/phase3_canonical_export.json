@@ -1,0 +1,38 @@
+{
+  "phase": "Phase 3",
+  "total_entries": 42,
+  "books": [
+    {
+      "book": "Jeremiah",
+      "count": 7
+    },
+    {
+      "book": "Ezekiel",
+      "count": 5
+    },
+    {
+      "book": "Joshua",
+      "count": 4
+    },
+    {
+      "book": "Judges",
+      "count": 6
+    },
+    {
+      "book": "1 Samuel",
+      "count": 6
+    },
+    {
+      "book": "2 Samuel",
+      "count": 4
+    },
+    {
+      "book": "1 Kings",
+      "count": 6
+    },
+    {
+      "book": "2 Kings",
+      "count": 4
+    }
+  ]
+}
