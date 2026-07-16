@@ -1,0 +1,18 @@
+{
+  "version": "5.0",
+  "date": "2026-07-16T02:32:00.158068",
+  "files": {
+    "downloads": [
+      "MEGA_BIBLE_UNIFIED.txt",
+      "complete_bible.db",
+      "index.html"
+    ],
+    "tools": [
+      "launch.py",
+      "menu.py"
+    ],
+    "docs": [
+      "README.md"
+    ]
+  }
+}
