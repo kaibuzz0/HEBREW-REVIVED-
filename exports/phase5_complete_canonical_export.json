@@ -1,0 +1,50 @@
+{
+  "phase": "Phase 5",
+  "total_entries": 82,
+  "books": [
+    {
+      "book": "Daniel",
+      "count": 8
+    },
+    {
+      "book": "12 Minor Prophets",
+      "count": 24
+    },
+    {
+      "book": "Proverbs",
+      "count": 20
+    },
+    {
+      "book": "Job",
+      "count": 5
+    },
+    {
+      "book": "Ecclesiastes",
+      "count": 4
+    },
+    {
+      "book": "Song of Solomon",
+      "count": 4
+    },
+    {
+      "book": "Ruth",
+      "count": 3
+    },
+    {
+      "book": "Esther",
+      "count": 2
+    },
+    {
+      "book": "Ezra",
+      "count": 2
+    },
+    {
+      "book": "Nehemiah",
+      "count": 3
+    },
+    {
+      "book": "1-2 Chronicles",
+      "count": 7
+    }
+  ]
+}
