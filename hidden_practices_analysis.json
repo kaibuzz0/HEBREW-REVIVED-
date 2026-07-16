@@ -1,0 +1,110 @@
+{
+  "acrostics": {
+    "initial_letter_distribution": {
+      "t": 874,
+      "w": 378,
+      "o": 266,
+      "b": 219,
+      "e": 64,
+      "h": 292,
+      "a": 564,
+      "i": 325,
+      "c": 143,
+      "p": 100,
+      "m": 204,
+      "s": 404,
+      "g": 119,
+      "l": 148,
+      "r": 68,
+      "u": 53,
+      "f": 159,
+      "j": 116,
+      "v": 22,
+      "d": 139,
+      "y": 119,
+      "k": 35,
+      "n": 94,
+      "q": 1
+    },
+    "alpha_omega_patterns": 3
+  },
+  "els": {
+    "god": 217,
+    "lord": 320,
+    "jesus": 148,
+    "christ": 65,
+    "salvation": 20
+  },
+  "notarikon": {
+    "top_initial_sequences": {
+      "jst": 15,
+      "tst": 7,
+      "hds": 7,
+      "jsi": 6,
+      "ahs": 6,
+      "tss": 5,
+      "tds": 5,
+      "jsa": 5,
+      "tko": 5,
+      "bit": 5
+    },
+    "divine_name_patterns": 18
+  },
+  "temurah": {
+    "transformation_patterns": 23,
+    "mirror_words": 0
+  },
+  "sacred_geometry": {
+    "circle": 0,
+    "square": 0,
+    "triangle": 0,
+    "cube": 0,
+    "sphere": 1,
+    "tabernacle": 0,
+    "temple": 31,
+    "mountain": 23,
+    "garden": 4,
+    "tree": 25,
+    "river": 9,
+    "city": 23,
+    "foundation": 6,
+    "gates": 3,
+    "dimensions": 0
+  },
+  "parable_structures": {
+    "patterns": {
+      "kingdom of heaven is like": 1,
+      "it is like": 1,
+      "there was a": 15,
+      "a certain man": 2,
+      "behold, a": 10
+    },
+    "teaching_methods": {
+      "as/metaphor": 616,
+      "conditional": 197,
+      "like/simile": 48,
+      "emphatic truth": 8,
+      "conclusion": 31
+    }
+  },
+  "demonstra": {
+    "mystery": 8,
+    "secret": 12,
+    "hidden": 15,
+    "concealed": 3,
+    "revealed": 30,
+    "knowledge": 23,
+    "understanding": 13,
+    "wisdom": 41,
+    "know": 79,
+    "see": 93,
+    "demonstration": 0,
+    "show": 33,
+    "manifest": 6,
+    "appear": 36,
+    "vision": 46,
+    "those who have ears": 0,
+    "let him hear": 2,
+    "he who has ears": 0
+  }
+}
