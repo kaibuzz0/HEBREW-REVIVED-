@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bible Archive Mobile</title>
+    <style>
+        body { font-family: Arial; margin: 10px; background: #1a1a2e; color: white; }
+        .card { background: #16213e; padding: 15px; margin: 10px 0; border-radius: 10px; }
+        .stat { display: flex; justify-content: space-between; margin: 5px 0; }
+        button { background: #e94560; color: white; border: none; padding: 15px; 
+                 border-radius: 5px; width: 100%; font-size: 16px; margin: 5px 0; }
+        h1 { text-align: center; color: #e94560; }
+    </style>
+</head>
+<body>
+    <h1>📖 Bible Archive</h1>
+    
+    <div class="card">
+        <h2>Stats</h2>
+        <div class="stat"><span>Texts:</span><strong>317</strong></div>
+        <div class="stat"><span>Entries:</span><strong>2,046</strong></div>
+        <div class="stat"><span>Unification:</span><strong>60.7%</strong></div>
+    </div>
+    
+    <button onclick="alert('Open menu.py on desktop')">🔍 Search</button>
+    <button onclick="alert('Check docs/')">📖 Read</button>
+    <button onclick="alert('Run dashboard.py')">📊 Stats</button>
+    
+    <div class="card">
+        <p><small>Complete Bible Archive v4.0</small></p>
+    </div>
+</body>
+</html>

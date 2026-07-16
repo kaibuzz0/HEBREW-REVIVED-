@@ -1,0 +1,32 @@
+{
+  "version": "4.0",
+  "features": {
+    "ai_assistant": {
+      "enabled": false,
+      "description": "AI-powered text analysis (requires API key)",
+      "requirements": ["openai"]
+    },
+    "advanced_search": {
+      "enabled": true,
+      "description": "Fuzzy matching and regex search"
+    },
+    "caching": {
+      "enabled": true,
+      "description": "Cache frequent queries for speed"
+    },
+    "logging": {
+      "enabled": true,
+      "description": "Track usage and changes"
+    },
+    "auto_update": {
+      "enabled": false,
+      "description": "Automatically check for updates"
+    }
+  },
+  "paths": {
+    "database": "data/complete_bible.db",
+    "exports": "exports/",
+    "docs": "docs/",
+    "backups": "backups/"
+  }
+}
