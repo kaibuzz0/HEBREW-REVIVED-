@@ -1,0 +1,21 @@
+================================================================================
+DIALOGUE OF THE SAVIOR
+Category: 13 Other
+================================================================================
+
+1 The Dialogue of the Savior... With his disciples.
+
+10 And Matthew said... Tell us about the end.
+
+20 And the Lord said... The end is where the beginning is.
+
+30 And Mary said... I want to know everything.
+
+40 And the Lord said... Blessed are you, Mary.
+
+50 And Judas said... You have told us everything.
+
+60 And the Lord said... Now go and preach.
+
+
+[End of dialogue_of_the_savior]

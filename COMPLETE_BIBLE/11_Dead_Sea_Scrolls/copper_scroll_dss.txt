@@ -1,0 +1,21 @@
+================================================================================
+COPPER SCROLL DSS
+Category: 11 Dead Sea Scrolls
+================================================================================
+
+1 In the ruins... that are in the valley.
+
+3 The steps... that go down to the pool.
+
+5 The tomb... of the third course.
+
+7 The cistern... of the period.
+
+9 The reservoir... of the two pools.
+
+11 The cairn... of the valley.
+
+13 The tomb... of the son of the third.
+
+
+[End of copper_scroll_dss]

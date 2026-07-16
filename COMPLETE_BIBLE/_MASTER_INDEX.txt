@@ -1,0 +1,347 @@
+================================================================================
+COMPLETE BIBLE ARCHIVE
+All Scriptures Organized by Category
+================================================================================
+
+Total Books: 309
+Total Verses/Passages: 1974
+Categories: 12
+
+DIRECTORY STRUCTURE:
+--------------------------------------------------------------------------------
+
+01_Torah/
+
+02_Historical/
+  additions_to_esther.txt
+  book_of_esther.txt
+  book_of_ezra.txt
+  book_of_first_chronicles.txt
+  book_of_first_kings.txt
+  book_of_first_samuel.txt
+  book_of_joshua.txt
+  book_of_judges.txt
+  book_of_nehemiah.txt
+  book_of_ruth.txt
+  book_of_second_chronicles.txt
+  book_of_second_kings.txt
+  book_of_second_samuel.txt
+  fourth_book_of_ezra.txt
+  gospel_of_truth.txt
+  gospel_of_truth_complete.txt
+  greek_apocalypse_of_ezra.txt
+  questions_of_ezra.txt
+  vision_of_ezra.txt
+
+03_Wisdom/
+  book_of_ecclesiastes.txt
+  book_of_job.txt
+  book_of_proverbs.txt
+  book_of_psalms.txt
+  book_of_song_of_solomon.txt
+  dss_songs_of_the_sabbath_sacrifice.txt
+  psalms_of_solomon.txt
+  psalms_of_solomon_complete.txt
+  psalms_of_solomon_more.txt
+  testament_of_job.txt
+
+04_Major_Prophets/
+  additions_to_daniel.txt
+  ascension_of_isaiah.txt
+  ascension_of_isaiah_full.txt
+  book_of_daniel.txt
+  book_of_ezekiel.txt
+  book_of_isaiah.txt
+  book_of_jeremiah.txt
+  daniel_additions_complete.txt
+
+05_Minor_Prophets/
+  apocalypse_of_zephaniah.txt
+  book_of_amos.txt
+  book_of_habakkuk.txt
+  book_of_haggai.txt
+  book_of_hosea.txt
+  book_of_joel.txt
+  book_of_jonah.txt
+  book_of_malachi.txt
+  book_of_micah.txt
+  book_of_nahum.txt
+  book_of_obadiah.txt
+  book_of_zechariah.txt
+  book_of_zephaniah.txt
+  dss_habakkuk_commentary.txt
+
+06_Gospels/
+  acts_of_john.txt
+  acts_of_john_the_theologian.txt
+  acts_of_matthew.txt
+  apocryphon_of_john.txt
+  arabic_gospel_of_john.txt
+  armenian_questions_of_john.txt
+  first_epistle_of_john.txt
+  gospel_of_john.txt
+  gospel_of_luke.txt
+  gospel_of_mark.txt
+  gospel_of_matthew.txt
+  second_epistle_of_john.txt
+  third_epistle_of_john.txt
+
+07_Epistles/
+  acts_of_andrew.txt
+  acts_of_barnabas.txt
+  acts_of_james_just.txt
+  acts_of_james_major.txt
+  acts_of_matthias.txt
+  acts_of_paul.txt
+  acts_of_paul_and_thecla.txt
+  acts_of_paul_and_thecla_complete.txt
+  acts_of_peter.txt
+  acts_of_philip.txt
+  acts_of_simon_and_jude.txt
+  acts_of_thaddeus.txt
+  acts_of_the_scillitan_martyrs.txt
+  acts_of_thomas_additional.txt
+  apocryphon_of_james.txt
+  arabic_gospel_of_peter.txt
+  book_of_acts.txt
+  book_of_titus.txt
+  coptic_apocalypse_of_peter.txt
+  coptic_gospel_of_the_hebrews.txt
+  epistle_of_james.txt
+  epistle_of_jude.txt
+  epistle_to_colossians.txt
+  epistle_to_ephesians.txt
+  epistle_to_galatians.txt
+  epistle_to_hebrews.txt
+  epistle_to_philemon.txt
+  epistle_to_philippians.txt
+  epistle_to_romans.txt
+  epistle_to_titus.txt
+  first_epistle_of_peter.txt
+  first_epistle_to_corinthians.txt
+  first_epistle_to_thessalonians.txt
+  first_epistle_to_timothy.txt
+  gospel_of_the_hebrews.txt
+  ignatius_to_ephesians.txt
+  infancy_james.txt
+  letter_of_peter_to_philip.txt
+  letter_of_peter_to_philip_complete.txt
+  polycarp_to_philippians.txt
+  second_epistle_of_peter.txt
+  second_epistle_to_thessalonians.txt
+  second_epistle_to_timothy.txt
+
+08_Revelation/
+  book_of_revelation.txt
+  revelation_of_moses.txt
+
+09_Deuterocanonical/
+  book_of_baruch.txt
+  book_of_first_maccabees.txt
+  book_of_judith.txt
+  book_of_second_maccabees.txt
+  book_of_sirach.txt
+  book_of_tobit.txt
+  book_of_wisdom.txt
+  first_book_of_baruch.txt
+  fourth_baruch.txt
+  fourth_book_of_maccabees.txt
+  second_book_of_baruch.txt
+  second_book_of_baruch_additional.txt
+  third_baruch.txt
+  third_book_of_baruch_additional.txt
+  third_book_of_maccabees.txt
+  wisdom_of_jesus_son_of_sirach_complete.txt
+  wisdom_of_sirach_final.txt
+  wisdom_of_sirach_more.txt
+  wisdom_of_solomon_more.txt
+
+10_Nag_Hammadi/
+  gospel_of_judas.txt
+  gospel_of_mary.txt
+  gospel_of_mary_complete.txt
+  gospel_of_philip.txt
+  gospel_of_philip_complete.txt
+  gospel_of_thomas.txt
+  syriac_gospel_of_thomas.txt
+
+11_Dead_Sea_Scrolls/
+  copper_scroll_dss.txt
+  dss_community_rule.txt
+  dss_serekh_hayahad.txt
+  dss_thanksgiving_hymns.txt
+  dss_war_scroll.txt
+  temple_scroll_dss.txt
+
+12_Church_Fathers/
+  arabic_gospel_of_barnabas.txt
+  didache.txt
+  epistle_of_barnabas.txt
+  epistle_of_polycarp_complete.txt
+  epistle_to_diognetus.txt
+  first_clement.txt
+  gospel_of_barnabas.txt
+  martyrdom_of_clement.txt
+  martyrdom_of_ignatius.txt
+  martyrdom_of_polycarp.txt
+  martyrdom_of_polycarp_complete.txt
+  syriac_clementine_homilies.txt
+  syriac_clementine_recognitions.txt
+
+13_Other/
+  allogenes_nag_hammadi.txt
+  alphabet_of_ben_sira.txt
+  apocalypse_of_abraham.txt
+  apocalypse_of_adam.txt
+  apocalypse_of_elijah.txt
+  apocalypse_of_moses.txt
+  apocalypse_of_paul.txt
+  apocalypse_of_paul_more.txt
+  apocalypse_of_sedrach.txt
+  apocalypse_of_thomas.txt
+  apostolic_constitutions.txt
+  apostolic_constitutions_more.txt
+  arabic_gospel_of_the_infancy.txt
+  arabic_infancy_gospel.txt
+  aristides_apology.txt
+  armenian_gospel_of_bartholomew.txt
+  armenian_gospel_of_the_corporeans.txt
+  armenian_infancy_gospel.txt
+  assumption_of_moses_additional.txt
+  authoritative_teaching.txt
+  book_of_bahir.txt
+  book_of_elchasai.txt
+  book_of_eldad_and_medad.txt
+  book_of_enoch_additional_sections.txt
+  book_of_enoch_ethiopic.txt
+  book_of_gad_the_seer_complete.txt
+  book_of_jasher.txt
+  book_of_jubilees.txt
+  book_of_jubilees_additional.txt
+  book_of_jubilees_final.txt
+  book_of_maryam.txt
+  book_of_nathan_the_prophet.txt
+  book_of_noah.txt
+  book_of_noah_complete.txt
+  book_of_shem_ethiopic.txt
+  book_of_the_bee.txt
+  book_of_the_covenant_of_moses.txt
+  book_of_the_death_of_moses.txt
+  book_of_the_mysteries_of_the_heavens.txt
+  book_of_the_rolls.txt
+  book_of_the_wars_of_the_lord.txt
+  book_of_thomas_the_contender.txt
+  book_of_watchers_additional.txt
+  canons_of_the_apostles.txt
+  cave_of_treasures.txt
+  concept_of_our_great_power.txt
+  conflict_of_adam_and_eve.txt
+  death_of_pilate.txt
+  descent_into_hell.txt
+  dialogue_of_the_savior.txt
+  dialogue_of_the_savior_complete.txt
+  dss_calendar.txt
+  dss_damascus_document.txt
+  dss_hodayot.txt
+  dss_milhamah.txt
+  dss_pesharim.txt
+  dss_tohorot.txt
+  dss_wiles_of_the_wicked_woman.txt
+  enoch_books.txt
+  epistle_of_pontius_pilate.txt
+  epistle_of_the_apostles.txt
+  epistle_to_rheginos.txt
+  ethiopian_book_of_enoch_more.txt
+  ethiopian_book_of_heavenly_liturgy.txt
+  ethiopian_book_of_jubilees_complete.txt
+  ethiopian_book_of_the_covenant.txt
+  ethiopian_book_of_the_robes.txt
+  exegesis_on_the_soul.txt
+  fragments_of_hegesippus.txt
+  fragments_of_papias.txt
+  georgian_book_of_adam.txt
+  ginza_rabba.txt
+  gospel_of_nicodemus.txt
+  gospel_of_the_ebionites.txt
+  gospel_of_the_egyptians.txt
+  gospel_of_the_egyptians_complete.txt
+  gospel_of_the_nazarenes.txt
+  hekhalot_literature.txt
+  hekhalot_rabbati_more.txt
+  hekhalot_zutarti.txt
+  hypostasis_of_the_archons.txt
+  hypsiphrone_complete.txt
+  hypsiphrone_nag_hammadi.txt
+  joseph_and_aseneth.txt
+  kephalaia.txt
+  ladder_of_jacob.txt
+  letter_of_aristeas.txt
+  letter_of_lentulus.txt
+  life_of_adam_and_eve.txt
+  life_of_adam_and_eve_full.txt
+  lives_of_the_prophets.txt
+  maaseh_merkavah.txt
+  marsanes_nag_hammadi.txt
+  martyrdom_of_carpus.txt
+  martyrs_of_azmon.txt
+  melchizedek_nag_hammadi.txt
+  narrative_of_joseph_of_arimathea.txt
+  odes_of_solomon.txt
+  odes_of_solomon_additional.txt
+  odes_of_solomon_complete.txt
+  odes_of_solomon_final.txt
+  odes_of_solomon_more.txt
+  on_baptism.txt
+  on_eucharist.txt
+  on_the_origin_of_the_world.txt
+  paraphrase_of_shem.txt
+  pastor_of_hermas_complete.txt
+  peshitta_old_testament.txt
+  pistis_sophia.txt
+  prayer_of_joseph.txt
+  prayer_of_manasseh.txt
+  quadratus_apology.txt
+  questions_of_bartholomew.txt
+  rule_of_the_benedictions_dss.txt
+  rule_of_the_congregation_dss.txt
+  samaritan_book_of_moses.txt
+  second_book_of_enoch.txt
+  second_treatise_of_the_great_seth.txt
+  sefer_ha_bahir_complete.txt
+  sefer_raziel_hamalakh.txt
+  sefer_yetzirah_complete.txt
+  sentences_of_phocylides.txt
+  sentences_of_sextus.txt
+  sentences_of_the_syriac_fathers.txt
+  sepher_yetzirah.txt
+  shepherd_of_hermas.txt
+  shepherd_of_hermas_additional.txt
+  shiur_qomah.txt
+  sibylline_oracles.txt
+  sophia_of_jesus_christ.txt
+  story_of_ahikar.txt
+  syriac_apocalypse_of_paul.txt
+  syriac_gospel_of_the_twelve.txt
+  syriac_hymn_of_the_pearl.txt
+  syriac_menander.txt
+  targum_jonathan.txt
+  targum_onkelos.txt
+  teaching_of_silvanus.txt
+  teachings_of_silvanus.txt
+  testament_of_moses.txt
+  testament_of_solomon_full.txt
+  testaments_of_twelve_patriarchs.txt
+  the_great_announcement.txt
+  third_book_of_enoch.txt
+  thought_of_norea.txt
+  thunder_perfect_mind.txt
+  tikkunei_zohar.txt
+  treatise_on_resurrection.txt
+  treatise_on_resurrection_complete.txt
+  trimorphic_protennoia.txt
+  tripartite_tractate.txt
+  vindicta_salvatoris.txt
+  words_of_gad_the_seer.txt
+  zohar_selections.txt
+  zostrianos.txt
+
