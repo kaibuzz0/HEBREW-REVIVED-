@@ -114,67 +114,67 @@ The secret sayings of Jesus, written down by Didymus Judas Thomas.
 
 ---
 
-**Saying 21** - Childlikeness
+**Saying 11** - Heaven Passes Away
 
-> Mary said to Jesus, 'Whom are your disciples like?' He said, 'They are like little children living in a field which is not theirs. When the owners of the field come, they will say, "Give us back our f...
-
----
-
-**Saying 22** - Union of Opposites
-
-> Jesus saw some babies nursing. He said to his disciples, 'These nursing babies are like those who enter the Kingdom.' They said to him, 'Then shall we enter the Kingdom as babies?' Jesus said to them,...
-
-*Parallels: ["Matthew 18:3", "Mark 10:15", "Galatians 3:28"]*
+> This heaven will pass away, and the one above it will pass away. The dead are not alive, and the living will not die. In the days when you consumed what is dead, you made it what is alive. When you co...
 
 ---
 
-**Saying 23** - Elect
+**Saying 12** - Leader After Jesus
 
-> Jesus said, 'I shall choose you, one out of a thousand, and two out of ten thousand, and they shall stand as a single one.'...
-
----
-
-**Saying 24** - Inner Light
-
-> His disciples said, 'Show us the place where you are, since it is necessary for us to seek it.' He said to them, 'Whoever has ears, let him hear. There is light within a man of light, and he lights up...
-
-*Parallels: ["Matthew 6:22-23", "Luke 11:34-35"]*
+> The disciples said to Jesus, 'We know that you will depart from us. Who is to be our leader?' Jesus said to them, 'Wherever you are, you are to go to James the righteous, for whose sake heaven and ear...
 
 ---
 
-**Saying 25** - Brotherly Love
+**Saying 13** - Three Secret Sayings
 
-> Jesus said, 'Love your brother like your soul, guard him like the pupil of your eye.'...
-
----
-
-**Saying 26** - Hypocrisy
-
-> Jesus said, 'You see the mote in your brother's eye, but you do not see the beam in your own eye. When you cast the beam out of your own eye, then you will see clearly to cast the mote from your broth...
-
-*Parallels: ["Matthew 7:3-5", "Luke 6:41-42"]*
+> Jesus said to his disciples, 'Compare me to someone and tell me whom I am like.' Simon Peter said to him, 'You are like a righteous angel.' Matthew said to him, 'You are like a wise philosopher.' Thom...
 
 ---
 
-**Saying 27** - True Sabbath
+**Saying 14** - True Purity
 
-> 'If you do not fast as regards the world, you will not find the Kingdom. If you do not observe the Sabbath as a Sabbath, you will not see the Father.'...
+> Jesus said to them, 'If you fast, you will give rise to sin for yourselves; and if you pray, you will be condemned; and if you give alms, you will do harm to your spirits. When you go into any land an...
 
----
-
-**Saying 28** - Intoxication of World
-
-> Jesus said, 'I took my place in the midst of the world, and I appeared to them in flesh. I found all of them intoxicated; I found none of them thirsty. And my soul became afflicted for the sons of men...
+*Parallels: ["Matthew 15:11", "Mark 7:15"]*
 
 ---
 
-**Saying 29** - Spirit and Flesh
+**Saying 15** - Not Born of Woman
 
-> Jesus said, 'If the flesh came into being because of spirit, it is a wonder. But if spirit came into being because of the body, it is a wonder of wonders. Indeed, I am amazed at how this great wealth ...
+> When you see one who was not born of woman, prostrate yourselves on your faces and worship him. That one is your father....
 
 ---
 
-*... and 77 more sayings.
+**Saying 16** - Sword and Division
+
+> Perhaps people think that I have come to cast peace upon the world. They do not know that I have come to cast conflicts upon the earth: fire, sword, war. For there will be five in a house: there will ...
+
+*Parallels: ["Matthew 10:34-36", "Luke 12:51-53"]*
+
+---
+
+**Saying 17** - Hidden Mysteries
+
+> Jesus said, 'I shall give you what no eye has seen and what no ear has heard and what no hand has touched and what has never occurred to the human mind.'...
+
+*Parallels: ["1 Corinthians 2:9", "Isaiah 64:4"]*
+
+---
+
+**Saying 18** - Beginning and End
+
+> The disciples said to Jesus, 'Tell us how our end will be.' Jesus said, 'Have you discovered, then, the beginning, that you look for the end? For where the beginning is, there will the end be. Blessed...
+
+---
+
+**Saying 19** - Five Trees in Paradise
+
+> Blessed is he who came into being before he came into being. If you become my disciples and listen to my words, these stones will minister to you. For there are five trees for you in Paradise which re...
+
+---
+
+*... and 95 more sayings.
 
 ## 📖 The Gospel of Mary
 
@@ -213,6 +213,82 @@ From Nag Hammadi Codex II,3 - On love, sacraments, and the bridal chamber.
 - **Resurrection While Living**: "Those who say they will die first are in error"
 
 *25 passages available in database.*
+
+---
+
+## 📖 The Infancy Gospel of James
+
+The Protevangelium - Birth of Mary and early life of Jesus (25 chapters).
+
+**Key Stories:**
+- Birth of Mary to Joachim and Anna
+- Mary presented at temple age 3
+- Joseph chosen by lot (dove from rod)
+- Annunciation to Mary age 14
+- Birth of Jesus with midwife Salome
+- Salome doubts, hand withered, healed
+- Flight to Egypt
+- Martyrdom of Zechariah
+
+**Significance:** Provides backstory for Mary and infancy narratives.
+
+---
+
+## 📖 The Gospel of Judas
+
+From Codex Tchacos (c. 280 CE) - Controversial portrayal of Judas as hero.
+
+**Key Themes:**
+- Judas is the only one who understands Jesus
+- The twelve disciples serve the wrong god (Saklas)
+- Judas acts at Jesus' request to betray him
+- The betrayal enables Jesus to escape the physical body
+- Judas is the "thirteenth" who surpasses the twelve
+- The Great Invisible Spirit is the true God
+
+**Controversy:** Completely contradicts canonical gospels.
+
+---
+
+## 📖 The Odes of Solomon
+
+42 Early Christian hymns (c. 100-150 CE) - earliest Christian hymnbook.
+
+**Key Themes:**
+- Living water (Odes 3, 6, 19)
+- Christ as crown (Ode 1)
+- Incarnation (Odes 22, 42)
+- Victory over death (Odes 12, 24)
+- Personal transformation (Ode 11)
+- Joy and praise (Ode 28)
+
+**Significance:**
+- Earliest Christian hymnbook
+- Similar to Gospel of John
+- First use of "Christian" in literature
+- Beautiful Syriac mystical poetry
+
+---
+
+## 📖 The Shepherd of Hermas
+
+30 Sections - Visions, Mandates, and Similitudes (c. 90-140 CE).
+
+**Structure:**
+- 4 Visions: Church as aged woman, willow tree, mountain
+- 12 Mandates: Practical commandments (no evil-speaking, truth, patience)
+- 9 Similitudes: Parables (sower, vine and elm, two ways, dragon)
+
+**Key Themes:**
+- Repentance after baptism (second repentance)
+- Double-mindedness as the great sin
+- The tower as symbol of the Church
+- Two ways: narrow way of life, broad way of destruction
+
+**Significance:**
+- Most popular early Christian writing
+- Included in Codex Sinaiticus
+- Quoted as Scripture by Irenaeus and Origen
 
 ---
 

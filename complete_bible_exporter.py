@@ -32,6 +32,10 @@ class CompleteBibleExporter:
         html += self._generate_thomas_section()
         html += self._generate_mary_section()
         html += self._generate_philip_section()
+        html += self._generate_james_section()
+        html += self._generate_judas_section()
+        html += self._generate_odes_section()
+        html += self._generate_hermas_section()
         html += self._generate_enoch_section()
         
         # Jesus' Years
@@ -56,6 +60,10 @@ class CompleteBibleExporter:
         md += self._generate_md_thomas()
         md += self._generate_md_mary()
         md += self._generate_md_philip()
+        md += self._generate_md_james()
+        md += self._generate_md_judas()
+        md += self._generate_md_odes()
+        md += self._generate_md_hermas()
         md += self._generate_md_enoch()
         md += self._generate_md_jesus_years()
         md += self._generate_md_witnesses()
@@ -236,6 +244,82 @@ class CompleteBibleExporter:
         <h3>Book 5: The Epistle of Enoch (Chapters 86-108)</h3>
         <p>The Apocalypse of Weeks and the birth of Noah.</p>
         '''
+        return html
+    
+    def _generate_james_section(self):
+        html = '<h2>📖 The Infancy Gospel of James</h2>'
+        html += '<p>The Protevangelium - Birth of Mary and early life of Jesus.</p>'
+        try:
+            with open('/root/hebrew-repo/exports/james_infancy_export.json') as f:
+                james_data = json.load(f)
+                for chapter in james_data.get('chapters', [])[:8]:
+                    html += f'''
+                    <div class="saying">
+                        <span class="saying-number">Chapter {chapter['chapter']}</span>
+                        <span class="theme">- {chapter.get('title', '')}</span>
+                        <div class="english">{chapter.get('english', '')[:250]}...</div>
+                    </div>
+                    '''
+                html += f'<p><em>... and {len(james_data["chapters"]) - 8} more chapters.</em></p>'
+        except:
+            html += '<p><em>James Infancy data available in database.</em></p>'
+        return html
+    
+    def _generate_judas_section(self):
+        html = '<h2>📖 The Gospel of Judas</h2>'
+        html += '<p>From Codex Tchacos - The controversial portrayal of Judas as hero.</p>'
+        try:
+            with open('/root/hebrew-repo/exports/judas_export.json') as f:
+                judas_data = json.load(f)
+                for passage in judas_data.get('passages', [])[:8]:
+                    html += f'''
+                    <div class="saying">
+                        <span class="saying-number">Passage {passage['number']}</span>
+                        <span class="theme">- {passage.get('title', '')}</span>
+                        <div class="english">{passage.get('english', '')[:250]}...</div>
+                    </div>
+                    '''
+                html += f'<p><em>... and {len(judas_data["passages"]) - 8} more passages.</em></p>'
+        except:
+            html += '<p><em>Judas data available in database.</em></p>'
+        return html
+    
+    def _generate_odes_section(self):
+        html = '<h2>📖 The Odes of Solomon</h2>'
+        html += '<p>42 Early Christian hymns - the earliest Christian hymnbook (c. 100-150 CE).</p>'
+        try:
+            with open('/root/hebrew-repo/exports/odes_of_solomon_export.json') as f:
+                odes_data = json.load(f)
+                for ode in odes_data.get('odes', [])[:8]:
+                    html += f'''
+                    <div class="saying">
+                        <span class="saying-number">Ode {ode['ode']}</span>
+                        <span class="theme">- {ode.get('title', '')}</span>
+                        <div class="english">{ode.get('preview', '')[:250]}...</div>
+                    </div>
+                    '''
+                html += f'<p><em>... and {len(odes_data["odes"]) - 8} more odes.</em></p>'
+        except:
+            html += '<p><em>Odes data available in database.</em></p>'
+        return html
+    
+    def _generate_hermas_section(self):
+        html = '<h2>📖 The Shepherd of Hermas</h2>'
+        html += '<p>30 Sections - Visions, Mandates, and Similitudes (c. 90-140 CE).</p>'
+        try:
+            with open('/root/hebrew-repo/exports/hermas_export.json') as f:
+                hermas_data = json.load(f)
+                for section in hermas_data.get('sections', [])[:8]:
+                    html += f'''
+                    <div class="saying">
+                        <span class="saying-number">Section {section['number']}</span>
+                        <span class="theme">- {section.get('title', '')} ({section.get('type', '')})</span>
+                        <div class="english">{section.get('preview', '')[:250]}...</div>
+                    </div>
+                    '''
+                html += f'<p><em>... and {len(hermas_data["sections"]) - 8} more sections.</em></p>'
+        except:
+            html += '<p><em>Hermas data available in database.</em></p>'
         return html
     
     def _generate_jesus_years_section(self):
@@ -432,6 +516,94 @@ The Apocalypse of Weeks and the birth of Noah.
         
         md += f"*... and {len(jesus_data) - 20} more events.\n\n"
         return md
+    
+    def _generate_md_james(self):
+        return '''## 📖 The Infancy Gospel of James
+
+The Protevangelium - Birth of Mary and early life of Jesus (25 chapters).
+
+**Key Stories:**
+- Birth of Mary to Joachim and Anna
+- Mary presented at temple age 3
+- Joseph chosen by lot (dove from rod)
+- Annunciation to Mary age 14
+- Birth of Jesus with midwife Salome
+- Salome doubts, hand withered, healed
+- Flight to Egypt
+- Martyrdom of Zechariah
+
+**Significance:** Provides backstory for Mary and infancy narratives.
+
+---
+
+'''
+    
+    def _generate_md_judas(self):
+        return '''## 📖 The Gospel of Judas
+
+From Codex Tchacos (c. 280 CE) - Controversial portrayal of Judas as hero.
+
+**Key Themes:**
+- Judas is the only one who understands Jesus
+- The twelve disciples serve the wrong god (Saklas)
+- Judas acts at Jesus' request to betray him
+- The betrayal enables Jesus to escape the physical body
+- Judas is the "thirteenth" who surpasses the twelve
+- The Great Invisible Spirit is the true God
+
+**Controversy:** Completely contradicts canonical gospels.
+
+---
+
+'''
+    
+    def _generate_md_odes(self):
+        return '''## 📖 The Odes of Solomon
+
+42 Early Christian hymns (c. 100-150 CE) - earliest Christian hymnbook.
+
+**Key Themes:**
+- Living water (Odes 3, 6, 19)
+- Christ as crown (Ode 1)
+- Incarnation (Odes 22, 42)
+- Victory over death (Odes 12, 24)
+- Personal transformation (Ode 11)
+- Joy and praise (Ode 28)
+
+**Significance:**
+- Earliest Christian hymnbook
+- Similar to Gospel of John
+- First use of "Christian" in literature
+- Beautiful Syriac mystical poetry
+
+---
+
+'''
+    
+    def _generate_md_hermas(self):
+        return '''## 📖 The Shepherd of Hermas
+
+30 Sections - Visions, Mandates, and Similitudes (c. 90-140 CE).
+
+**Structure:**
+- 4 Visions: Church as aged woman, willow tree, mountain
+- 12 Mandates: Practical commandments (no evil-speaking, truth, patience)
+- 9 Similitudes: Parables (sower, vine and elm, two ways, dragon)
+
+**Key Themes:**
+- Repentance after baptism (second repentance)
+- Double-mindedness as the great sin
+- The tower as symbol of the Church
+- Two ways: narrow way of life, broad way of destruction
+
+**Significance:**
+- Most popular early Christian writing
+- Included in Codex Sinaiticus
+- Quoted as Scripture by Irenaeus and Origen
+
+---
+
+'''
     
     def _generate_md_witnesses(self):
         return '''## 👥 Witnesses of Jesus
