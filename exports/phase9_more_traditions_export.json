@@ -1,0 +1,42 @@
+{
+  "phase": "Phase 9",
+  "total_entries": 68,
+  "books": [
+    {
+      "book": "Jubilees (Additional)",
+      "count": 9
+    },
+    {
+      "book": "1 Enoch (Ethiopic)",
+      "count": 10
+    },
+    {
+      "book": "Apocalypse of Paul",
+      "count": 6
+    },
+    {
+      "book": "Apocalypse of Thomas",
+      "count": 4
+    },
+    {
+      "book": "Acts of Paul and Thecla",
+      "count": 5
+    },
+    {
+      "book": "Martyrdom of Polycarp",
+      "count": 5
+    },
+    {
+      "book": "Shepherd of Hermas (Additional)",
+      "count": 14
+    },
+    {
+      "book": "3 Baruch",
+      "count": 10
+    },
+    {
+      "book": "Story of Ahikar",
+      "count": 5
+    }
+  ]
+}
