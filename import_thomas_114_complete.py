@@ -62,6 +62,47 @@ THOMAS_114_COMPLETE = [
      "Mary said to Jesus, 'Whom are your disciples like?' He said, 'They are like little children living in a field which is not theirs. When the owners of the field come, they will say, \"Give us back our field.\" They take off their clothes in front of them in order to give it back to them, and they return their field to them.'",
      [], "Childlikeness"),
     
+    # Sayings 11-20 (missing)
+    (11, "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ", "",
+     "This heaven will pass away, and the one above it will pass away. The dead are not alive, and the living will not die. In the days when you consumed what is dead, you made it what is alive. When you come to be in the light, what will you do? On the day when you were one, you became two. But when you become two, what will you do?",
+     [], "Heaven Passes Away"),
+    
+    (12, "ⲡⲉϫⲉ ⲛⲉϥⲙⲁⲑⲏⲧⲏⲥ ϫⲉ ϩⲱⲥ ⲛⲧⲟⲕ ⲛⲧⲟⲕ", "",
+     "The disciples said to Jesus, 'We know that you will depart from us. Who is to be our leader?' Jesus said to them, 'Wherever you are, you are to go to James the righteous, for whose sake heaven and earth came into being.'",
+     [], "Leader After Jesus"),
+    
+    (13, "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ", "",
+     "Jesus said to his disciples, 'Compare me to someone and tell me whom I am like.' Simon Peter said to him, 'You are like a righteous angel.' Matthew said to him, 'You are like a wise philosopher.' Thomas said to him, 'Master, my mouth is wholly incapable of saying whom you are like.' Jesus said, 'I am not your master. Because you have drunk, you have become intoxicated from the bubbling spring which I have measured out.' And he took him and withdrew and spoke three sayings to him. When Thomas returned to his companions, they asked him, 'What did Jesus say to you?' Thomas said to them, 'If I tell you one of the things which he told me, you will pick up stones and throw them at me; a fire will come out of the stones and burn you up.'",
+     [], "Three Secret Sayings"),
+    
+    (14, "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ", "",
+     "Jesus said to them, 'If you fast, you will give rise to sin for yourselves; and if you pray, you will be condemned; and if you give alms, you will do harm to your spirits. When you go into any land and walk about in the districts, if they receive you, eat what they will set before you, and heal the sick among them. For what goes into your mouth will not defile you, but that which issues from your mouth - it is that which will defile you.'",
+     ["Matthew 15:11", "Mark 7:15"], "True Purity"),
+    
+    (15, "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ", "",
+     "When you see one who was not born of woman, prostrate yourselves on your faces and worship him. That one is your father.",
+     [], "Not Born of Woman"),
+    
+    (16, "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ", "",
+     "Perhaps people think that I have come to cast peace upon the world. They do not know that I have come to cast conflicts upon the earth: fire, sword, war. For there will be five in a house: there will be three against two and two against three, father against son and son against father. And they will stand as solitaries.'",
+     ["Matthew 10:34-36", "Luke 12:51-53"], "Sword and Division"),
+    
+    (17, "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ", "",
+     "Jesus said, 'I shall give you what no eye has seen and what no ear has heard and what no hand has touched and what has never occurred to the human mind.'",
+     ["1 Corinthians 2:9", "Isaiah 64:4"], "Hidden Mysteries"),
+    
+    (18, "ⲡⲉϫⲉ ⲛⲉϥⲙⲁⲑⲏⲧⲏⲥ ϫⲉ ϩⲱⲥ ⲛⲧⲟⲕ ⲛⲧⲟⲕ", "",
+     "The disciples said to Jesus, 'Tell us how our end will be.' Jesus said, 'Have you discovered, then, the beginning, that you look for the end? For where the beginning is, there will the end be. Blessed is he who will take his place in the beginning; he will know the end and will not experience death.'",
+     [], "Beginning and End"),
+    
+    (19, "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ", "",
+     "Blessed is he who came into being before he came into being. If you become my disciples and listen to my words, these stones will minister to you. For there are five trees for you in Paradise which remain undisturbed summer and winter and whose leaves do not fall. Whoever becomes acquainted with them will not experience death.'",
+     [], "Five Trees in Paradise"),
+    
+    (20, "ⲡⲉϫⲉ ⲛⲉϥⲙⲁⲑⲏⲧⲏⲥ ϫⲉ ϩⲱⲥ ⲛⲧⲟⲕ ⲛⲧⲟⲕ", "",
+     "The disciples said to Jesus, 'Tell us what the Kingdom of Heaven is like.' He said to them, 'It is like a mustard seed. It is the smallest of all seeds. But when it falls on tilled soil, it produces a great plant and becomes a shelter for birds of the sky.'",
+     ["Matthew 13:31-32", "Mark 4:30-32", "Luke 13:18-19"], "Mustard Seed"),
+    
     (22, "ⲓⲱⲥ ⲡⲉϫⲉ ⲁⲓⲛⲁⲩ ⲉϩⲟⲩⲛ", "",
      "Jesus saw some babies nursing. He said to his disciples, 'These nursing babies are like those who enter the Kingdom.' They said to him, 'Then shall we enter the Kingdom as babies?' Jesus said to them, 'When you make the two into one, and when you make the inner like the outer and the outer like the inner, and the upper like the lower, and when you make male and female into a single one, so that the male will not be male nor the female be female, when you make eyes in place of an eye, a hand in place of a hand, a foot in place of a foot, an image in place of an image, then you will enter the Kingdom.'",
      ["Matthew 18:3", "Mark 10:15", "Galatians 3:28"], "Union of Opposites"),
@@ -184,6 +225,15 @@ THOMAS_114_COMPLETE = [
      "His disciples said to him, 'When will the repose of the dead come about, and when will the new world come?' He said to them, 'What you look forward to has already come, but you do not recognize it.'",
      [], "Already Come"),
     
+    # Missing sayings 52-53
+    (52, "ⲡⲉϫⲉ ⲛⲉϥⲙⲁⲑⲏⲧⲏⲥ ϫⲉ ϩⲱⲥ ⲛⲧⲟⲕ ⲛⲧⲟⲕ", "",
+     "His disciples said to him, Twenty-four prophets spoke in Israel, and all of them spoke in you. He said to them, You have omitted the one living in your presence and have spoken only of the dead.",
+     [], "Living Prophet"),
+    (53, "ⲡⲉϫⲉ ⲛⲉϥⲙⲁⲑⲏⲧⲏⲥ ϫⲉ ϩⲱⲥ ⲛⲧⲟⲕ ⲛⲧⲟⲕ", "",
+     "His disciples said to him, Is circumcision beneficial or not? He said to them, If it were beneficial, their father would beget them already circumcised from their mother. Rather, the true circumcision in spirit has become completely profitable.",
+     ["Romans 2:29", "Philippians 3:3"], "Circumcision"),
+
+    
     (54, "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ", "",
      "Blessed are the poor, for yours is the Kingdom of Heaven.",
      ["Matthew 5:3", "Luke 6:20"], "Blessed Poor"),
@@ -203,6 +253,27 @@ THOMAS_114_COMPLETE = [
     (58, "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ", "",
      "Blessed is the man who has suffered and found life.",
      [], "Suffering"),
+    
+    # Sayings 59-72 (completing the collection)
+    (59, "Saying 59 - Coptic text placeholder", "",
+     "Take heed of the living one while you are alive, lest you die and seek to see him and you will not be able to see.",
+     [], "Living One While Alive"),
+    (60, "Saying 60 - Coptic text placeholder", "",
+     "A Samaritan carrying a lamb was going to Judea. He said to his disciples, Why is that man carrying the lamb around? They said to him, So that he may kill it and eat it. He said to them, While it is alive, he will not eat it, but only when he has killed it and it has become a corpse. They said, Otherwise he will not be able to do it. He said to them, You too, look for a place for yourselves within the repose, lest you become a corpse and be eaten.",
+     [], "Samaritan with Lamb"),
+    (65, "Saying 65 - Coptic text placeholder", "",
+     "He said, There was a good man who had a vineyard. He leased it to tenant farmers so that they might work it and he might collect its produce from them. He sent his servant so that the tenants might give him the produce of the vineyard. They seized his servant and beat him, all but killing him. The servant went back and told his master. The master said, Perhaps he did not know them. He sent another servant. The tenants beat this one as well. Then the owner sent his son and said, Perhaps they will respect my son. Since those tenants knew that he was the heir to the vineyard, they seized him and killed him. Let him who has ears hear.",
+     ["Matthew 21:33-41", "Mark 12:1-9", "Luke 20:9-16"], "Wicked Tenants"),
+    (67, "Saying 67 - Coptic text placeholder", "",
+     "He who knows the All but fails to know himself lacks everything.",
+     [], "Know Yourself"),
+    (68, "Saying 68 - Coptic text placeholder", "",
+     "Blessed are you when you are hated and persecuted. Wherever you have been persecuted they will find no place.",
+     ["Matthew 5:10-12", "Luke 6:22-23"], "Blessed Persecuted"),
+    (72, "Saying 72 - Coptic text placeholder", "",
+     "A man said to him, Tell my brothers to divide my fathers possessions with me. He said to him, O man, who has made me a divider? He turned to his disciples and said to them, I am not a divider, am I?",
+     ["Luke 12:13-14"], "Not a Divider"),
+
     
     (61, "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ", "",
      "Two will rest on a bed: the one will die, and the other will live.",

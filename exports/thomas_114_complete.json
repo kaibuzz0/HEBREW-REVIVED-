@@ -102,6 +102,96 @@
       "theme": "Fire and Judgment"
     },
     {
+      "id": 13,
+      "saying_number": 11,
+      "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
+      "greek_fragments": "",
+      "english_text": "This heaven will pass away, and the one above it will pass away. The dead are not alive, and the living will not die. In the days when you consumed what is dead, you made it what is alive. When you come to be in the light, what will you do? On the day when you were one, you became two. But when you become two, what will you do?",
+      "parallel_passages": "[]",
+      "theme": "Heaven Passes Away"
+    },
+    {
+      "id": 14,
+      "saying_number": 12,
+      "coptic_text": "ⲡⲉϫⲉ ⲛⲉϥⲙⲁⲑⲏⲧⲏⲥ ϫⲉ ϩⲱⲥ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
+      "greek_fragments": "",
+      "english_text": "The disciples said to Jesus, 'We know that you will depart from us. Who is to be our leader?' Jesus said to them, 'Wherever you are, you are to go to James the righteous, for whose sake heaven and earth came into being.'",
+      "parallel_passages": "[]",
+      "theme": "Leader After Jesus"
+    },
+    {
+      "id": 15,
+      "saying_number": 13,
+      "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
+      "greek_fragments": "",
+      "english_text": "Jesus said to his disciples, 'Compare me to someone and tell me whom I am like.' Simon Peter said to him, 'You are like a righteous angel.' Matthew said to him, 'You are like a wise philosopher.' Thomas said to him, 'Master, my mouth is wholly incapable of saying whom you are like.' Jesus said, 'I am not your master. Because you have drunk, you have become intoxicated from the bubbling spring which I have measured out.' And he took him and withdrew and spoke three sayings to him. When Thomas returned to his companions, they asked him, 'What did Jesus say to you?' Thomas said to them, 'If I tell you one of the things which he told me, you will pick up stones and throw them at me; a fire will come out of the stones and burn you up.'",
+      "parallel_passages": "[]",
+      "theme": "Three Secret Sayings"
+    },
+    {
+      "id": 16,
+      "saying_number": 14,
+      "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
+      "greek_fragments": "",
+      "english_text": "Jesus said to them, 'If you fast, you will give rise to sin for yourselves; and if you pray, you will be condemned; and if you give alms, you will do harm to your spirits. When you go into any land and walk about in the districts, if they receive you, eat what they will set before you, and heal the sick among them. For what goes into your mouth will not defile you, but that which issues from your mouth - it is that which will defile you.'",
+      "parallel_passages": "[\"Matthew 15:11\", \"Mark 7:15\"]",
+      "theme": "True Purity"
+    },
+    {
+      "id": 17,
+      "saying_number": 15,
+      "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
+      "greek_fragments": "",
+      "english_text": "When you see one who was not born of woman, prostrate yourselves on your faces and worship him. That one is your father.",
+      "parallel_passages": "[]",
+      "theme": "Not Born of Woman"
+    },
+    {
+      "id": 18,
+      "saying_number": 16,
+      "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
+      "greek_fragments": "",
+      "english_text": "Perhaps people think that I have come to cast peace upon the world. They do not know that I have come to cast conflicts upon the earth: fire, sword, war. For there will be five in a house: there will be three against two and two against three, father against son and son against father. And they will stand as solitaries.'",
+      "parallel_passages": "[\"Matthew 10:34-36\", \"Luke 12:51-53\"]",
+      "theme": "Sword and Division"
+    },
+    {
+      "id": 19,
+      "saying_number": 17,
+      "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
+      "greek_fragments": "",
+      "english_text": "Jesus said, 'I shall give you what no eye has seen and what no ear has heard and what no hand has touched and what has never occurred to the human mind.'",
+      "parallel_passages": "[\"1 Corinthians 2:9\", \"Isaiah 64:4\"]",
+      "theme": "Hidden Mysteries"
+    },
+    {
+      "id": 20,
+      "saying_number": 18,
+      "coptic_text": "ⲡⲉϫⲉ ⲛⲉϥⲙⲁⲑⲏⲧⲏⲥ ϫⲉ ϩⲱⲥ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
+      "greek_fragments": "",
+      "english_text": "The disciples said to Jesus, 'Tell us how our end will be.' Jesus said, 'Have you discovered, then, the beginning, that you look for the end? For where the beginning is, there will the end be. Blessed is he who will take his place in the beginning; he will know the end and will not experience death.'",
+      "parallel_passages": "[]",
+      "theme": "Beginning and End"
+    },
+    {
+      "id": 21,
+      "saying_number": 19,
+      "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
+      "greek_fragments": "",
+      "english_text": "Blessed is he who came into being before he came into being. If you become my disciples and listen to my words, these stones will minister to you. For there are five trees for you in Paradise which remain undisturbed summer and winter and whose leaves do not fall. Whoever becomes acquainted with them will not experience death.'",
+      "parallel_passages": "[]",
+      "theme": "Five Trees in Paradise"
+    },
+    {
+      "id": 22,
+      "saying_number": 20,
+      "coptic_text": "ⲡⲉϫⲉ ⲛⲉϥⲙⲁⲑⲏⲧⲏⲥ ϫⲉ ϩⲱⲥ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
+      "greek_fragments": "",
+      "english_text": "The disciples said to Jesus, 'Tell us what the Kingdom of Heaven is like.' He said to them, 'It is like a mustard seed. It is the smallest of all seeds. But when it falls on tilled soil, it produces a great plant and becomes a shelter for birds of the sky.'",
+      "parallel_passages": "[\"Matthew 13:31-32\", \"Mark 4:30-32\", \"Luke 13:18-19\"]",
+      "theme": "Mustard Seed"
+    },
+    {
       "id": 12,
       "saying_number": 21,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
@@ -111,7 +201,7 @@
       "theme": "Childlikeness"
     },
     {
-      "id": 13,
+      "id": 23,
       "saying_number": 22,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ⲁⲓⲛⲁⲩ ⲉϩⲟⲩⲛ",
       "greek_fragments": "",
@@ -120,7 +210,7 @@
       "theme": "Union of Opposites"
     },
     {
-      "id": 14,
+      "id": 24,
       "saying_number": 23,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ⲛⲧⲟⲕ ⲛⲧⲟⲕ ⲉⲧϣⲟⲟⲡⲉ ⲛⲁⲓ",
       "greek_fragments": "",
@@ -129,7 +219,7 @@
       "theme": "Elect"
     },
     {
-      "id": 15,
+      "id": 25,
       "saying_number": 24,
       "coptic_text": "ⲡⲉϫⲉ ⲛⲉϥⲙⲁⲑⲏⲧⲏⲥ ϫⲉ ϣⲟⲟⲡⲉ ⲛⲁⲓ ϩⲏⲧ",
       "greek_fragments": "",
@@ -138,7 +228,7 @@
       "theme": "Inner Light"
     },
     {
-      "id": 16,
+      "id": 26,
       "saying_number": 25,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲱⲥ ⲛⲧⲟⲕ ⲛⲧⲟⲕ ⲉⲧϣⲟⲟⲡⲉ",
       "greek_fragments": "",
@@ -147,7 +237,7 @@
       "theme": "Brotherly Love"
     },
     {
-      "id": 17,
+      "id": 27,
       "saying_number": 26,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ⲡⲉⲧⲣⲟⲥ ⲛⲧⲟⲕ ⲛⲧⲟⲕ ⲉⲧϣⲟⲟⲡⲉ",
       "greek_fragments": "",
@@ -156,7 +246,7 @@
       "theme": "Hypocrisy"
     },
     {
-      "id": 18,
+      "id": 28,
       "saying_number": 27,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
@@ -165,7 +255,7 @@
       "theme": "True Sabbath"
     },
     {
-      "id": 19,
+      "id": 29,
       "saying_number": 28,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ⲁⲓⲥⲱⲧⲙ ⲉⲣⲟⲕ ⲛϩⲏⲧ",
       "greek_fragments": "",
@@ -174,7 +264,7 @@
       "theme": "Intoxication of World"
     },
     {
-      "id": 20,
+      "id": 30,
       "saying_number": 29,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
@@ -183,7 +273,7 @@
       "theme": "Spirit and Flesh"
     },
     {
-      "id": 21,
+      "id": 31,
       "saying_number": 30,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲱⲥ ⲛⲧⲟⲕ ⲛⲧⲟⲕ ⲉⲧϣⲟⲟⲡⲉ",
       "greek_fragments": "",
@@ -192,7 +282,7 @@
       "theme": "Presence in Unity"
     },
     {
-      "id": 22,
+      "id": 32,
       "saying_number": 31,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
@@ -201,7 +291,7 @@
       "theme": "Prophet in Hometown"
     },
     {
-      "id": 23,
+      "id": 33,
       "saying_number": 32,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
@@ -210,7 +300,7 @@
       "theme": "City on Hill"
     },
     {
-      "id": 24,
+      "id": 34,
       "saying_number": 33,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
@@ -219,7 +309,7 @@
       "theme": "Proclaim the Light"
     },
     {
-      "id": 25,
+      "id": 35,
       "saying_number": 34,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
@@ -228,7 +318,7 @@
       "theme": "Blind Leading Blind"
     },
     {
-      "id": 26,
+      "id": 36,
       "saying_number": 35,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
@@ -237,7 +327,7 @@
       "theme": "Binding the Strong Man"
     },
     {
-      "id": 27,
+      "id": 37,
       "saying_number": 36,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
@@ -246,7 +336,7 @@
       "theme": "Do Not Worry"
     },
     {
-      "id": 28,
+      "id": 38,
       "saying_number": 37,
       "coptic_text": "ⲡⲉϫⲉ ⲛⲉϥⲙⲁⲑⲏⲧⲏⲥ ϫⲉ ϩⲱⲥ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
@@ -255,7 +345,7 @@
       "theme": "Nakedness and Shame"
     },
     {
-      "id": 29,
+      "id": 39,
       "saying_number": 38,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
@@ -264,7 +354,7 @@
       "theme": "Seeking and Not Finding"
     },
     {
-      "id": 30,
+      "id": 40,
       "saying_number": 39,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
@@ -273,7 +363,7 @@
       "theme": "Keys of Knowledge"
     },
     {
-      "id": 31,
+      "id": 41,
       "saying_number": 40,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
@@ -282,7 +372,7 @@
       "theme": "True Vine"
     },
     {
-      "id": 32,
+      "id": 42,
       "saying_number": 41,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
@@ -291,7 +381,7 @@
       "theme": "Those Who Have"
     },
     {
-      "id": 33,
+      "id": 43,
       "saying_number": 42,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
@@ -300,7 +390,7 @@
       "theme": "Passers-By"
     },
     {
-      "id": 34,
+      "id": 44,
       "saying_number": 43,
       "coptic_text": "ⲡⲉϫⲉ ⲛⲉϥⲙⲁⲑⲏⲧⲏⲥ ϫⲉ ⲧⲟⲩⲛⲟⲩⲥ ϩⲱⲱⲧ ⲡⲱⲧ",
       "greek_fragments": "",
@@ -309,7 +399,7 @@
       "theme": "Identity"
     },
     {
-      "id": 35,
+      "id": 45,
       "saying_number": 44,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
@@ -318,7 +408,7 @@
       "theme": "Unforgivable Sin"
     },
     {
-      "id": 36,
+      "id": 46,
       "saying_number": 45,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
@@ -327,7 +417,7 @@
       "theme": "Good and Evil Fruit"
     },
     {
-      "id": 37,
+      "id": 47,
       "saying_number": 46,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
@@ -336,7 +426,7 @@
       "theme": "Greater Than John"
     },
     {
-      "id": 38,
+      "id": 48,
       "saying_number": 47,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
@@ -345,7 +435,7 @@
       "theme": "Two Masters"
     },
     {
-      "id": 39,
+      "id": 49,
       "saying_number": 48,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
@@ -354,7 +444,7 @@
       "theme": "Faith Moves Mountains"
     },
     {
-      "id": 40,
+      "id": 50,
       "saying_number": 49,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
@@ -363,7 +453,7 @@
       "theme": "Solitary and Elect"
     },
     {
-      "id": 41,
+      "id": 51,
       "saying_number": 50,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
@@ -372,7 +462,7 @@
       "theme": "Movement and Repose"
     },
     {
-      "id": 42,
+      "id": 52,
       "saying_number": 51,
       "coptic_text": "ⲡⲉϫⲉ ⲛⲉϥⲙⲁⲑⲏⲧⲏⲥ ϫⲉ ϩⲱⲥ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
@@ -381,7 +471,25 @@
       "theme": "Already Come"
     },
     {
-      "id": 43,
+      "id": 53,
+      "saying_number": 52,
+      "coptic_text": "ⲡⲉϫⲉ ⲛⲉϥⲙⲁⲑⲏⲧⲏⲥ ϫⲉ ϩⲱⲥ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
+      "greek_fragments": "",
+      "english_text": "His disciples said to him, Twenty-four prophets spoke in Israel, and all of them spoke in you. He said to them, You have omitted the one living in your presence and have spoken only of the dead.",
+      "parallel_passages": "[]",
+      "theme": "Living Prophet"
+    },
+    {
+      "id": 54,
+      "saying_number": 53,
+      "coptic_text": "ⲡⲉϫⲉ ⲛⲉϥⲙⲁⲑⲏⲧⲏⲥ ϫⲉ ϩⲱⲥ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
+      "greek_fragments": "",
+      "english_text": "His disciples said to him, Is circumcision beneficial or not? He said to them, If it were beneficial, their father would beget them already circumcised from their mother. Rather, the true circumcision in spirit has become completely profitable.",
+      "parallel_passages": "[\"Romans 2:29\", \"Philippians 3:3\"]",
+      "theme": "Circumcision"
+    },
+    {
+      "id": 55,
       "saying_number": 54,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
@@ -390,7 +498,7 @@
       "theme": "Blessed Poor"
     },
     {
-      "id": 44,
+      "id": 56,
       "saying_number": 55,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
@@ -399,7 +507,7 @@
       "theme": "Hate Family"
     },
     {
-      "id": 45,
+      "id": 57,
       "saying_number": 56,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
@@ -408,7 +516,7 @@
       "theme": "Corpse"
     },
     {
-      "id": 46,
+      "id": 58,
       "saying_number": 57,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
@@ -417,7 +525,7 @@
       "theme": "Wheat and Tares"
     },
     {
-      "id": 47,
+      "id": 59,
       "saying_number": 58,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
@@ -426,7 +534,25 @@
       "theme": "Suffering"
     },
     {
-      "id": 48,
+      "id": 60,
+      "saying_number": 59,
+      "coptic_text": "Saying 59 - Coptic text placeholder",
+      "greek_fragments": "",
+      "english_text": "Take heed of the living one while you are alive, lest you die and seek to see him and you will not be able to see.",
+      "parallel_passages": "[]",
+      "theme": "Living One While Alive"
+    },
+    {
+      "id": 61,
+      "saying_number": 60,
+      "coptic_text": "Saying 60 - Coptic text placeholder",
+      "greek_fragments": "",
+      "english_text": "A Samaritan carrying a lamb was going to Judea. He said to his disciples, Why is that man carrying the lamb around? They said to him, So that he may kill it and eat it. He said to them, While it is alive, he will not eat it, but only when he has killed it and it has become a corpse. They said, Otherwise he will not be able to do it. He said to them, You too, look for a place for yourselves within the repose, lest you become a corpse and be eaten.",
+      "parallel_passages": "[]",
+      "theme": "Samaritan with Lamb"
+    },
+    {
+      "id": 66,
       "saying_number": 61,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
@@ -435,7 +561,7 @@
       "theme": "Two on Bed"
     },
     {
-      "id": 49,
+      "id": 67,
       "saying_number": 62,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
@@ -444,7 +570,7 @@
       "theme": "Worthy"
     },
     {
-      "id": 50,
+      "id": 68,
       "saying_number": 63,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
@@ -453,7 +579,7 @@
       "theme": "Rich Fool"
     },
     {
-      "id": 51,
+      "id": 69,
       "saying_number": 64,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
@@ -462,7 +588,16 @@
       "theme": "Great Supper"
     },
     {
-      "id": 52,
+      "id": 62,
+      "saying_number": 65,
+      "coptic_text": "Saying 65 - Coptic text placeholder",
+      "greek_fragments": "",
+      "english_text": "He said, There was a good man who had a vineyard. He leased it to tenant farmers so that they might work it and he might collect its produce from them. He sent his servant so that the tenants might give him the produce of the vineyard. They seized his servant and beat him, all but killing him. The servant went back and told his master. The master said, Perhaps he did not know them. He sent another servant. The tenants beat this one as well. Then the owner sent his son and said, Perhaps they will respect my son. Since those tenants knew that he was the heir to the vineyard, they seized him and killed him. Let him who has ears hear.",
+      "parallel_passages": "[\"Matthew 21:33-41\", \"Mark 12:1-9\", \"Luke 20:9-16\"]",
+      "theme": "Wicked Tenants"
+    },
+    {
+      "id": 70,
       "saying_number": 66,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
@@ -471,7 +606,25 @@
       "theme": "Cornerstone"
     },
     {
-      "id": 53,
+      "id": 63,
+      "saying_number": 67,
+      "coptic_text": "Saying 67 - Coptic text placeholder",
+      "greek_fragments": "",
+      "english_text": "He who knows the All but fails to know himself lacks everything.",
+      "parallel_passages": "[]",
+      "theme": "Know Yourself"
+    },
+    {
+      "id": 64,
+      "saying_number": 68,
+      "coptic_text": "Saying 68 - Coptic text placeholder",
+      "greek_fragments": "",
+      "english_text": "Blessed are you when you are hated and persecuted. Wherever you have been persecuted they will find no place.",
+      "parallel_passages": "[\"Matthew 5:10-12\", \"Luke 6:22-23\"]",
+      "theme": "Blessed Persecuted"
+    },
+    {
+      "id": 71,
       "saying_number": 69,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
@@ -480,7 +633,7 @@
       "theme": "Persecuted"
     },
     {
-      "id": 54,
+      "id": 72,
       "saying_number": 70,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
@@ -489,7 +642,7 @@
       "theme": "Bring Forth"
     },
     {
-      "id": 55,
+      "id": 73,
       "saying_number": 71,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
@@ -498,7 +651,16 @@
       "theme": "Destroy Temple"
     },
     {
-      "id": 56,
+      "id": 65,
+      "saying_number": 72,
+      "coptic_text": "Saying 72 - Coptic text placeholder",
+      "greek_fragments": "",
+      "english_text": "A man said to him, Tell my brothers to divide my fathers possessions with me. He said to him, O man, who has made me a divider? He turned to his disciples and said to them, I am not a divider, am I?",
+      "parallel_passages": "[\"Luke 12:13-14\"]",
+      "theme": "Not a Divider"
+    },
+    {
+      "id": 74,
       "saying_number": 73,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
@@ -507,7 +669,7 @@
       "theme": "Laborers for Harvest"
     },
     {
-      "id": 57,
+      "id": 75,
       "saying_number": 74,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
@@ -516,7 +678,7 @@
       "theme": "Fire on Earth"
     },
     {
-      "id": 58,
+      "id": 76,
       "saying_number": 75,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
@@ -525,7 +687,7 @@
       "theme": "Life and Death"
     },
     {
-      "id": 59,
+      "id": 77,
       "saying_number": 76,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
@@ -534,7 +696,7 @@
       "theme": "Pearl Merchant"
     },
     {
-      "id": 60,
+      "id": 78,
       "saying_number": 77,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
@@ -543,7 +705,7 @@
       "theme": "Universal Presence"
     },
     {
-      "id": 61,
+      "id": 79,
       "saying_number": 78,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
@@ -552,7 +714,7 @@
       "theme": "Reed in Wind"
     },
     {
-      "id": 62,
+      "id": 80,
       "saying_number": 79,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
@@ -561,7 +723,7 @@
       "theme": "Barren Blessed"
     },
     {
-      "id": 63,
+      "id": 81,
       "saying_number": 80,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
@@ -570,7 +732,7 @@
       "theme": "World Not Worthy"
     },
     {
-      "id": 64,
+      "id": 82,
       "saying_number": 81,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
@@ -579,7 +741,7 @@
       "theme": "Rich King"
     },
     {
-      "id": 65,
+      "id": 83,
       "saying_number": 82,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
@@ -588,7 +750,7 @@
       "theme": "Near the Fire"
     },
     {
-      "id": 66,
+      "id": 84,
       "saying_number": 83,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
@@ -597,7 +759,7 @@
       "theme": "Concealed Light"
     },
     {
-      "id": 67,
+      "id": 85,
       "saying_number": 84,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
@@ -606,7 +768,7 @@
       "theme": "Images Before You"
     },
     {
-      "id": 68,
+      "id": 86,
       "saying_number": 85,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
@@ -615,7 +777,7 @@
       "theme": "Adam Not Worthy"
     },
     {
-      "id": 69,
+      "id": 87,
       "saying_number": 86,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
@@ -624,7 +786,7 @@
       "theme": "Nowhere to Rest"
     },
     {
-      "id": 70,
+      "id": 88,
       "saying_number": 87,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
@@ -633,7 +795,7 @@
       "theme": "Wretched Dependence"
     },
     {
-      "id": 71,
+      "id": 89,
       "saying_number": 88,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
@@ -642,7 +804,7 @@
       "theme": "Angels and Prophets"
     },
     {
-      "id": 72,
+      "id": 90,
       "saying_number": 89,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
@@ -651,7 +813,7 @@
       "theme": "Clean Cup"
     },
     {
-      "id": 73,
+      "id": 91,
       "saying_number": 90,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
@@ -660,7 +822,7 @@
       "theme": "Easy Yoke"
     },
     {
-      "id": 74,
+      "id": 92,
       "saying_number": 91,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
@@ -669,7 +831,7 @@
       "theme": "Reading Signs"
     },
     {
-      "id": 75,
+      "id": 93,
       "saying_number": 92,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
@@ -678,7 +840,7 @@
       "theme": "Not Seeking"
     },
     {
-      "id": 76,
+      "id": 94,
       "saying_number": 93,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
@@ -687,7 +849,7 @@
       "theme": "Pearls to Swine"
     },
     {
-      "id": 77,
+      "id": 95,
       "saying_number": 94,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
@@ -696,7 +858,7 @@
       "theme": "Seek and Find"
     },
     {
-      "id": 78,
+      "id": 96,
       "saying_number": 95,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
@@ -705,7 +867,7 @@
       "theme": "Lend Without Interest"
     },
     {
-      "id": 79,
+      "id": 97,
       "saying_number": 96,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
@@ -714,7 +876,7 @@
       "theme": "Leaven"
     },
     {
-      "id": 80,
+      "id": 98,
       "saying_number": 97,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
@@ -723,7 +885,7 @@
       "theme": "Empty Jar"
     },
     {
-      "id": 81,
+      "id": 99,
       "saying_number": 98,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
@@ -732,7 +894,7 @@
       "theme": "Test Before Action"
     },
     {
-      "id": 82,
+      "id": 100,
       "saying_number": 99,
       "coptic_text": "ⲡⲉϫⲉ ⲛⲉϥⲙⲁⲑⲏⲧⲏⲥ ϫⲉ ϩⲱⲥ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
@@ -741,7 +903,7 @@
       "theme": "True Family"
     },
     {
-      "id": 83,
+      "id": 101,
       "saying_number": 100,
       "coptic_text": "ⲡⲉϫⲉ ⲛⲉϥⲙⲁⲑⲏⲧⲏⲥ ϫⲉ ϩⲱⲥ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
@@ -750,7 +912,7 @@
       "theme": "Caesar's Coin"
     },
     {
-      "id": 84,
+      "id": 102,
       "saying_number": 101,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
@@ -759,7 +921,7 @@
       "theme": "Hate and Love Family"
     },
     {
-      "id": 85,
+      "id": 103,
       "saying_number": 102,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
@@ -768,7 +930,7 @@
       "theme": "Dog in Manger"
     },
     {
-      "id": 86,
+      "id": 104,
       "saying_number": 103,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
@@ -777,7 +939,7 @@
       "theme": "Suffering Brings Life"
     },
     {
-      "id": 87,
+      "id": 105,
       "saying_number": 104,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
@@ -786,7 +948,7 @@
       "theme": "When to Fast"
     },
     {
-      "id": 88,
+      "id": 106,
       "saying_number": 105,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
@@ -795,7 +957,7 @@
       "theme": "Son of Harlot"
     },
     {
-      "id": 89,
+      "id": 107,
       "saying_number": 106,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
@@ -804,7 +966,7 @@
       "theme": "Sons of Man"
     },
     {
-      "id": 90,
+      "id": 108,
       "saying_number": 107,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
@@ -813,7 +975,7 @@
       "theme": "Lost Sheep"
     },
     {
-      "id": 91,
+      "id": 109,
       "saying_number": 108,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
@@ -822,7 +984,7 @@
       "theme": "Drink From Mouth"
     },
     {
-      "id": 92,
+      "id": 110,
       "saying_number": 109,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
@@ -831,7 +993,7 @@
       "theme": "Hidden Treasure"
     },
     {
-      "id": 93,
+      "id": 111,
       "saying_number": 110,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
@@ -840,7 +1002,7 @@
       "theme": "Renounce World"
     },
     {
-      "id": 94,
+      "id": 112,
       "saying_number": 111,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
@@ -849,7 +1011,7 @@
       "theme": "Heavens Rolled Up"
     },
     {
-      "id": 95,
+      "id": 113,
       "saying_number": 112,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
@@ -858,7 +1020,7 @@
       "theme": "Flesh and Soul"
     },
     {
-      "id": 96,
+      "id": 114,
       "saying_number": 113,
       "coptic_text": "ⲓⲱⲥ ⲡⲉϫⲉ ϩⲛⲧⲙⲉ ⲉⲧⲛⲁⲛⲟⲩ ⲛⲧⲟⲕ ⲛⲧⲟⲕ",
       "greek_fragments": "",
@@ -867,7 +1029,7 @@
       "theme": "Kingdom Spread on Earth"
     },
     {
-      "id": 97,
+      "id": 115,
       "saying_number": 114,
       "coptic_text": "ⲥⲓⲙⲱⲛ ⲡⲉⲧⲣⲟⲥ ⲁϥϫⲟⲟⲥ ϫⲉ ϯⲛⲧⲱⲛ ⲛⲧⲟⲕ",
       "greek_fragments": "",
