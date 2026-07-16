@@ -1,0 +1,66 @@
+{
+  "phase": "Phase 12",
+  "total_entries": 80,
+  "books": [
+    {
+      "book": "Jubilees (Final)",
+      "count": 4
+    },
+    {
+      "book": "1 Baruch",
+      "count": 6
+    },
+    {
+      "book": "Letter of Aristeas",
+      "count": 6
+    },
+    {
+      "book": "4 Maccabees",
+      "count": 5
+    },
+    {
+      "book": "Prayer of Joseph",
+      "count": 4
+    },
+    {
+      "book": "Testament of Job",
+      "count": 6
+    },
+    {
+      "book": "Testament of Moses",
+      "count": 5
+    },
+    {
+      "book": "Assumption of Moses (Additional)",
+      "count": 5
+    },
+    {
+      "book": "Ladder of Jacob",
+      "count": 5
+    },
+    {
+      "book": "Joseph and Aseneth",
+      "count": 6
+    },
+    {
+      "book": "Samaritan Book of Moses",
+      "count": 5
+    },
+    {
+      "book": "Ethiopian Book of Enoch (More)",
+      "count": 8
+    },
+    {
+      "book": "Book of the Covenant of Moses",
+      "count": 5
+    },
+    {
+      "book": "Words of Gad the Seer",
+      "count": 5
+    },
+    {
+      "book": "Revelation of Moses",
+      "count": 5
+    }
+  ]
+}
