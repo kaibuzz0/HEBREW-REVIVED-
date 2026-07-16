@@ -1,0 +1,46 @@
+{
+  "phase": "Phase 6",
+  "total_entries": 61,
+  "books": [
+    {
+      "book": "Tobit",
+      "count": 10
+    },
+    {
+      "book": "Judith",
+      "count": 8
+    },
+    {
+      "book": "Wisdom of Solomon",
+      "count": 8
+    },
+    {
+      "book": "Sirach",
+      "count": 7
+    },
+    {
+      "book": "Baruch",
+      "count": 5
+    },
+    {
+      "book": "1 Maccabees",
+      "count": 6
+    },
+    {
+      "book": "2 Maccabees",
+      "count": 5
+    },
+    {
+      "book": "Additions to Esther",
+      "count": 3
+    },
+    {
+      "book": "Additions to Daniel",
+      "count": 6
+    },
+    {
+      "book": "Prayer of Manasseh",
+      "count": 3
+    }
+  ]
+}
