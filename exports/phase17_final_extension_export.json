@@ -1,0 +1,78 @@
+{
+  "phase": "Phase 17",
+  "total_entries": 101,
+  "books": [
+    {
+      "book": "Melchizedek (Nag Hammadi)",
+      "count": 5
+    },
+    {
+      "book": "Marsanes (Nag Hammadi)",
+      "count": 5
+    },
+    {
+      "book": "Allogenes (Nag Hammadi)",
+      "count": 5
+    },
+    {
+      "book": "Epistle to Diognetus",
+      "count": 12
+    },
+    {
+      "book": "Fragments of Papias",
+      "count": 5
+    },
+    {
+      "book": "Fragments of Hegesippus",
+      "count": 5
+    },
+    {
+      "book": "Martyrdom of Ignatius",
+      "count": 5
+    },
+    {
+      "book": "Apocalypse of Sedrach",
+      "count": 5
+    },
+    {
+      "book": "Questions of Ezra",
+      "count": 5
+    },
+    {
+      "book": "Apocalypse of Paul (More)",
+      "count": 4
+    },
+    {
+      "book": "Daniel Additions (Complete)",
+      "count": 7
+    },
+    {
+      "book": "Book of Bahir",
+      "count": 5
+    },
+    {
+      "book": "Hekhalot Zutarti",
+      "count": 4
+    },
+    {
+      "book": "Death of Pilate",
+      "count": 5
+    },
+    {
+      "book": "Narrative of Joseph of Arimathea",
+      "count": 5
+    },
+    {
+      "book": "Acts of Paul and Thecla (Complete)",
+      "count": 9
+    },
+    {
+      "book": "Gospel of the Nazarenes",
+      "count": 5
+    },
+    {
+      "book": "Gospel of the Ebionites",
+      "count": 5
+    }
+  ]
+}
