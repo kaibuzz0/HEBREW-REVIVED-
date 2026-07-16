@@ -230,6 +230,18 @@ class CompleteBibleDatabase:
             )
         """)
         
+        # Shepherd of Hermas
+        self.cursor.execute("""
+            CREATE TABLE IF NOT EXISTS shepherd_of_hermas (
+                id INTEGER PRIMARY KEY,
+                section_number INTEGER,
+                greek_text TEXT,
+                english_text TEXT,
+                title TEXT,
+                section_type TEXT
+            )
+        """)
+        
         # Jesus' 30 years reconstruction
         self.cursor.execute("""
             CREATE TABLE IF NOT EXISTS jesus_years (
