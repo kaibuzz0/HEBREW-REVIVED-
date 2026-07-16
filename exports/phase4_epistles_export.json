@@ -1,0 +1,78 @@
+{
+  "phase": "Phase 4",
+  "total_entries": 50,
+  "books": [
+    {
+      "book": "Galatians",
+      "count": 4
+    },
+    {
+      "book": "Ephesians",
+      "count": 4
+    },
+    {
+      "book": "Philippians",
+      "count": 4
+    },
+    {
+      "book": "Colossians",
+      "count": 2
+    },
+    {
+      "book": "1 Thessalonians",
+      "count": 2
+    },
+    {
+      "book": "2 Thessalonians",
+      "count": 2
+    },
+    {
+      "book": "1 Timothy",
+      "count": 3
+    },
+    {
+      "book": "2 Timothy",
+      "count": 3
+    },
+    {
+      "book": "Titus",
+      "count": 3
+    },
+    {
+      "book": "Philemon",
+      "count": 1
+    },
+    {
+      "book": "Hebrews",
+      "count": 4
+    },
+    {
+      "book": "James",
+      "count": 4
+    },
+    {
+      "book": "1 Peter",
+      "count": 4
+    },
+    {
+      "book": "2 Peter",
+      "count": 2
+    },
+    {
+      "book": "1 John",
+      "count": 4
+    },
+    {
+      "book": "2 John",
+      "count": 1
+    },
+    {
+      "book": "3 John",
+      "count": 1
+    },
+    {
+      "book": "Jude",
+      "count": 2
+    }
+  ]
+}
